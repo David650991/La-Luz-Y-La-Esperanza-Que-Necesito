@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://david650991.github.io/La-Luz-Y-La-Esperanza-Que-Necesito/sitemap.xml
+Sitemap: https://www.laluzylaesperanzaquenecesito.me/sitemap.xml
