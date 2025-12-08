@@ -6,7 +6,7 @@
 
 > **Sitio web institucional** desarrollado para el Centro de Rehabilitación en Tres Valles, Veracruz. Combina un diseño médico profesional con elementos estacionales (Tema Navideño) y funcionalidad moderna sin servidor.
 
-🌐 **[Ver Sitio Web en Vivo](https://david650991.github.io/La-Luz-Y-La-Esperanza-Que-Necesito/)**
+🌐 **[Ver Sitio Web en Vivo](https://www.laluzylaesperanzaquenecesito.me/)**
 
 ---
 
