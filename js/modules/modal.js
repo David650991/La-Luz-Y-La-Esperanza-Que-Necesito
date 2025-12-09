@@ -5,7 +5,7 @@ export function initPopup() {
 
     // Validación de seguridad: Si no existen los elementos, no hacer nada
     if (modal && closeBtn) {
-        
+
         // 1. Mostrar automáticamente después de 1 segundo
         setTimeout(() => {
             modal.classList.add('active');
@@ -18,14 +18,14 @@ export function initPopup() {
 
         // 3. Eventos
         closeBtn.addEventListener('click', closeModal);
-        
+
         // Cerrar al dar clic fuera de la imagen
         modal.addEventListener('click', (e) => {
             if (e.target === modal) {
                 closeModal();
             }
         });
-        
+
         // Cerrar con tecla ESC
         document.addEventListener('keydown', (e) => {
             if (e.key === 'Escape' && modal.classList.contains('active')) {
