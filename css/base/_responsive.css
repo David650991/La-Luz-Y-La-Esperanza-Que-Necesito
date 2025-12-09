@@ -1,0 +1,21 @@
+@media (max-width: 992px) {
+    .grid-2-col, .method-row, .method-row.reverse, .contact-layout { grid-template-columns: 1fr; flex-direction: column; }
+    .hero-content h1 { font-size: 2.8rem; }
+    .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+    .stacked-images { height: 350px; margin-top: 40px; }
+    .img-main, .img-secondary { position: relative; width: 100%; margin-bottom: 20px; }
+    .contact-info-box { padding-right: 0; margin-bottom: 50px; }
+}
+@media (max-width: 768px) {
+    .main-nav {
+        display: none; position: absolute; top: 80px; left: 0; width: 100%;
+        background: var(--white); flex-direction: column; padding: 30px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+    .main-nav.active { display: flex; }
+    .main-nav ul { flex-direction: column; width: 100%; gap: 20px; }
+    .hamburger-menu { display: block; }
+    .hero-buttons { flex-direction: column; }
+    .section-title { font-size: 2rem; }
+    .gallery-grid { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,18 @@
+:root {
+    /* Paleta de Colores "Medical Luxury" */
+    --primary: #0F2C59;
+    --secondary: #3E6D9C;
+    --gold: #D4AF37;
+    --red-christmas: #C92C2C;
+    /* Neutrales */
+    --text: #333333;
+    --text-light: #666666;
+    --bg-light: #F8F9FA;
+    --white: #FFFFFF;
+    /* Tipografía */
+    --font-head: 'Montserrat', sans-serif;
+    --font-body: 'Lato', sans-serif;
+    /* Efectos */
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    --radius: 12px;
+}
