@@ -19,3 +19,33 @@
     .section-title { font-size: 2rem; }
     .gallery-grid { grid-template-columns: 1fr; }
 }
+
+/* =========================================
+   CORRECCIÓN CRÍTICA PARA IOS (IPHONE/IPAD)
+   ========================================= */
+@media (hover: none) and (pointer: coarse) {
+    /* Desactiva el parallax en pantallas táctiles para evitar zoom excesivo */
+    .hero-bg-img, 
+    .testimonials-section {
+        background-attachment: scroll !important;
+        background-size: cover !important;
+        background-position: center center !important;
+    }
+}
+
+/* Ajuste de Imágenes Generales en Móvil */
+@media (max-width: 768px) {
+    /* Asegura que ninguna imagen se desborde o deforme */
+    img {
+        width: 100%;
+        height: auto !important; /* Fuerza la proporción natural */
+        object-fit: cover;
+    }
+    
+    /* Excepción para galería y staff que necesitan altura fija */
+    .gallery-item img, 
+    .staff-photo img, 
+    .card-img img {
+        height: 100% !important; /* Aquí sí respetamos el contenedor */
+    }
+}
