@@ -1,5 +1,5 @@
 REPORTE DE ESTRUCTURA Y CONTENIDO
-Fecha: 12/09/2025 15:03:51
+Fecha: 12/09/2025 16:25:48
 Ruta Analizada: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperanza-Que-Necesito
 --------------------------------------------------
 
@@ -7,6 +7,7 @@ Ruta Analizada: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Espera
 📁 \assets
 📁 \css
 📁 \js
+   📄 \.nojekyll
    📄 \CNAME
    📄 \ESTRUCTURAYCONTENIDO.txt
    📄 \googled12c5739ef345a25.html
@@ -164,8 +165,16 @@ Ruta Analizada: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Espera
 ARCHIVO: _reset.css
 RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperanza-Que-Necesito\css\base\_reset.css
 ==========================================================================
-* { margin: 0; padding: 0; box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: var(--font-body);
     color: var(--text);
@@ -173,53 +182,185 @@ body {
     background-color: var(--white);
     position: relative;
 }
-h1, h2, h3, h4, h5 {
+
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-family: var(--font-head);
     color: var(--primary);
     font-weight: 700;
     margin-bottom: 1rem;
 }
-img { max-width: 100%; height: auto; display: block; }
-a { text-decoration: none; transition: 0.3s; }
-ul { list-style: none; }
-/* Clases Utilitarias */
-.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-.section-padding { padding: 80px 0; }
-.text-center { text-align: center; }
-.text-white { color: var(--white) !important; }
-.bg-light { background-color: var(--bg-light); }
-.highlight { color: var(--gold); }
-.w-100 { width: 100%; }
-.mt-5 { margin-top: 3rem; }
-.shadow-lg { box-shadow: var(--shadow); }
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Clases Utilitarias */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-padding {
+    padding: 80px 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-white {
+    color: var(--white) !important;
+}
+
+.bg-light {
+    background-color: var(--bg-light);
+}
+
+.highlight {
+    color: var(--gold);
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.mt-5 {
+    margin-top: 3rem;
+}
+
+.shadow-lg {
+    box-shadow: var(--shadow);
+}
 
 ==========================================================================
 ARCHIVO: _responsive.css
 RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperanza-Que-Necesito\css\base\_responsive.css
 ==========================================================================
 @media (max-width: 992px) {
-    .grid-2-col, .method-row, .method-row.reverse, .contact-layout { grid-template-columns: 1fr; flex-direction: column; }
-    .hero-content h1 { font-size: 2.8rem; }
-    .gallery-grid { grid-template-columns: repeat(2, 1fr); }
-    .stacked-images { height: 350px; margin-top: 40px; }
-    .img-main, .img-secondary { position: relative; width: 100%; margin-bottom: 20px; }
-    .contact-info-box { padding-right: 0; margin-bottom: 50px; }
-}
-@media (max-width: 768px) {
-    .main-nav {
-        display: none; position: absolute; top: 80px; left: 0; width: 100%;
-        background: var(--white); flex-direction: column; padding: 30px;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+
+    .grid-2-col,
+    .method-row,
+    .method-row.reverse,
+    .contact-layout {
+        grid-template-columns: 1fr;
+        flex-direction: column;
     }
-    .main-nav.active { display: flex; }
-    .main-nav ul { flex-direction: column; width: 100%; gap: 20px; }
-    .hamburger-menu { display: block; }
-    .hero-buttons { flex-direction: column; }
-    .section-title { font-size: 2rem; }
-    .gallery-grid { grid-template-columns: 1fr; }
+
+    .hero-content h1 {
+        font-size: 2.8rem;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stacked-images {
+        height: 350px;
+        margin-top: 40px;
+    }
+
+    .img-main,
+    .img-secondary {
+        position: relative;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .contact-info-box {
+        padding-right: 0;
+        margin-bottom: 50px;
+    }
 }
 
+@media (max-width: 768px) {
+    .main-nav {
+        display: none;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: var(--white);
+        flex-direction: column;
+        padding: 30px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .main-nav.active {
+        display: flex;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =========================================
+   CORRECCIÓN CRÍTICA PARA IOS (IPHONE/IPAD)
+   ========================================= */
+@media (hover: none) and (pointer: coarse) {
+
+    /* Desactiva el parallax en pantallas táctiles para evitar zoom excesivo */
+    .hero-bg-img,
+    .testimonials-section {
+        background-attachment: scroll !important;
+        background-size: cover !important;
+        background-position: center center !important;
+    }
+}
+
+/* Ajuste de Imágenes Generales en Móvil */
+@media (max-width: 768px) {
+
+    /* Asegura que ninguna imagen se desborde o deforme */
+    img {
+        width: 100%;
+        height: auto !important;
+        /* Fuerza la proporción natural */
+        object-fit: cover;
+    }
+
+    /* Excepción para galería y staff que necesitan altura fija */
+    .gallery-item img,
+    .staff-photo img,
+    .card-img img {
+        height: 100% !important;
+        /* Aquí sí respetamos el contenedor */
+    }
+}
 
 ==========================================================================
 ARCHIVO: _variables.css
@@ -244,43 +385,100 @@ RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperan
     --radius: 12px;
 }
 
-
 ==========================================================================
 ARCHIVO: _buttons.css
 RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperanza-Que-Necesito\css\components\_buttons.css
 ==========================================================================
 .btn {
-    display: inline-block; padding: 12px 35px; border-radius: 50px;
-    font-weight: 700; text-transform: uppercase; font-size: 0.9rem;
-    cursor: pointer; border: 2px solid transparent;
-}
-.btn-primary { background: var(--primary); color: var(--white); }
-.btn-primary:hover { background: var(--secondary); transform: translateY(-2px); }
-.btn-gold { background: var(--gold); color: var(--white); }
-.btn-gold:hover { background: #b5952f; box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4); transform: translateY(-2px); }
-.btn-outline-light { border: 2px solid var(--white); color: var(--white); }
-.btn-outline-light:hover { background: var(--white); color: var(--primary); }
-.btn-outline-dark { border: 2px solid var(--primary); color: var(--primary); }
-.btn-outline-dark:hover { background: var(--primary); color: var(--white); }
-.pulse-effect { animation: pulse 2s infinite; }
-@keyframes pulse {
-    0% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.7); }
-    70% { box-shadow: 0 0 0 10px rgba(212, 175, 55, 0); }
-    100% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0); }
+    display: inline-block;
+    padding: 12px 35px;
+    border-radius: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border: 2px solid transparent;
 }
 
+.btn-primary {
+    background: var(--primary);
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    background: var(--secondary);
+    transform: translateY(-2px);
+}
+
+.btn-gold {
+    background: var(--gold);
+    color: var(--white);
+}
+
+.btn-gold:hover {
+    background: #b5952f;
+    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
+    transform: translateY(-2px);
+}
+
+.btn-outline-light {
+    border: 2px solid var(--white);
+    color: var(--white);
+}
+
+.btn-outline-light:hover {
+    background: var(--white);
+    color: var(--primary);
+}
+
+.btn-outline-dark {
+    border: 2px solid var(--primary);
+    color: var(--primary);
+}
+
+.btn-outline-dark:hover {
+    background: var(--primary);
+    color: var(--white);
+}
+
+.pulse-effect {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.7);
+    }
+
+    70% {
+        box-shadow: 0 0 0 10px rgba(212, 175, 55, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(212, 175, 55, 0);
+    }
+}
 
 ==========================================================================
 ARCHIVO: _effects.css
 RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperanza-Que-Necesito\css\components\_effects.css
 ==========================================================================
 .snowflake {
-    position: fixed; top: -10px; color: #fff; font-size: 1em;
-    pointer-events: none; z-index: 9999;
-    animation: fall linear infinite; text-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: -10px;
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+    z-index: 9999;
+    animation: fall linear infinite;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
 }
-@keyframes fall { to { transform: translateY(105vh); } }
 
+@keyframes fall {
+    to {
+        transform: translateY(105vh);
+    }
+}
 
 ==========================================================================
 ARCHIVO: _modals.css
@@ -302,7 +500,8 @@ RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperan
     justify-content: center;
     align-items: center;
     opacity: 0;
-    visibility: hidden; /* Por defecto está oculto */
+    visibility: hidden;
+    /* Por defecto está oculto */
     transition: all 0.4s ease;
 }
 
@@ -365,8 +564,18 @@ RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperan
 
 /* Ajuste Móvil */
 @media (max-width: 480px) {
-    .modal-content { max-width: 100%; }
-    .modal-close { width: 42px; height: 42px; font-size: 20px; top: 15px; right: 15px; background: rgba(15, 44, 89, 0.95); }
+    .modal-content {
+        max-width: 100%;
+    }
+
+    .modal-close {
+        width: 42px;
+        height: 42px;
+        font-size: 20px;
+        top: 15px;
+        right: 15px;
+        background: rgba(15, 44, 89, 0.95);
+    }
 }
 
 ==========================================================================
@@ -374,268 +583,895 @@ ARCHIVO: _footer.css
 RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperanza-Que-Necesito\css\layout\_footer.css
 ==========================================================================
 .main-footer {
-    background: #051021; color: #b0b0b0; padding: 70px 0 30px;
-    text-align: center; border-top: 4px solid var(--gold);
+    background: #051021;
+    color: #b0b0b0;
+    padding: 70px 0 30px;
+    text-align: center;
+    border-top: 4px solid var(--gold);
 }
-.footer-brand { margin-bottom: 30px; }
-.footer-logo-img { height: 150px; width: auto; margin: 0 auto 15px; filter: brightness(1.1); }
-.footer-brand h4 { color: var(--white); font-size: 1.4rem; margin-bottom: 5px; letter-spacing: 1px; }
-.footer-brand p { font-size: 0.95rem; opacity: 0.7; }
-.footer-social { margin: 30px 0; display: flex; justify-content: center; gap: 25px; }
-.social-btn {
-    width: 60px; height: 60px; background: rgba(255, 255, 255, 0.1);
-    border-radius: 50%; display: flex; align-items: center; justify-content: center;
-    color: var(--white); font-size: 1.8rem; transition: 0.4s; border: 1px solid rgba(255, 255, 255, 0.1);
-}
-.social-btn:hover { transform: translateY(-5px) scale(1.1); background: var(--white); border-color: var(--white); }
-.social-btn.facebook:hover { color: #1877F2; }
-.social-btn.whatsapp:hover { color: #25D366; }
-.footer-links { margin-bottom: 30px; }
-.footer-links a { color: #b0b0b0; margin: 0 15px; font-size: 0.95rem; text-transform: uppercase; font-weight: 600; font-size: 0.85rem; }
-.footer-links a:hover { color: var(--gold); text-decoration: underline; }
-.copyright { font-size: 0.8rem; opacity: 0.5; }
-.whatsapp-float {
-    position: fixed; bottom: 30px; right: 30px; width: 65px; height: 65px;
-    background: #25d366; color: white; border-radius: 50%;
-    display: flex; align-items: center; justify-content: center; font-size: 35px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3); z-index: 999; transition: transform 0.3s;
-}
-.whatsapp-float:hover { transform: scale(1.1); }
 
+.footer-brand {
+    margin-bottom: 30px;
+}
+
+.footer-logo-img {
+    height: 150px;
+    width: auto;
+    margin: 0 auto 15px;
+    filter: brightness(1.1);
+}
+
+.footer-brand h4 {
+    color: var(--white);
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+.footer-brand p {
+    font-size: 0.95rem;
+    opacity: 0.7;
+}
+
+.footer-social {
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.social-btn {
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-size: 1.8rem;
+    transition: 0.4s;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.social-btn:hover {
+    transform: translateY(-5px) scale(1.1);
+    background: var(--white);
+    border-color: var(--white);
+}
+
+.social-btn.facebook:hover {
+    color: #1877F2;
+}
+
+.social-btn.whatsapp:hover {
+    color: #25D366;
+}
+
+.footer-links {
+    margin-bottom: 30px;
+}
+
+.footer-links a {
+    color: #b0b0b0;
+    margin: 0 15px;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+.footer-links a:hover {
+    color: var(--gold);
+    text-decoration: underline;
+}
+
+.copyright {
+    font-size: 0.8rem;
+    opacity: 0.5;
+}
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 65px;
+    height: 65px;
+    background: #25d366;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+    transition: transform 0.3s;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
 
 ==========================================================================
 ARCHIVO: _header.css
 RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperanza-Que-Necesito\css\layout\_header.css
 ==========================================================================
 .main-header {
-    position: fixed; top: 0; width: 100%; z-index: 1000;
-    background: rgba(255, 255, 255, 0.98); box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    border-bottom: 3px solid var(--gold); backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid var(--gold);
+    backdrop-filter: blur(10px);
 }
-.header-container { display: flex; justify-content: space-between; align-items: center; height: 80px; }
-.logo-img { height: 60px; }
-.main-nav ul { display: flex; gap: 25px; align-items: center; }
-.main-nav a { color: var(--primary); font-weight: 600; font-size: 0.95rem; position: relative; }
-.main-nav a:hover { color: var(--gold); }
-.nav-cta { background: var(--primary); color: var(--white) !important; padding: 8px 20px; border-radius: 20px; }
-.nav-cta:hover { background: var(--gold); }
-.hamburger-menu { display: none; font-size: 1.5rem; color: var(--primary); cursor: pointer; }
 
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.logo-img {
+    height: 60px;
+}
+
+.main-nav ul {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.main-nav a {
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 0.95rem;
+    position: relative;
+}
+
+.main-nav a:hover {
+    color: var(--gold);
+}
+
+.nav-cta {
+    background: var(--primary);
+    color: var(--white) !important;
+    padding: 8px 20px;
+    border-radius: 20px;
+}
+
+.nav-cta:hover {
+    background: var(--gold);
+}
+
+.hamburger-menu {
+    display: none;
+    font-size: 1.5rem;
+    color: var(--primary);
+    cursor: pointer;
+}
 
 ==========================================================================
 ARCHIVO: _contact.css
 RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperanza-Que-Necesito\css\sections\_contact.css
 ==========================================================================
-.contact-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: stretch; }
-.contact-info-box {
-    background: var(--white); border-radius: var(--radius); box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
-    border-top: 6px solid var(--primary); display: flex; flex-direction: column; overflow: hidden;
-}
-.contact-top-content { padding: 40px 40px 20px 40px; }
-.contact-top-content h2 { font-size: 1.8rem; margin-bottom: 15px; }
-.contact-top-content>p { color: var(--text-light); margin-bottom: 30px; }
-.info-item { display: flex; gap: 15px; margin-bottom: 25px; align-items: center; }
-.info-item i {
-    font-size: 1.2rem; color: var(--white); background: var(--secondary);
-    width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;
-    border-radius: 50%; flex-shrink: 0;
-}
-.info-item h5 { margin: 0; font-size: 1rem; color: var(--primary); }
-.info-item p { margin: 0; font-size: 0.9rem; color: #555; }
-.location-map-group { background: #f4f6f8; border-top: 1px solid #e0e0e0; margin-top: auto; }
-.location-text { padding: 20px 40px 15px; display: flex; gap: 15px; align-items: flex-start; }
-.icon-location { color: var(--gold); font-size: 1.5rem; margin-top: 3px; }
-.location-text h5 { margin: 0 0 5px; font-size: 1.1rem; }
-.location-text p { margin: 0; font-size: 0.9rem; line-height: 1.4; }
-.map-wrapper { width: 100%; height: 200px; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; }
-.map-wrapper iframe { width: 100%; height: 100%; border: none; display: block; }
-.social-footer { padding: 25px 40px; background: var(--white); text-align: center; }
-.social-label {
-    font-size: 0.9rem; color: var(--text-light); margin-bottom: 15px;
-    text-transform: uppercase; letter-spacing: 1px; font-weight: 700;
-}
-.social-icons { display: flex; justify-content: center; gap: 20px; }
-.contact-form-container {
-    background: var(--white); padding: 40px; border-radius: var(--radius);
-    border-top: 6px solid var(--gold); box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
-    height: 100%; display: flex; flex-direction: column; justify-content: center;
-}
-.contact-form-container h3 { text-align: center; margin-bottom: 30px; font-size: 1.8rem; }
-.input-group { margin-bottom: 20px; }
-.input-group label { display: block; margin-bottom: 8px; font-weight: 700; font-size: 0.9rem; color: var(--primary); }
-.input-group input, .input-group textarea {
-    width: 100%; padding: 12px 15px; border: 1px solid #e1e1e1; border-radius: 8px;
-    background: #f9f9f9; font-family: var(--font-body); transition: 0.3s;
-}
-.input-group input:focus, .input-group textarea:focus {
-    background: var(--white); border-color: var(--secondary); outline: none;
-    box-shadow: 0 0 0 4px rgba(62, 109, 156, 0.1);
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: stretch;
 }
 
+.contact-info-box {
+    background: var(--white);
+    border-radius: var(--radius);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    border-top: 6px solid var(--primary);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.contact-top-content {
+    padding: 40px 40px 20px 40px;
+}
+
+.contact-top-content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.contact-top-content>p {
+    color: var(--text-light);
+    margin-bottom: 30px;
+}
+
+.info-item {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+    align-items: center;
+}
+
+.info-item i {
+    font-size: 1.2rem;
+    color: var(--white);
+    background: var(--secondary);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.info-item h5 {
+    margin: 0;
+    font-size: 1rem;
+    color: var(--primary);
+}
+
+.info-item p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.location-map-group {
+    background: #f4f6f8;
+    border-top: 1px solid #e0e0e0;
+    margin-top: auto;
+}
+
+.location-text {
+    padding: 20px 40px 15px;
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.icon-location {
+    color: var(--gold);
+    font-size: 1.5rem;
+    margin-top: 3px;
+}
+
+.location-text h5 {
+    margin: 0 0 5px;
+    font-size: 1.1rem;
+}
+
+.location-text p {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.map-wrapper {
+    width: 100%;
+    height: 200px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.map-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+}
+
+.social-footer {
+    padding: 25px 40px;
+    background: var(--white);
+    text-align: center;
+}
+
+.social-label {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-form-container {
+    background: var(--white);
+    padding: 40px;
+    border-radius: var(--radius);
+    border-top: 6px solid var(--gold);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-form-container h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: var(--primary);
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    background: #f9f9f9;
+    font-family: var(--font-body);
+    transition: 0.3s;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    background: var(--white);
+    border-color: var(--secondary);
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(62, 109, 156, 0.1);
+}
 
 ==========================================================================
 ARCHIVO: _content.css
 RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperanza-Que-Necesito\css\sections\_content.css
 ==========================================================================
-.grid-2-col { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
-.section-subtitle {
-    display: block; color: var(--gold); font-weight: 700;
-    text-transform: uppercase; letter-spacing: 2px; margin-bottom: 10px; font-size: 0.9rem;
+.grid-2-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
 }
-.section-title { font-size: 2.5rem; }
-.lead-text { font-size: 1.15rem; color: var(--text); margin-bottom: 20px; font-weight: 400; }
-.features-list { margin-top: 30px; }
-.feature-item { display: flex; gap: 15px; margin-bottom: 25px; }
-.feature-item i {
-    font-size: 2rem; color: var(--secondary); background: rgba(62, 109, 156, 0.1);
-    width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; border-radius: 50%;
-}
-.images-column { display: flex; flex-direction: column; gap: 30px; height: auto; }
-.images-column img {
-    width: 100%; border-radius: var(--radius); border: 5px solid var(--white);
-    position: relative; box-shadow: var(--shadow); transition: transform 0.3s ease;
-}
-.images-column img:hover { transform: translateY(-5px); }
-.grid-3-col { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; margin-top: 50px; }
-.service-card {
-    background: var(--white); border-radius: var(--radius); overflow: hidden;
-    box-shadow: var(--shadow); transition: 0.3s; border: 1px solid rgba(0, 0, 0, 0.05);
-}
-.service-card:hover { transform: translateY(-10px); box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12); }
-.card-img { height: 220px; overflow: hidden; }
-.card-img img { width: 100%; height: 100%; object-fit: cover; transition: 0.5s; }
-.service-card:hover .card-img img { transform: scale(1.1); }
-.card-content { padding: 30px; }
-.card-content h3 { font-size: 1.4rem; margin-bottom: 10px; }
 
+.section-subtitle {
+    display: block;
+    color: var(--gold);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+.section-title {
+    font-size: 2.5rem;
+}
+
+.lead-text {
+    font-size: 1.15rem;
+    color: var(--text);
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.features-list {
+    margin-top: 30px;
+}
+
+.feature-item {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.feature-item i {
+    font-size: 2rem;
+    color: var(--secondary);
+    background: rgba(62, 109, 156, 0.1);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.images-column {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: auto;
+}
+
+.images-column img {
+    width: 100%;
+    border-radius: var(--radius);
+    border: 5px solid var(--white);
+    position: relative;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+}
+
+.images-column img:hover {
+    transform: translateY(-5px);
+}
+
+.grid-3-col {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.service-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: 0.3s;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.card-img {
+    height: 220px;
+    overflow: hidden;
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.service-card:hover .card-img img {
+    transform: scale(1.1);
+}
+
+.card-content {
+    padding: 30px;
+}
+
+.card-content h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
 
 ==========================================================================
 ARCHIVO: _gallery.css
 RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperanza-Que-Necesito\css\sections\_gallery.css
 ==========================================================================
-.gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 50px; }
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
 .gallery-item {
-    position: relative; border-radius: 15px; overflow: hidden; height: 300px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); border: 4px solid var(--white);
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    height: 300px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border: 4px solid var(--white);
     transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
-.gallery-item:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2); z-index: 2; }
-.gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
-.gallery-item:hover img { transform: scale(1.15); }
-.overlay {
-    position: absolute; inset: 0; background: linear-gradient(to top, rgba(15, 44, 89, 0.95), rgba(15, 44, 89, 0.6));
-    color: var(--white); display: flex; flex-direction: column; justify-content: center; align-items: center;
-    text-align: center; opacity: 0; transition: 0.4s ease; padding: 20px; backdrop-filter: blur(2px);
-}
-.gallery-item:hover .overlay { opacity: 1; }
-.overlay i { color: var(--gold); margin-bottom: 15px; }
-.overlay h4 { color: var(--white); font-size: 1.4rem; margin-bottom: 10px; font-weight: 700; }
-.overlay p { font-size: 0.95rem; opacity: 0.9; }
 
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.15);
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(15, 44, 89, 0.95), rgba(15, 44, 89, 0.6));
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: 0.4s ease;
+    padding: 20px;
+    backdrop-filter: blur(2px);
+}
+
+.gallery-item:hover .overlay {
+    opacity: 1;
+}
+
+.overlay i {
+    color: var(--gold);
+    margin-bottom: 15px;
+}
+
+.overlay h4 {
+    color: var(--white);
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.overlay p {
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
 
 ==========================================================================
 ARCHIVO: _hero.css
 RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperanza-Que-Necesito\css\sections\_hero.css
 ==========================================================================
 .hero-section {
-    height: 100vh; position: relative; display: flex; align-items: center;
-    margin-top: 80px; color: var(--white); text-align: center;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+    color: var(--white);
+    text-align: center;
 }
-.hero-bg-img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; }
-.hero-overlay {
-    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
-    background: linear-gradient(rgba(15, 44, 89, 0.85), rgba(15, 44, 89, 0.7)); z-index: -1;
-}
-.hero-content { max-width: 900px; margin: 0 auto; z-index: 1; padding: 0 20px; }
-.hero-content h1 { font-size: 3.5rem; color: var(--white); line-height: 1.2; margin-bottom: 20px; }
-.hero-subtitle { font-size: 1.2rem; margin-bottom: 30px; opacity: 0.9; }
-.badge-christmas {
-    display: inline-block; background: var(--red-christmas); color: var(--white);
-    padding: 8px 20px; border-radius: 50px; font-weight: 700; margin-bottom: 25px;
-    box-shadow: 0 0 15px rgba(201, 44, 44, 0.6); font-size: 0.9rem; letter-spacing: 0.5px;
-}
-.hero-buttons { display: flex; justify-content: center; gap: 15px; }
 
+.hero-bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* CRÍTICO: Recorta, no estira */
+    object-position: center;
+    /* Centra la imagen */
+    z-index: -2;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(15, 44, 89, 0.85), rgba(15, 44, 89, 0.7));
+    z-index: -1;
+}
+
+.hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+    z-index: 1;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    color: var(--white);
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.badge-christmas {
+    display: inline-block;
+    background: var(--red-christmas);
+    color: var(--white);
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    box-shadow: 0 0 15px rgba(201, 44, 44, 0.6);
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
 
 ==========================================================================
 ARCHIVO: _method.css
 RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperanza-Que-Necesito\css\sections\_method.css
 ==========================================================================
-.method-section { background: var(--primary); color: var(--white); position: relative; }
-.method-section h2 { color: var(--white); }
-.method-row { display: flex; align-items: center; gap: 60px; margin-bottom: 80px; }
-.method-row:last-child { margin-bottom: 0; }
-.method-row.reverse { flex-direction: row-reverse; }
-.method-content { flex: 1; }
-.method-content h3 { color: var(--gold); font-size: 2rem; margin-bottom: 20px; }
-.method-content p { font-size: 1.05rem; opacity: 0.9; margin-bottom: 20px; }
-.check-list li { margin-bottom: 12px; display: flex; align-items: center; gap: 12px; font-size: 1rem; }
-.check-list i { color: var(--gold); }
-.method-visual {
-    flex: 1; border-radius: var(--radius); overflow: hidden;
-    border: 4px solid rgba(255, 255, 255, 0.1); box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+.method-section {
+    background: var(--primary);
+    color: var(--white);
+    position: relative;
 }
-.method-visual img { width: 100%; height: auto; display: block; }
-.video-container video { width: 100%; border-radius: var(--radius); display: block; }
-.video-caption { display: block; text-align: center; font-size: 0.85rem; padding-top: 10px; opacity: 0.7; font-style: italic; }
 
+.method-section h2 {
+    color: var(--white);
+}
+
+.method-row {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 80px;
+}
+
+.method-row:last-child {
+    margin-bottom: 0;
+}
+
+.method-row.reverse {
+    flex-direction: row-reverse;
+}
+
+.method-content {
+    flex: 1;
+}
+
+.method-content h3 {
+    color: var(--gold);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.method-content p {
+    font-size: 1.05rem;
+    opacity: 0.9;
+    margin-bottom: 20px;
+}
+
+.check-list li {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1rem;
+}
+
+.check-list i {
+    color: var(--gold);
+}
+
+.method-visual {
+    flex: 1;
+    border-radius: var(--radius);
+    overflow: hidden;
+    border: 4px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.method-visual img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.video-container video {
+    width: 100%;
+    border-radius: var(--radius);
+    display: block;
+}
+
+.video-caption {
+    display: block;
+    text-align: center;
+    font-size: 0.85rem;
+    padding-top: 10px;
+    opacity: 0.7;
+    font-style: italic;
+}
 
 ==========================================================================
 ARCHIVO: _staff.css
 RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperanza-Que-Necesito\css\sections\_staff.css
 ==========================================================================
-.staff-category { margin-bottom: 60px; }
-.staff-category h3 {
-    border-bottom: 3px solid var(--gold); display: inline-block;
-    padding-bottom: 8px; margin-bottom: 40px; font-size: 1.8rem; color: var(--secondary);
+.staff-category {
+    margin-bottom: 60px;
 }
-.staff-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 40px; }
-.small-grid { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; }
-.staff-card {
-    background: var(--white); padding: 30px 20px; border-radius: var(--radius);
-    text-align: center; box-shadow: var(--shadow); transition: 0.3s; border: 1px solid #eee;
-}
-.staff-card:hover { transform: translateY(-8px); border-bottom: 4px solid var(--gold); }
-.staff-photo {
-    width: 140px; height: 140px; margin: 0 auto 20px; border-radius: 50%;
-    overflow: hidden; border: 4px solid var(--bg-light); box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-.staff-photo img { width: 100%; height: 100%; object-fit: cover; }
-.staff-card h4 { font-size: 1.2rem; margin-bottom: 5px; color: var(--primary); }
-.role { display: block; font-size: 0.95rem; color: var(--text-light); font-weight: 600; }
-.staff-card.mini { padding: 20px 15px; }
-.staff-card.mini .staff-photo { width: 100px; height: 100px; margin-bottom: 15px; border-width: 3px; }
-.staff-card.mini h4 { font-size: 1rem; }
-.staff-card.mini .role { font-size: 0.85rem; }
 
+.staff-category h3 {
+    border-bottom: 3px solid var(--gold);
+    display: inline-block;
+    padding-bottom: 8px;
+    margin-bottom: 40px;
+    font-size: 1.8rem;
+    color: var(--secondary);
+}
+
+.staff-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 40px;
+}
+
+.small-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+.staff-card {
+    background: var(--white);
+    padding: 30px 20px;
+    border-radius: var(--radius);
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: 0.3s;
+    border: 1px solid #eee;
+}
+
+.staff-card:hover {
+    transform: translateY(-8px);
+    border-bottom: 4px solid var(--gold);
+}
+
+.staff-photo {
+    width: 140px;
+    height: 140px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid var(--bg-light);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.staff-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.staff-card h4 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: var(--primary);
+}
+
+.role {
+    display: block;
+    font-size: 0.95rem;
+    color: var(--text-light);
+    font-weight: 600;
+}
+
+.staff-card.mini {
+    padding: 20px 15px;
+}
+
+.staff-card.mini .staff-photo {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+    border-width: 3px;
+}
+
+.staff-card.mini h4 {
+    font-size: 1rem;
+}
+
+.staff-card.mini .role {
+    font-size: 0.85rem;
+}
 
 ==========================================================================
 ARCHIVO: _testimonials.css
 RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperanza-Que-Necesito\css\sections\_testimonials.css
 ==========================================================================
-.testimonials-section {
-    background: linear-gradient(rgba(15, 44, 89, 0.92), rgba(15, 44, 89, 0.92)), url('../assets/img/hero/fachada_principal.jpeg');
-    background-size: cover; background-attachment: fixed; color: var(--white); padding: 100px 0;
+.hero-bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* CRÍTICO: Recorta, no estira */
+    object-position: center;
+    /* Centra la imagen */
+    z-index: -2;
 }
-.testimonials-wrapper { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-top: 50px; }
-.testimonial-card {
-    background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(8px); padding: 40px 30px;
-    border-radius: var(--radius); max-width: 350px; text-align: center;
-    border: 1px solid rgba(255, 255, 255, 0.15); transition: 0.3s;
-}
-.testimonial-card:hover { background: rgba(255, 255, 255, 0.15); transform: translateY(-5px); }
-.user-icon { font-size: 3rem; margin-bottom: 20px; color: var(--gold); }
-.testimonio-text { font-style: italic; margin-bottom: 25px; font-size: 1rem; line-height: 1.6; }
-.stars { color: var(--gold); margin-bottom: 15px; letter-spacing: 3px; }
-cite { font-weight: 700; display: block; font-size: 1.1rem; }
-.rehab-time { font-weight: 400; font-size: 0.85rem; opacity: 0.8; display: block; margin-top: 5px; }
-.donation-card {
-    background: var(--white); padding: 50px; border-radius: var(--radius);
-    box-shadow: var(--shadow); border: 2px dashed var(--gold);
-    display: inline-block; max-width: 800px; margin-top: 20px;
-}
-.icon-gold { color: var(--gold); margin-bottom: 20px; }
 
+.testimonials-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.testimonial-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    padding: 40px 30px;
+    border-radius: var(--radius);
+    max-width: 350px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    transition: 0.3s;
+}
+
+.testimonial-card:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-5px);
+}
+
+.user-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: var(--gold);
+}
+
+.testimonio-text {
+    font-style: italic;
+    margin-bottom: 25px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.stars {
+    color: var(--gold);
+    margin-bottom: 15px;
+    letter-spacing: 3px;
+}
+
+cite {
+    font-weight: 700;
+    display: block;
+    font-size: 1.1rem;
+}
+
+.rehab-time {
+    font-weight: 400;
+    font-size: 0.85rem;
+    opacity: 0.8;
+    display: block;
+    margin-top: 5px;
+}
+
+.donation-card {
+    background: var(--white);
+    padding: 50px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    border: 2px dashed var(--gold);
+    display: inline-block;
+    max-width: 800px;
+    margin-top: 20px;
+}
+
+.icon-gold {
+    color: var(--gold);
+    margin-bottom: 20px;
+}
 
 ==========================================================================
 ARCHIVO: main.css
@@ -677,24 +1513,28 @@ RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperan
 export function initSnow() {
     const container = document.getElementById('snow-container');
     if (!container) return;
+
     const count = 50;
     for (let i = 0; i < count; i++) {
         const flake = document.createElement('div');
-        flake.classList.add('snowflake'); flake.innerHTML = '❄';
+        flake.classList.add('snowflake');
+        flake.innerHTML = '❄';
+
         const left = Math.random() * 100;
         const animDuration = Math.random() * 5 + 5;
         const animDelay = Math.random() * 5;
         const size = Math.random() * 15 + 10;
         const opacity = Math.random() * 0.5 + 0.3;
+
         flake.style.left = left + '%';
         flake.style.animationDuration = animDuration + 's';
         flake.style.animationDelay = animDelay + 's';
         flake.style.fontSize = size + 'px';
         flake.style.opacity = opacity;
+
         container.appendChild(flake);
     }
 }
-
 
 ==========================================================================
 ARCHIVO: forms.js
@@ -704,40 +1544,49 @@ RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperan
 export function initContactForm() {
     const form = document.getElementById('contactForm');
     const statusMsg = document.getElementById('form-status');
+
     if (form) {
         form.addEventListener("submit", async function (event) {
             event.preventDefault();
-            const btn = form.querySelector('button[type=\"submit\"]');
+            const btn = form.querySelector('button[type="submit"]');
             const data = new FormData(event.target);
             const originalText = btn.textContent;
+
             btn.disabled = true;
-            btn.innerHTML = 'Enviando... <i class=\"fas fa-spinner fa-spin\"></i>';
+            btn.innerHTML = 'Enviando... <i class="fas fa-spinner fa-spin"></i>';
+
             try {
                 const response = await fetch(event.target.action, {
-                    method: form.method, body: data, headers: { 'Accept': 'application/json' }
+                    method: form.method,
+                    body: data,
+                    headers: { 'Accept': 'application/json' }
                 });
+
                 if (response.ok) {
-                    statusMsg.innerHTML = '<i class=\"fas fa-check-circle\"></i> ¡Gracias! Hemos recibido tu mensaje correctamente.';
-                    statusMsg.className = "status-msg success"; form.reset();
+                    statusMsg.innerHTML = '<i class="fas fa-check-circle"></i> ¡Gracias! Hemos recibido tu mensaje correctamente.';
+                    statusMsg.className = "status-msg success";
+                    form.reset();
                 } else {
                     const errorData = await response.json();
                     if (Object.hasOwn(errorData, 'errors')) {
-                        statusMsg.innerHTML = errorData.errors.map(error => error[\"message\"]).join(\", \");
+                        statusMsg.innerHTML = errorData.errors.map(error => error["message"]).join(", ");
                     } else {
-                        statusMsg.innerHTML = '<i class=\"fas fa-exclamation-circle\"></i> Ocurrió un error al enviar. Intenta de nuevo.';
+                        // CORRECCIÓN: El texto debe estar en una sola línea
+                        statusMsg.innerHTML = '<i class="fas fa-exclamation-circle"></i> Ocurrió un error al enviar. Intenta de nuevo.';
                     }
                     statusMsg.className = "status-msg error";
                 }
             } catch (error) {
-                statusMsg.innerHTML = '<i class=\"fas fa-wifi\"></i> Error de conexión. Verifica tu internet.';
+                // CORRECCIÓN: El texto debe estar en una sola línea
+                statusMsg.innerHTML = '<i class="fas fa-wifi"></i> Error de conexión. Verifica tu internet.';
                 statusMsg.className = "status-msg error";
             } finally {
-                btn.disabled = false; btn.textContent = originalText;
+                btn.disabled = false;
+                btn.textContent = originalText;
             }
         });
     }
 }
-
 
 ==========================================================================
 ARCHIVO: modal.js
@@ -750,7 +1599,7 @@ export function initPopup() {
 
     // Validación de seguridad: Si no existen los elementos, no hacer nada
     if (modal && closeBtn) {
-        
+
         // 1. Mostrar automáticamente después de 1 segundo
         setTimeout(() => {
             modal.classList.add('active');
@@ -763,14 +1612,14 @@ export function initPopup() {
 
         // 3. Eventos
         closeBtn.addEventListener('click', closeModal);
-        
+
         // Cerrar al dar clic fuera de la imagen
         modal.addEventListener('click', (e) => {
             if (e.target === modal) {
                 closeModal();
             }
         });
-        
+
         // Cerrar con tecla ESC
         document.addEventListener('keydown', (e) => {
             if (e.key === 'Escape' && modal.classList.contains('active')) {
@@ -834,22 +1683,23 @@ RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperan
 ==========================================================================
 /**
  * MAIN.JS - CONTROLADOR PRINCIPAL
- * Nota: Al usar type="module", este script ya se ejecuta diferido.
- * No necesitamos esperar a DOMContentLoaded nuevamente.
+ * Corrección: Ejecución directa para módulos ES6
  */
 import { initMobileMenu, initSmoothScroll } from './modules/ui.js';
 import { initSnow } from './modules/effects.js';
 import { initContactForm } from './modules/forms.js';
 import { initPopup } from './modules/modal.js';
 
-// Ejecución directa para garantizar inicialización
-console.log('Sistema Modular Iniciando...');
+// Mensaje de depuración para confirmar que el archivo cargó
+console.log('Sistema Modular Iniciando (Ejecución Directa)...');
 
+// Ejecutamos las funciones directamente
+// Ya no esperamos a DOMContentLoaded porque 'type="module"' ya lo garantiza.
 initMobileMenu();
 initSmoothScroll();
 initSnow();
 initContactForm();
-initPopup(); // Esto activará el modal
+initPopup();
 
 ==========================================================================
 ARCHIVO: googled12c5739ef345a25.html
@@ -929,7 +1779,7 @@ RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperan
     <header class="main-header">
         <div class="container header-container">
             <div class="logo-box">
-                <img src="assets/img/hero/logo_del_centro.png" alt="Logo Centro de Rehabilitación" class="logo-img">
+                <img src="assets/img/hero/logo_del_centro.png" alt="Logo Centro de Rehabilitación" class="logo-img" loading="lazy">
             </div>
             <nav class="main-nav">
                 <ul>
@@ -959,8 +1809,10 @@ RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperan
              -------------------------------------------------------------------------- -->
         <section id="inicio" class="hero-section">
             <div class="hero-overlay"></div>
-            <img src="assets/img/hero/fachada_principal.jpeg" alt="Fachada Centro de Rehabilitación"
-                class="hero-bg-img">
+            <img src="assets/img/hero/fachada_principal.jpeg" 
+     alt="Fachada Centro de Rehabilitación"
+     class="hero-bg-img"
+     fetchpriority="high" loading="lazy">
 
             <div class="container hero-content">
                 <div class="badge-christmas"><i class="fas fa-star"></i> Atención Profesional y Humana</div>
@@ -1008,9 +1860,9 @@ RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperan
                     </div>
                 </div>
                 <div class="image-content images-column">
-                    <img src="assets/img/hero/portada.png" alt="Entrada principal" class="shadow-lg">
+                    <img src="assets/img/hero/portada.png" alt="Entrada principal" class="shadow-lg" loading="lazy">
 
-                    <img src="assets/img/hero/quienessomos.png" alt="Equipo terapéutico" class="shadow-lg">
+                    <img src="assets/img/hero/quienessomos.png" alt="Equipo terapéutico" class="shadow-lg" loading="lazy">
                 </div>
             </div>
         </section>
@@ -1032,7 +1884,7 @@ RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperan
                 <div class="grid-3-col">
                     <article class="service-card">
                         <div class="card-img">
-                            <img src="assets/img/padecimientos/alcoholismo.jpg" alt="Alcoholismo">
+                            <img src="assets/img/padecimientos/alcoholismo.jpg" alt="Alcoholismo" loading="lazy">
                         </div>
                         <div class="card-content">
                             <h3>Alcoholismo</h3>
@@ -1042,7 +1894,7 @@ RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperan
 
                     <article class="service-card">
                         <div class="card-img">
-                            <img src="assets/img/padecimientos/adicciones.webp" alt="Drogadicción">
+                            <img src="assets/img/padecimientos/adicciones.webp" alt="Drogadicción" loading="lazy">
                         </div>
                         <div class="card-content">
                             <h3>Drogadicción</h3>
@@ -1052,7 +1904,7 @@ RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperan
 
                     <article class="service-card">
                         <div class="card-img">
-                            <img src="assets/img/padecimientos/depresion.jpg" alt="Depresión y Ansiedad">
+                            <img src="assets/img/padecimientos/depresion.jpg" alt="Depresión y Ansiedad" loading="lazy">
                         </div>
                         <div class="card-content">
                             <h3>Depresión Dual</h3>
@@ -1062,7 +1914,7 @@ RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperan
 
                     <article class="service-card">
                         <div class="card-img">
-                            <img src="assets/img/padecimientos/violencia.jpg" alt="Conductas Violentas">
+                            <img src="assets/img/padecimientos/violencia.jpg" alt="Conductas Violentas" loading="lazy">
                         </div>
                         <div class="card-content">
                             <h3>Conductas Agresivas</h3>
@@ -1072,7 +1924,7 @@ RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperan
 
                     <article class="service-card">
                         <div class="card-img">
-                            <img src="assets/img/padecimientos/ingobernabilidad.jpg" alt="Ingobernabilidad">
+                            <img src="assets/img/padecimientos/ingobernabilidad.jpg" alt="Ingobernabilidad" loading="lazy">
                         </div>
                         <div class="card-content">
                             <h3>Ingobernabilidad</h3>
@@ -1082,7 +1934,7 @@ RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperan
 
                     <article class="service-card">
                         <div class="card-img">
-                            <img src="assets/img/padecimientos/crisis.webp" alt="Crisis Emocional">
+                            <img src="assets/img/padecimientos/crisis.webp" alt="Crisis Emocional" loading="lazy">
                         </div>
                         <div class="card-content">
                             <h3>Crisis Existencial</h3>
@@ -1114,7 +1966,7 @@ RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperan
                         </ul>
                     </div>
                     <div class="method-visual">
-                        <img src="assets/img/tratamiento/clinico/consultorio_medico.jpeg" alt="Consultorio Médico">
+                        <img src="assets/img/tratamiento/clinico/consultorio_medico.jpeg" alt="Consultorio Médico" loading="lazy">
                     </div>
                 </div>
 
@@ -1129,7 +1981,7 @@ RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperan
                         </ul>
                     </div>
                     <div class="method-visual">
-                        <img src="assets/img/tratamiento/psicologico/psicologia_grupal.jpg" alt="Terapia Grupal">
+                        <img src="assets/img/tratamiento/psicologico/psicologia_grupal.jpg" alt="Terapia Grupal" loading="lazy">
                     </div>
                 </div>
 
@@ -1161,7 +2013,7 @@ RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperan
                     </div>
                     <div class="method-visual">
                         <img src="assets/img/educacion/sala_de_estudios_distintos_niveles_secundaria_preparatoria_universidad.jpeg"
-                            alt="Sala de cómputo y estudios">
+                            alt="Sala de cómputo y estudios" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -1183,7 +2035,7 @@ RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperan
                 <div class="gallery-grid">
                     <div class="gallery-item">
                         <img src="assets/img/instalaciones/seguridad/video_vigilancia_24_hrs.jpeg"
-                            alt="Cámaras de Seguridad">
+                             alt="Cámaras de Seguridad" loading="lazy">
                         <div class="overlay">
                             <i class="fas fa-shield-alt fa-2x mb-2"></i>
                             <h4>Monitoreo 24/7</h4>
@@ -1192,7 +2044,7 @@ RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperan
                     </div>
 
                     <div class="gallery-item">
-                        <img src="assets/img/instalaciones/areas_comunes/recepcion.jpeg" alt="Recepción">
+                        <img src="assets/img/instalaciones/areas_comunes/recepcion.jpeg" alt="Recepción" loading="lazy">
                         <div class="overlay">
                             <i class="fas fa-concierge-bell fa-2x mb-2"></i>
                             <h4>Recepción y Atención</h4>
@@ -1201,7 +2053,7 @@ RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperan
                     </div>
 
                     <div class="gallery-item">
-                        <img src="assets/img/instalaciones/areas_comunes/instalaciones_pasillo.jpeg" alt="Pasillos">
+                        <img src="assets/img/instalaciones/areas_comunes/instalaciones_pasillo.jpeg" alt="Pasillos" loading="lazy">
                         <div class="overlay">
                             <i class="fas fa-route fa-2x mb-2"></i>
                             <h4>Instalaciones Amplias</h4>
@@ -1211,7 +2063,7 @@ RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperan
 
                     <div class="gallery-item">
                         <img src="assets/img/instalaciones/dormitorios/sala_de_recuperacion_hombres.jpeg"
-                            alt="Dormitorio Hombres">
+                            alt="Dormitorio Hombres" loading="lazy">
                         <div class="overlay">
                             <i class="fas fa-bed fa-2x mb-2"></i>
                             <h4>Dormitorios Climatizados</h4>
@@ -1221,7 +2073,7 @@ RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperan
 
                     <div class="gallery-item">
                         <img src="assets/img/tratamiento/espiritual/cadena_de_oracion_mujeres.jpg"
-                            alt="Dormitorio Mujeres">
+                             alt="Dormitorio Mujeres" loading="lazy">
                         <div class="overlay">
                             <i class="fas fa-female fa-2x mb-2"></i>
                             <h4>Área Femenina</h4>
@@ -1230,7 +2082,7 @@ RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperan
                     </div>
 
                     <div class="gallery-item">
-                        <img src="assets/img/instalaciones/dormitorios/instalaciones_banos_hombres_2.jpeg" alt="Baños">
+                        <img src="assets/img/instalaciones/dormitorios/instalaciones_banos_hombres_2.jpeg" alt="Baños" loading="lazy">
                         <div class="overlay">
                             <i class="fas fa-shower fa-2x mb-2"></i>
                             <h4>Servicios Sanitarios</h4>
@@ -1258,14 +2110,14 @@ RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperan
                         <div class="staff-card">
                             <div class="staff-photo">
                                 <img src="assets/img/staff/directivos/director_general_luis_alberto_avarez_urbano.png"
-                                    alt="Director General Luis Alberto Alvarez">
+                                    alt="Director General Luis Alberto Alvarez" loading="lazy">
                             </div>
                             <h4>Luis Alberto Álvarez Urbano</h4>
                             <span class="role">Director General</span>
                         </div>
                         <div class="staff-card">
                             <div class="staff-photo">
-                                <img src="assets/img/staff/clinico/psicologo_eder_gomez.png" alt="Psicólogo Eder Gómez">
+                                <img src="assets/img/staff/clinico/psicologo_eder_gomez.png" alt="Psicólogo Eder Gómez" loading="lazy">
                             </div>
                             <h4>Psic. Eder Gómez</h4>
                             <span class="role">Psicólogo Clínico</span>
@@ -1273,7 +2125,7 @@ RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperan
                         <div class="staff-card">
                             <div class="staff-photo">
                                 <img src="assets/img/staff/clinico/auxiliar_de_enfermeria_angel_de_jesus_lopez_bravo.png"
-                                    alt="Enfermero Ángel De Jesús" style="object-position: top;">
+                                    alt="Enfermero Ángel De Jesús" style="object-position: top;" loading="lazy">
                             </div>
                             <h4>Ángel De Jesús López</h4>
                             <span class="role">Auxiliar de Enfermería</span>
@@ -1287,7 +2139,7 @@ RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperan
                         <div class="staff-card">
                             <div class="staff-photo">
                                 <img src="assets/img/staff/espiritual/pastores_gabriela_cabrera_y_victor_hugo.png"
-                                    alt="Pastores Gaby y Victor">
+                                    alt="Pastores Gaby y Victor" loading="lazy">
                             </div>
                             <h4>Pastores Gabriela Cabrera y Victor Hugo García</h4>
                             <span class="role">Guía Pastoral</span>
@@ -1295,7 +2147,7 @@ RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperan
                         <div class="staff-card">
                             <div class="staff-photo">
                                 <img src="assets/img/staff/espiritual/consejero_en_adicciones_oscar_reyes.png"
-                                    alt="Consejero Oscar Reyes" style="object-position: top;">
+                                    alt="Consejero Oscar Reyes" style="object-position: top;" loading="lazy">
                             </div>
                             <h4>Oscar Reyes</h4>
                             <span class="role">Consejero en Adicciones</span>
@@ -1303,7 +2155,7 @@ RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperan
                         <div class="staff-card">
                             <div class="staff-photo">
                                 <img src="assets/img/staff/espiritual/consejero_en_adicciones_obed_tronco_diaz.png"
-                                    alt="Consejero Obed Tronco" style="object-position: top;">
+                                    alt="Consejero Obed Tronco" style="object-position: top;" loading="lazy">
                             </div>
                             <h4>Obed Tronco Díaz</h4>
                             <span class="role">Consejero en Adicciones</span>
@@ -1317,7 +2169,7 @@ RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperan
                         <div class="staff-card mini">
                             <div class="staff-photo">
                                 <img src="assets/img/staff/coordinadores/adminitrativo_maria_de_jesus_rodriguez_reyes.png"
-                                    alt="Administrativo Maria De Jesús" style="object-position: top;">
+                                    alt="Administrativo Maria De Jesús" style="object-position: top;" loading="lazy">
                             </div>
                             <h4>María De Jesús Rodríguez</h4>
                             <span class="role">Administrativa</span>
@@ -1325,7 +2177,7 @@ RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperan
                         <div class="staff-card mini">
                             <div class="staff-photo">
                                 <img src="assets/img/staff/coordinadores/coordinador_ismael_carmona_arias.png"
-                                    alt="Coordinador Ismael Carmona" style="object-position: top;">
+                                    alt="Coordinador Ismael Carmona" style="object-position: top;" loading="lazy">
                             </div>
                             <h4>Ismael Carmona Arias</h4>
                             <span class="role">Coordinador</span>
@@ -1333,7 +2185,7 @@ RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperan
                         <div class="staff-card mini">
                             <div class="staff-photo">
                                 <img src="assets/img/staff/coordinadores/coordinadores_brain_alexis_vidal_nolasco.png"
-                                    alt="Coordinador Brain Alexis" style="object-position: top;">
+                                    alt="Coordinador Brain Alexis" style="object-position: top;" loading="lazy">
                             </div>
                             <h4>Brain Alexis Vidal</h4>
                             <span class="role">Coordinador</span>
@@ -1341,7 +2193,7 @@ RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperan
                         <div class="staff-card mini">
                             <div class="staff-photo">
                                 <img src="assets/img/staff/coordinadores/coordinador_diego_cabrera_pelaez.png"
-                                    alt="Coordinador Diego Cabrera">
+                                    alt="Coordinador Diego Cabrera" loading="lazy">
                             </div>
                             <h4>Diego Cabrera Páez</h4>
                             <span class="role">Consejero en adicciones</span>
@@ -1506,7 +2358,7 @@ RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperan
 
                 <div class="footer-brand">
                     <img src="assets/img/hero/logo_del_centro.png" alt="Logo La Luz y Esperanza"
-                        class="footer-logo-img">
+                        class="footer-logo-img" loading="lazy">
                 </div>
 
                 <div class="footer-social">
@@ -1540,7 +2392,7 @@ RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperan
             <div class="modal-body">
                 <img src="assets/img/actividades/eventos/posada_20_12_2025.png" 
                      alt="Invitación Gran Posada Navideña 2025" 
-                     class="modal-image">
+                     class="modal-image" loading="lazy">
             </div>
         </div>
     </div>
