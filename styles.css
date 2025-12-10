@@ -1,21 +1,60 @@
 /* ==========================================================================
-   1. VARIABLES Y CONFIGURACIÓN BASE
+   ARCHIVO MAESTRO DE ESTILOS: STYLES.CSS
+   PROYECTO: LA LUZ Y LA ESPERANZA QUE NECESITO
+   FECHA: 12/09/2025
+   ==========================================================================
+
+   TABLA DE CONTENIDO (MÓDULOS Y BLOQUES):
+   --------------------------------------------------
+   1.  VARIABLES GLOBALES (Base)
+   2.  RESET Y UTILIDADES (Base)
+   3.  HEADER Y NAVEGACIÓN (Layout)
+   4.  FOOTER (Layout)
+   5.  BOTONES (Componentes)
+   6.  EFECTOS VISUALES (Componentes)
+   7.  MODALES Y POPUPS (Componentes)
+   8.  SECCIÓN HERO (Secciones)
+   9.  CONTENIDO Y SERVICIOS (Secciones)
+   10. MÉTODO DE 4 PILARES (Secciones)
+   11. GALERÍA E INSTALACIONES (Secciones)
+   12. EQUIPO / STAFF (Secciones)
+   13. TESTIMONIOS (Secciones)
+   14. CONTACTO (Secciones)
+   15. RESPONSIVE DESIGN (Base - Override Final)
+   ========================================================================== */
+
+/* ==========================================================================
+   [1] INICIO DEL BLOQUE: VARIABLES GLOBALES
+   FUENTE ORIGINAL: css/base/_variables.css
    ========================================================================== */
 :root {
+    /* Paleta de Colores "Medical Luxury" */
     --primary: #0F2C59;
     --secondary: #3E6D9C;
     --gold: #D4AF37;
     --red-christmas: #C92C2C;
+    /* Neutrales */
     --text: #333333;
     --text-light: #666666;
     --bg-light: #F8F9FA;
     --white: #FFFFFF;
+    /* Tipografía */
     --font-head: 'Montserrat', sans-serif;
     --font-body: 'Lato', sans-serif;
+    /* Efectos */
     --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
     --radius: 12px;
 }
 
+/* ==========================================================================
+   [1] FIN DEL BLOQUE: VARIABLES GLOBALES
+   ========================================================================== */
+
+
+/* ==========================================================================
+   [2] INICIO DEL BLOQUE: RESET Y UTILIDADES
+   FUENTE ORIGINAL: css/base/_reset.css
+   ========================================================================== */
 * {
     margin: 0;
     padding: 0;
@@ -32,8 +71,6 @@ body {
     line-height: 1.6;
     background-color: var(--white);
     position: relative;
-    overflow-x: hidden;
-    /* Previene scroll horizontal indeseado en móvil */
 }
 
 h1,
@@ -47,13 +84,10 @@ h5 {
     margin-bottom: 1rem;
 }
 
-/* Optimización de Imágenes Global */
 img {
     max-width: 100%;
     height: auto;
     display: block;
-    object-fit: cover;
-    /* Evita distorsión */
 }
 
 a {
@@ -105,78 +139,14 @@ ul {
 }
 
 /* ==========================================================================
-   2. COMPONENTES Y HEADER
+   [2] FIN DEL BLOQUE: RESET Y UTILIDADES
    ========================================================================== */
-.btn {
-    display: inline-block;
-    padding: 12px 35px;
-    border-radius: 50px;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 0.9rem;
-    cursor: pointer;
-    border: 2px solid transparent;
-}
 
-.btn-primary {
-    background: var(--primary);
-    color: var(--white);
-}
 
-.btn-primary:hover {
-    background: var(--secondary);
-    transform: translateY(-2px);
-}
-
-.btn-gold {
-    background: var(--gold);
-    color: var(--white);
-}
-
-.btn-gold:hover {
-    background: #b5952f;
-    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
-}
-
-.btn-outline-light {
-    border: 2px solid var(--white);
-    color: var(--white);
-}
-
-.btn-outline-light:hover {
-    background: var(--white);
-    color: var(--primary);
-}
-
-.btn-outline-dark {
-    border: 2px solid var(--primary);
-    color: var(--primary);
-}
-
-.btn-outline-dark:hover {
-    background: var(--primary);
-    color: var(--white);
-}
-
-.pulse-effect {
-    animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-    0% {
-        box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.7);
-    }
-
-    70% {
-        box-shadow: 0 0 0 10px rgba(212, 175, 55, 0);
-    }
-
-    100% {
-        box-shadow: 0 0 0 0 rgba(212, 175, 55, 0);
-    }
-}
-
-/* Header */
+/* ==========================================================================
+   [3] INICIO DEL BLOQUE: HEADER Y NAVEGACIÓN
+   FUENTE ORIGINAL: css/layout/_header.css
+   ========================================================================== */
 .main-header {
     position: fixed;
     top: 0;
@@ -195,11 +165,8 @@ ul {
     height: 80px;
 }
 
-/* Corrección Logo Gigante */
 .logo-img {
     height: 60px;
-    width: auto;
-    max-width: 200px;
 }
 
 .main-nav ul {
@@ -212,6 +179,7 @@ ul {
     color: var(--primary);
     font-weight: 600;
     font-size: 0.95rem;
+    position: relative;
 }
 
 .main-nav a:hover {
@@ -225,6 +193,10 @@ ul {
     border-radius: 20px;
 }
 
+.nav-cta:hover {
+    background: var(--gold);
+}
+
 .hamburger-menu {
     display: none;
     font-size: 1.5rem;
@@ -233,682 +205,14 @@ ul {
 }
 
 /* ==========================================================================
-   3. SECCIONES (HERO, CONTENIDO, METODO)
+   [3] FIN DEL BLOQUE: HEADER Y NAVEGACIÓN
    ========================================================================== */
-.hero-section {
-    height: 100vh;
-    position: relative;
-    display: flex;
-    align-items: center;
-    margin-top: 80px;
-    color: var(--white);
-    text-align: center;
-}
 
-.hero-bg-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    z-index: -2;
-}
-
-.hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(15, 44, 89, 0.85), rgba(15, 44, 89, 0.7));
-    z-index: -1;
-}
-
-.hero-content {
-    max-width: 900px;
-    margin: 0 auto;
-    z-index: 1;
-    padding: 0 20px;
-}
-
-.hero-content h1 {
-    font-size: 3.5rem;
-    color: var(--white);
-    line-height: 1.2;
-    margin-bottom: 20px;
-}
-
-.hero-subtitle {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-    opacity: 0.9;
-}
-
-.badge-christmas {
-    display: inline-block;
-    background: var(--red-christmas);
-    color: var(--white);
-    padding: 8px 20px;
-    border-radius: 50px;
-    font-weight: 700;
-    margin-bottom: 25px;
-    box-shadow: 0 0 15px rgba(201, 44, 44, 0.6);
-    font-size: 0.9rem;
-    letter-spacing: 0.5px;
-}
-
-.hero-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-/* Identidad y Padecimientos */
-.grid-2-col {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    align-items: center;
-}
-
-.section-subtitle {
-    display: block;
-    color: var(--gold);
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 10px;
-    font-size: 0.9rem;
-}
-
-.section-title {
-    font-size: 2.5rem;
-}
-
-.lead-text {
-    font-size: 1.15rem;
-    color: var(--text);
-    margin-bottom: 20px;
-    font-weight: 400;
-}
-
-.features-list {
-    margin-top: 30px;
-}
-
-.feature-item {
-    display: flex;
-    gap: 15px;
-    margin-bottom: 25px;
-}
-
-.feature-item i {
-    font-size: 2rem;
-    color: var(--secondary);
-    background: rgba(62, 109, 156, 0.1);
-    width: 60px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-}
-
-.images-column {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
-.images-column img {
-    width: 100%;
-    border-radius: var(--radius);
-    border: 5px solid var(--white);
-    box-shadow: var(--shadow);
-    transition: transform 0.3s ease;
-}
-
-.images-column img:hover {
-    transform: translateY(-5px);
-}
-
-.grid-3-col {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 30px;
-    margin-top: 50px;
-}
-
-.service-card {
-    background: var(--white);
-    border-radius: var(--radius);
-    overflow: hidden;
-    box-shadow: var(--shadow);
-    transition: 0.3s;
-    border: 1px solid rgba(0, 0, 0, 0.05);
-}
-
-.service-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
-}
-
-.card-img {
-    height: 220px;
-    overflow: hidden;
-}
-
-.card-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: 0.5s;
-}
-
-.service-card:hover .card-img img {
-    transform: scale(1.1);
-}
-
-.card-content {
-    padding: 30px;
-}
-
-.card-content h3 {
-    font-size: 1.4rem;
-    margin-bottom: 10px;
-}
-
-/* Método */
-.method-section {
-    background: var(--primary);
-    color: var(--white);
-    position: relative;
-}
-
-.method-section h2 {
-    color: var(--white);
-}
-
-.method-row {
-    display: flex;
-    align-items: center;
-    gap: 60px;
-    margin-bottom: 80px;
-}
-
-.method-row:last-child {
-    margin-bottom: 0;
-}
-
-.method-row.reverse {
-    flex-direction: row-reverse;
-}
-
-.method-content {
-    flex: 1;
-}
-
-.method-content h3 {
-    color: var(--gold);
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.method-content p {
-    font-size: 1.05rem;
-    opacity: 0.9;
-    margin-bottom: 20px;
-}
-
-.check-list li {
-    margin-bottom: 12px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    font-size: 1rem;
-}
-
-.check-list i {
-    color: var(--gold);
-}
-
-.method-visual {
-    flex: 1;
-    border-radius: var(--radius);
-    overflow: hidden;
-    border: 4px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
-}
-
-.method-visual img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.video-container video {
-    width: 100%;
-    border-radius: var(--radius);
-    display: block;
-}
-
-.video-caption {
-    display: block;
-    text-align: center;
-    font-size: 0.85rem;
-    padding-top: 10px;
-    opacity: 0.7;
-    font-style: italic;
-}
 
 /* ==========================================================================
-   4. INSTALACIONES Y STAFF
+   [4] INICIO DEL BLOQUE: FOOTER
+   FUENTE ORIGINAL: css/layout/_footer.css
    ========================================================================== */
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    margin-top: 50px;
-}
-
-.gallery-item {
-    position: relative;
-    border-radius: 15px;
-    overflow: hidden;
-    height: 300px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    border: 4px solid var(--white);
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
-}
-
-.gallery-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-    z-index: 2;
-}
-
-.gallery-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.6s ease;
-}
-
-.gallery-item:hover img {
-    transform: scale(1.15);
-}
-
-.overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(to top, rgba(15, 44, 89, 0.95), rgba(15, 44, 89, 0.6));
-    color: var(--white);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    opacity: 0;
-    transition: 0.4s ease;
-    padding: 20px;
-    backdrop-filter: blur(2px);
-}
-
-.gallery-item:hover .overlay {
-    opacity: 1;
-}
-
-.overlay i {
-    color: var(--gold);
-    margin-bottom: 15px;
-}
-
-.overlay h4 {
-    color: var(--white);
-    font-size: 1.4rem;
-    margin-bottom: 10px;
-    font-weight: 700;
-}
-
-.overlay p {
-    font-size: 0.95rem;
-    opacity: 0.9;
-}
-
-/* Staff */
-.staff-category {
-    margin-bottom: 60px;
-}
-
-.staff-category h3 {
-    border-bottom: 3px solid var(--gold);
-    display: inline-block;
-    padding-bottom: 8px;
-    margin-bottom: 40px;
-    font-size: 1.8rem;
-    color: var(--secondary);
-}
-
-.staff-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 40px;
-}
-
-.small-grid {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 30px;
-}
-
-.staff-card {
-    background: var(--white);
-    padding: 30px 20px;
-    border-radius: var(--radius);
-    text-align: center;
-    box-shadow: var(--shadow);
-    transition: 0.3s;
-    border: 1px solid #eee;
-}
-
-.staff-card:hover {
-    transform: translateY(-8px);
-    border-bottom: 4px solid var(--gold);
-}
-
-.staff-photo {
-    width: 140px;
-    height: 140px;
-    margin: 0 auto 20px;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 4px solid var(--bg-light);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.staff-photo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.staff-card h4 {
-    font-size: 1.2rem;
-    margin-bottom: 5px;
-    color: var(--primary);
-}
-
-.role {
-    display: block;
-    font-size: 0.95rem;
-    color: var(--text-light);
-    font-weight: 600;
-}
-
-.staff-card.mini {
-    padding: 20px 15px;
-}
-
-.staff-card.mini .staff-photo {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 15px;
-    border-width: 3px;
-}
-
-.staff-card.mini h4 {
-    font-size: 1rem;
-}
-
-.staff-card.mini .role {
-    font-size: 0.85rem;
-}
-
-/* ==========================================================================
-   5. TESTIMONIOS Y CONTACTO
-   ========================================================================== */
-.testimonials-section {
-    /* CORRECCIÓN: Fondo visible y funcional */
-    background: linear-gradient(rgba(15, 44, 89, 0.92), rgba(15, 44, 89, 0.92)), url('assets/img/hero/fachada_principal.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    color: var(--white);
-    padding: 100px 0;
-}
-
-.testimonials-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 50px;
-}
-
-.testimonial-card {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(8px);
-    padding: 40px 30px;
-    border-radius: var(--radius);
-    max-width: 350px;
-    text-align: center;
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    transition: 0.3s;
-}
-
-.testimonial-card:hover {
-    background: rgba(255, 255, 255, 0.15);
-    transform: translateY(-5px);
-}
-
-.user-icon {
-    font-size: 3rem;
-    margin-bottom: 20px;
-    color: var(--gold);
-}
-
-.testimonio-text {
-    font-style: italic;
-    margin-bottom: 25px;
-    font-size: 1rem;
-    line-height: 1.6;
-}
-
-.stars {
-    color: var(--gold);
-    margin-bottom: 15px;
-    letter-spacing: 3px;
-}
-
-cite {
-    font-weight: 700;
-    display: block;
-    font-size: 1.1rem;
-}
-
-.rehab-time {
-    font-weight: 400;
-    font-size: 0.85rem;
-    opacity: 0.8;
-    display: block;
-    margin-top: 5px;
-}
-
-.donation-card {
-    background: var(--white);
-    padding: 50px;
-    border-radius: var(--radius);
-    box-shadow: var(--shadow);
-    border: 2px dashed var(--gold);
-    display: inline-block;
-    max-width: 800px;
-    margin-top: 20px;
-}
-
-.icon-gold {
-    color: var(--gold);
-    margin-bottom: 20px;
-}
-
-/* Contacto */
-.contact-layout {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    align-items: stretch;
-}
-
-.contact-info-box {
-    background: var(--white);
-    border-radius: var(--radius);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
-    border-top: 6px solid var(--primary);
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-}
-
-.contact-top-content {
-    padding: 40px 40px 20px 40px;
-}
-
-.contact-top-content h2 {
-    font-size: 1.8rem;
-    margin-bottom: 15px;
-}
-
-.contact-top-content>p {
-    color: var(--text-light);
-    margin-bottom: 30px;
-}
-
-.info-item {
-    display: flex;
-    gap: 15px;
-    margin-bottom: 25px;
-    align-items: center;
-}
-
-.info-item i {
-    font-size: 1.2rem;
-    color: var(--white);
-    background: var(--secondary);
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    flex-shrink: 0;
-}
-
-.info-item h5 {
-    margin: 0;
-    font-size: 1rem;
-    color: var(--primary);
-}
-
-.info-item p {
-    margin: 0;
-    font-size: 0.9rem;
-    color: #555;
-}
-
-.location-map-group {
-    background: #f4f6f8;
-    border-top: 1px solid #e0e0e0;
-    margin-top: auto;
-}
-
-.location-text {
-    padding: 20px 40px 15px;
-    display: flex;
-    gap: 15px;
-    align-items: flex-start;
-}
-
-.icon-location {
-    color: var(--gold);
-    font-size: 1.5rem;
-    margin-top: 3px;
-}
-
-.location-text h5 {
-    margin: 0 0 5px;
-    font-size: 1.1rem;
-}
-
-.location-text p {
-    margin: 0;
-    font-size: 0.9rem;
-    line-height: 1.4;
-}
-
-.map-wrapper {
-    width: 100%;
-    height: 200px;
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-}
-
-.map-wrapper iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-    display: block;
-}
-
-.contact-form-container {
-    background: var(--white);
-    padding: 40px;
-    border-radius: var(--radius);
-    border-top: 6px solid var(--gold);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.contact-form-container h3 {
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 1.8rem;
-}
-
-.input-group {
-    margin-bottom: 20px;
-}
-
-.input-group label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: 700;
-    font-size: 0.9rem;
-    color: var(--primary);
-}
-
-.input-group input,
-.input-group textarea {
-    width: 100%;
-    padding: 12px 15px;
-    border: 1px solid #e1e1e1;
-    border-radius: 8px;
-    background: #f9f9f9;
-    font-family: var(--font-body);
-    transition: 0.3s;
-}
-
-.input-group input:focus,
-.input-group textarea:focus {
-    background: var(--white);
-    border-color: var(--secondary);
-    outline: none;
-    box-shadow: 0 0 0 4px rgba(62, 109, 156, 0.1);
-}
-
-/* Footer */
 .main-footer {
     background: #051021;
     color: #b0b0b0;
@@ -1021,7 +325,92 @@ cite {
 }
 
 /* ==========================================================================
-   6. EXTRAS: NIEVE Y MODAL
+   [4] FIN DEL BLOQUE: FOOTER
+   ========================================================================== */
+
+
+/* ==========================================================================
+   [5] INICIO DEL BLOQUE: BOTONES
+   FUENTE ORIGINAL: css/components/_buttons.css
+   ========================================================================== */
+.btn {
+    display: inline-block;
+    padding: 12px 35px;
+    border-radius: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.btn-primary {
+    background: var(--primary);
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    background: var(--secondary);
+    transform: translateY(-2px);
+}
+
+.btn-gold {
+    background: var(--gold);
+    color: var(--white);
+}
+
+.btn-gold:hover {
+    background: #b5952f;
+    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
+    transform: translateY(-2px);
+}
+
+.btn-outline-light {
+    border: 2px solid var(--white);
+    color: var(--white);
+}
+
+.btn-outline-light:hover {
+    background: var(--white);
+    color: var(--primary);
+}
+
+.btn-outline-dark {
+    border: 2px solid var(--primary);
+    color: var(--primary);
+}
+
+.btn-outline-dark:hover {
+    background: var(--primary);
+    color: var(--white);
+}
+
+.pulse-effect {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.7);
+    }
+
+    70% {
+        box-shadow: 0 0 0 10px rgba(212, 175, 55, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(212, 175, 55, 0);
+    }
+}
+
+/* ==========================================================================
+   [5] FIN DEL BLOQUE: BOTONES
+   ========================================================================== */
+
+
+/* ==========================================================================
+   [6] INICIO DEL BLOQUE: EFECTOS VISUALES
+   FUENTE ORIGINAL: css/components/_effects.css
    ========================================================================== */
 .snowflake {
     position: fixed;
@@ -1029,7 +418,8 @@ cite {
     color: #fff;
     font-size: 1em;
     pointer-events: none;
-    z-index: 9999;
+    z-index: 1;
+    /* Cambiar de 9999 a 1 */
     animation: fall linear infinite;
     text-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
 }
@@ -1040,6 +430,15 @@ cite {
     }
 }
 
+/* ==========================================================================
+   [6] FIN DEL BLOQUE: EFECTOS VISUALES
+   ========================================================================== */
+
+
+/* ==========================================================================
+   [7] INICIO DEL BLOQUE: MODALES Y POPUPS
+   FUENTE ORIGINAL: css/components/_modals.css
+   ========================================================================== */
 .modal-overlay {
     position: fixed;
     top: 0;
@@ -1054,8 +453,6 @@ cite {
     opacity: 0;
     visibility: hidden;
     transition: all 0.4s ease;
-    backdrop-filter: blur(4px);
-    padding: 15px;
 }
 
 .modal-overlay.active {
@@ -1086,6 +483,7 @@ cite {
     border: 2px solid var(--gold);
 }
 
+/* BOTÓN CERRAR (Medical Luxury Style) */
 .modal-close {
     position: absolute;
     top: 10px;
@@ -1114,8 +512,806 @@ cite {
     transform: rotate(90deg);
 }
 
+/* Ajuste Móvil para Modal */
+@media (max-width: 480px) {
+    .modal-content {
+        max-width: 100%;
+    }
+
+    .modal-close {
+        width: 42px;
+        height: 42px;
+        font-size: 20px;
+        top: 15px;
+        right: 15px;
+        background: rgba(15, 44, 89, 0.95);
+    }
+}
+
 /* ==========================================================================
-   7. RESPONSIVE Y FIX DE IOS (CRÍTICO)
+   [7] FIN DEL BLOQUE: MODALES Y POPUPS
+   ========================================================================== */
+
+
+/* ==========================================================================
+   [8] INICIO DEL BLOQUE: SECCIÓN HERO
+   FUENTE ORIGINAL: css/sections/_hero.css
+   ========================================================================== */
+.hero-section {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+    color: var(--white);
+    text-align: center;
+}
+
+.hero-bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: -2;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(15, 44, 89, 0.85), rgba(15, 44, 89, 0.7));
+    z-index: -1;
+}
+
+.hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+    z-index: 1;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    color: var(--white);
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.badge-christmas {
+    display: inline-block;
+    background: var(--red-christmas);
+    color: var(--white);
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    box-shadow: 0 0 15px rgba(201, 44, 44, 0.6);
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* ==========================================================================
+   [8] FIN DEL BLOQUE: SECCIÓN HERO
+   ========================================================================== */
+
+
+/* ==========================================================================
+   [9] INICIO DEL BLOQUE: CONTENIDO Y SERVICIOS
+   FUENTE ORIGINAL: css/sections/_content.css
+   ========================================================================== */
+.grid-2-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.section-subtitle {
+    display: block;
+    color: var(--gold);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+.section-title {
+    font-size: 2.5rem;
+}
+
+.lead-text {
+    font-size: 1.15rem;
+    color: var(--text);
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.features-list {
+    margin-top: 30px;
+}
+
+.feature-item {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.feature-item i {
+    font-size: 2rem;
+    color: var(--secondary);
+    background: rgba(62, 109, 156, 0.1);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.images-column {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: auto;
+}
+
+.images-column img {
+    width: 100%;
+    border-radius: var(--radius);
+    border: 5px solid var(--white);
+    position: relative;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+}
+
+.images-column img:hover {
+    transform: translateY(-5px);
+}
+
+.grid-3-col {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.service-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: 0.3s;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.card-img {
+    height: 220px;
+    overflow: hidden;
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.service-card:hover .card-img img {
+    transform: scale(1.1);
+}
+
+.card-content {
+    padding: 30px;
+}
+
+.card-content h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+/* ==========================================================================
+   [9] FIN DEL BLOQUE: CONTENIDO Y SERVICIOS
+   ========================================================================== */
+
+
+/* ==========================================================================
+   [10] INICIO DEL BLOQUE: MÉTODO DE 4 PILARES
+   FUENTE ORIGINAL: css/sections/_method.css
+   ========================================================================== */
+.method-section {
+    background: var(--primary);
+    color: var(--white);
+    position: relative;
+}
+
+.method-section h2 {
+    color: var(--white);
+}
+
+.method-row {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 80px;
+}
+
+.method-row:last-child {
+    margin-bottom: 0;
+}
+
+.method-row.reverse {
+    flex-direction: row-reverse;
+}
+
+.method-content {
+    flex: 1;
+}
+
+.method-content h3 {
+    color: var(--gold);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.method-content p {
+    font-size: 1.05rem;
+    opacity: 0.9;
+    margin-bottom: 20px;
+}
+
+.check-list li {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1rem;
+}
+
+.check-list i {
+    color: var(--gold);
+}
+
+.method-visual {
+    flex: 1;
+    border-radius: var(--radius);
+    overflow: hidden;
+    border: 4px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.method-visual img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.video-container video {
+    width: 100%;
+    border-radius: var(--radius);
+    display: block;
+}
+
+.video-caption {
+    display: block;
+    text-align: center;
+    font-size: 0.85rem;
+    padding-top: 10px;
+    opacity: 0.7;
+    font-style: italic;
+}
+
+/* ==========================================================================
+   [10] FIN DEL BLOQUE: MÉTODO DE 4 PILARES
+   ========================================================================== */
+
+
+/* ==========================================================================
+   [11] INICIO DEL BLOQUE: GALERÍA E INSTALACIONES
+   FUENTE ORIGINAL: css/sections/_gallery.css
+   ========================================================================== */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.gallery-item {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    height: 300px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border: 4px solid var(--white);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.15);
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(15, 44, 89, 0.95), rgba(15, 44, 89, 0.6));
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: 0.4s ease;
+    padding: 20px;
+    backdrop-filter: blur(2px);
+}
+
+.gallery-item:hover .overlay {
+    opacity: 1;
+}
+
+.overlay i {
+    color: var(--gold);
+    margin-bottom: 15px;
+}
+
+.overlay h4 {
+    color: var(--white);
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.overlay p {
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+
+/* ==========================================================================
+   [11] FIN DEL BLOQUE: GALERÍA E INSTALACIONES
+   ========================================================================== */
+
+
+/* ==========================================================================
+   [12] INICIO DEL BLOQUE: EQUIPO / STAFF
+   FUENTE ORIGINAL: css/sections/_staff.css
+   ========================================================================== */
+.staff-category {
+    margin-bottom: 60px;
+}
+
+.staff-category h3 {
+    border-bottom: 3px solid var(--gold);
+    display: inline-block;
+    padding-bottom: 8px;
+    margin-bottom: 40px;
+    font-size: 1.8rem;
+    color: var(--secondary);
+}
+
+.staff-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 40px;
+}
+
+.small-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+.staff-card {
+    background: var(--white);
+    padding: 30px 20px;
+    border-radius: var(--radius);
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: 0.3s;
+    border: 1px solid #eee;
+}
+
+.staff-card:hover {
+    transform: translateY(-8px);
+    border-bottom: 4px solid var(--gold);
+}
+
+.staff-photo {
+    width: 140px;
+    height: 140px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid var(--bg-light);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.staff-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.staff-card h4 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: var(--primary);
+}
+
+.role {
+    display: block;
+    font-size: 0.95rem;
+    color: var(--text-light);
+    font-weight: 600;
+}
+
+.staff-card.mini {
+    padding: 20px 15px;
+}
+
+.staff-card.mini .staff-photo {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+    border-width: 3px;
+}
+
+.staff-card.mini h4 {
+    font-size: 1rem;
+}
+
+.staff-card.mini .role {
+    font-size: 0.85rem;
+}
+
+/* ==========================================================================
+   [12] FIN DEL BLOQUE: EQUIPO / STAFF
+   ========================================================================== */
+
+
+/* ==========================================================================
+   [13] INICIO DEL BLOQUE: TESTIMONIOS
+   FUENTE ORIGINAL: css/sections/_testimonials.css
+   ========================================================================== */
+
+/* Agrega esto justo debajo del encabezado del bloque 13 en styles.css */
+
+.testimonials-section {
+    position: relative;
+    /* Ruta a la imagen de portada que solicitaste */
+    background-image: url('assets/img/hero/fachada_principal.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* Efecto Parallax */
+    background-repeat: no-repeat;
+    /* Color de texto base para asegurar legibilidad */
+    color: var(--white);
+}
+
+/* Capa oscura para que el texto blanco se lea perfectamente sobre la foto */
+.testimonials-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 44, 89, 0.85);
+    /* Azul institucional con transparencia */
+    z-index: 0;
+}
+
+/* Aseguramos que el contenido esté POR ENCIMA de la capa oscura y la foto */
+.testimonials-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Nota: hero-bg-img ya fue definido en HERO, pero si hay conflictos, esto es una redefinición local */
+.testimonials-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.testimonial-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    padding: 40px 30px;
+    border-radius: var(--radius);
+    max-width: 350px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    transition: 0.3s;
+}
+
+.testimonial-card:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-5px);
+}
+
+.user-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: var(--gold);
+}
+
+.testimonio-text {
+    font-style: italic;
+    margin-bottom: 25px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.stars {
+    color: var(--gold);
+    margin-bottom: 15px;
+    letter-spacing: 3px;
+}
+
+cite {
+    font-weight: 700;
+    display: block;
+    font-size: 1.1rem;
+}
+
+.rehab-time {
+    font-weight: 400;
+    font-size: 0.85rem;
+    opacity: 0.8;
+    display: block;
+    margin-top: 5px;
+}
+
+.donation-card {
+    background: var(--white);
+    padding: 50px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    border: 2px dashed var(--gold);
+    display: inline-block;
+    max-width: 800px;
+    margin-top: 20px;
+}
+
+.icon-gold {
+    color: var(--gold);
+    margin-bottom: 20px;
+}
+
+/* ==========================================================================
+   [13] FIN DEL BLOQUE: TESTIMONIOS
+   ========================================================================== */
+
+
+/* ==========================================================================
+   [14] INICIO DEL BLOQUE: CONTACTO
+   FUENTE ORIGINAL: css/sections/_contact.css
+   ========================================================================== */
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: stretch;
+}
+
+.contact-info-box {
+    background: var(--white);
+    border-radius: var(--radius);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    border-top: 6px solid var(--primary);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.contact-top-content {
+    padding: 40px 40px 20px 40px;
+}
+
+.contact-top-content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.contact-top-content>p {
+    color: var(--text-light);
+    margin-bottom: 30px;
+}
+
+.info-item {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+    align-items: center;
+}
+
+.info-item i {
+    font-size: 1.2rem;
+    color: var(--white);
+    background: var(--secondary);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.info-item h5 {
+    margin: 0;
+    font-size: 1rem;
+    color: var(--primary);
+}
+
+.info-item p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.location-map-group {
+    background: #f4f6f8;
+    border-top: 1px solid #e0e0e0;
+    margin-top: auto;
+}
+
+.location-text {
+    padding: 20px 40px 15px;
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.icon-location {
+    color: var(--gold);
+    font-size: 1.5rem;
+    margin-top: 3px;
+}
+
+.location-text h5 {
+    margin: 0 0 5px;
+    font-size: 1.1rem;
+}
+
+.location-text p {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.map-wrapper {
+    width: 100%;
+    height: 200px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.map-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+}
+
+.social-footer {
+    padding: 25px 40px;
+    background: var(--white);
+    text-align: center;
+}
+
+.social-label {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-form-container {
+    background: var(--white);
+    padding: 40px;
+    border-radius: var(--radius);
+    border-top: 6px solid var(--gold);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-form-container h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: var(--primary);
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    background: #f9f9f9;
+    font-family: var(--font-body);
+    transition: 0.3s;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    background: var(--white);
+    border-color: var(--secondary);
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(62, 109, 156, 0.1);
+}
+
+/* ==========================================================================
+   [14] FIN DEL BLOQUE: CONTACTO
+   ========================================================================== */
+
+
+/* ==========================================================================
+   [15] INICIO DEL BLOQUE: RESPONSIVE DESIGN
+   FUENTE ORIGINAL: css/base/_responsive.css
+   NOTA: Se ha movido al final para asegurar la prioridad en cascada.
    ========================================================================== */
 @media (max-width: 992px) {
 
@@ -1191,16 +1387,14 @@ cite {
     .gallery-grid {
         grid-template-columns: 1fr;
     }
-
-    /* FIX MÓVIL: Evita que imágenes se estiren */
-    img {
-        height: auto !important;
-    }
 }
 
-/* FIX ESPECÍFICO IPHONE (iOS) - Evita zoom excesivo en backgrounds */
+/* =========================================
+   CORRECCIÓN CRÍTICA PARA IOS (IPHONE/IPAD)
+   ========================================= */
 @media (hover: none) and (pointer: coarse) {
 
+    /* Desactiva el parallax en pantallas táctiles para evitar zoom excesivo */
     .hero-bg-img,
     .testimonials-section {
         background-attachment: scroll !important;
@@ -1208,3 +1402,247 @@ cite {
         background-position: center center !important;
     }
 }
+
+/* Ajuste de Imágenes Generales en Móvil */
+@media (max-width: 768px) {
+
+    /* Asegura que ninguna imagen se desborde o deforme */
+    img {
+        width: 100%;
+        height: auto !important;
+        /* Fuerza la proporción natural */
+        object-fit: cover;
+    }
+
+    /* Excepción para galería y staff que necesitan altura fija */
+    .gallery-item img,
+    .staff-photo img,
+    .card-img img {
+        height: 100% !important;
+        /* Aquí sí respetamos el contenedor */
+    }
+}
+
+.header-container .logo-img {
+    width: auto !important;
+    height: 50px !important;
+    max-width: none;
+    object-fit: contain;
+}
+
+.header-container {
+    padding: 0 15px;
+}
+
+/* =========================================
+   CORRECCIÓN FINAL PARA MÓVILES (CELULARES)
+   Agrega esto al final absoluto de styles.css
+   ========================================= */
+
+@media (max-width: 576px) {
+
+    /* 1. Reducción drástica del título para que quepa en pantalla */
+    .hero-content h1 {
+        font-size: 1.8rem;
+        /* Bajamos de 2.8rem a 1.8rem */
+        line-height: 1.3;
+        /* Mayor espaciado entre líneas */
+        margin-bottom: 15px;
+    }
+
+    /* 2. Ajuste del subtítulo */
+    .hero-subtitle {
+        font-size: 1rem;
+        line-height: 1.5;
+        padding: 0 10px;
+        /* Un poco de aire a los lados */
+    }
+
+    /* 3. Ajuste del distintivo (Badge) */
+    .badge-christmas {
+        font-size: 0.75rem;
+        padding: 6px 15px;
+        margin-bottom: 15px;
+    }
+
+    /* 4. Botones: Apilados y de ancho completo para fácil clic */
+    .hero-buttons {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+        /* Botones ocupan todo el ancho */
+        display: block;
+        /* Asegura comportamiento de bloque */
+        text-align: center;
+    }
+
+    /* 5. Ajuste de altura de la sección Hero para evitar cortes */
+    .hero-section {
+        height: auto;
+        /* Permitir que crezca si el texto es largo */
+        min-height: 100vh;
+        /* Al menos el alto de la pantalla */
+        padding-top: 100px;
+        /* Compensar el menú fijo */
+        padding-bottom: 50px;
+    }
+}
+
+/* =========================================
+   CORRECCIÓN DE DESBORDAMIENTO (PANTALLAS MUY ANGOSTAS)
+   Soluciona el espacio blanco lateral en Galaxy Fold y similares
+   ========================================= */
+
+/* =========================================
+   CORRECCIÓN DE DESBORDAMIENTO Y TIPOGRAFÍA (PANTALLAS MUY ANGOSTAS)
+   Soluciona espacio blanco y títulos rotos en pantallas < 400px
+   ========================================= */
+
+@media (max-width: 400px) {
+
+    /* 1. Forzamos a las grillas a ser de 1 sola columna flexible */
+    .grid-3-col,
+    .gallery-grid,
+    .staff-grid,
+    .small-grid {
+        display: flex;
+        flex-direction: column;
+        width: 100% !important;
+        grid-template-columns: 1fr !important;
+        gap: 20px;
+    }
+
+    /* 2. Eliminamos los anchos mínimos fijos */
+    .service-card,
+    .gallery-item,
+    .staff-card,
+    .staff-card.mini {
+        min-width: 0 !important;
+        width: 100% !important;
+        margin: 0 !important;
+    }
+
+    /* 3. Ajuste de seguridad para el contenedor principal */
+    .container {
+        padding: 0 10px;
+        /* Reducimos padding al mínimo */
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* 4. Ajuste del Título Principal (Hero) */
+    .hero-content h1 {
+        font-size: 1.4rem;
+        /* Reducción agresiva */
+    }
+
+    /* --- [NUEVO] 5. Ajuste de Títulos de Sección (Identidad, Método, etc.) --- */
+    .section-title {
+        font-size: 1.3rem !important;
+        /* Bajamos de 2rem a 1.3rem */
+        line-height: 1.2;
+        word-wrap: break-word;
+        /* Rompe palabras largas si es necesario */
+    }
+
+    /* --- [NUEVO] 6. Ajuste de textos de párrafo --- */
+    .lead-text,
+    p {
+        font-size: 0.95rem !important;
+        text-align: justify;
+        /* Mejora la lectura en columnas estrechas */
+    }
+
+    /* 7. Ajuste del Subtítulo dorado */
+    .section-subtitle {
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+    }
+}
+
+/* =========================================
+   MODO MICRO-PANTALLA (SUPERVIVENCIA EXTREMA)
+   Para dispositivos < 280px (Galaxy Fold cerrado, Smartwatches)
+   ========================================= */
+
+@media (max-width: 280px) {
+
+    /* 1. LA REGLA DE ORO: Romper palabras largas a la fuerza */
+    * {
+        word-wrap: break-word !important;
+        overflow-wrap: break-word !important;
+        word-break: break-all !important;
+        /* Corta "Rehabilitación" si no cabe */
+        hyphens: auto !important;
+    }
+
+    /* 2. Reducción drástica de tipografía */
+    html {
+        font-size: 14px;
+        /* Base más pequeña */
+    }
+
+    .hero-content h1 {
+        font-size: 1.2rem !important;
+        /* Título minúsculo pero legible */
+        line-height: 1.1;
+    }
+
+    h2,
+    .section-title {
+        font-size: 1.1rem !important;
+    }
+
+    h3,
+    h4,
+    h5 {
+        font-size: 1rem !important;
+    }
+
+    /* 3. Dieta estricta de espacios (Padding/Margin) */
+    .container,
+    .header-container,
+    .hero-content {
+        padding-left: 5px !important;
+        /* Solo 5px de aire a los lados */
+        padding-right: 5px !important;
+    }
+
+    .section-padding {
+        padding: 40px 0 !important;
+        /* Menos espacio vertical entre secciones */
+    }
+
+    /* 4. Ajuste del Logo para que no desaparezca */
+    .header-container .logo-img {
+        height: 35px !important;
+        /* Logo tamaño micro */
+        width: auto !important;
+    }
+
+    /* 5. Botones al ancho total siempre */
+    .btn {
+        width: 100% !important;
+        padding: 10px 5px !important;
+        /* Padding reducido */
+        font-size: 0.8rem !important;
+        white-space: normal !important;
+        /* Permite que el texto del botón baje de línea */
+    }
+
+    /* 6. Ajuste de Iconos Gigantes */
+    .fa-3x,
+    .fa-2x {
+        font-size: 1.5em !important;
+        /* Reducir iconos grandes */
+    }
+}
+
+/* ==========================================================================
+   [15] FIN DEL BLOQUE: RESPONSIVE DESIGN
+   ========================================================================== */

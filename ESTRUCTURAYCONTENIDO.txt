@@ -1,12 +1,10 @@
 REPORTE DE ESTRUCTURA Y CONTENIDO
-Fecha: 12/09/2025 16:25:48
+Fecha: 12/09/2025 17:23:51
 Ruta Analizada: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperanza-Que-Necesito
 --------------------------------------------------
 
 --- [1] ESTRUCTURA DE ARCHIVOS ACTUAL ---
 📁 \assets
-📁 \css
-📁 \js
    📄 \.nojekyll
    📄 \CNAME
    📄 \ESTRUCTURAYCONTENIDO.txt
@@ -15,7 +13,9 @@ Ruta Analizada: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Espera
    📄 \LICENSE
    📄 \README.md
    📄 \robots.txt
+   📄 \script.js
    📄 \sitemap.xml
+   📄 \styles.css
 📁 \assets\img
 📁 \assets\video
 📁 \assets\img\actividades
@@ -25,46 +25,22 @@ Ruta Analizada: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Espera
 📁 \assets\img\padecimientos
 📁 \assets\img\staff
 📁 \assets\img\tratamiento
-📁 \assets\img\actividades\comedor
 📁 \assets\img\actividades\eventos
-📁 \assets\img\actividades\recreacion
-   📄 \assets\img\actividades\comedor\servidores_cortando_lena_para_la_comidad_de_los_usurios.jpg
-   📄 \assets\img\actividades\comedor\servidores_preparando_comida_para_usurios.jpg
    📄 \assets\img\actividades\eventos\agradecimiento_sala_de_mujeres.jpg
    📄 \assets\img\actividades\eventos\aniversario_del_centro.jpg
    📄 \assets\img\actividades\eventos\posada_20_12_2025.png
-   📄 \assets\img\actividades\recreacion\actividades_recreativas_mujeres_ninos.jpg
-   📄 \assets\img\actividades\recreacion\deporte_sala_de_mujeres.jpg
-   📄 \assets\img\actividades\recreacion\manualidades_sala_de_mujeres_2.jpg
-   📄 \assets\img\actividades\recreacion\manualidades_sala_de_mujeres_3.jpg
-   📄 \assets\img\actividades\recreacion\manualidades_sala_de_mujeres_4.jpg
-   📄 \assets\img\actividades\recreacion\manualidades_sala_de_mujeres.jpg
-   📄 \assets\img\actividades\recreacion\manualidades_sala_mujeres.jpg
-   📄 \assets\img\educacion\clases_virtuales_secundaria_preparatoria_universidad_2_4010.jpg
-   📄 \assets\img\educacion\clases_virtuales_secundaria_preparatoria_universidad_2.jpg
-   📄 \assets\img\educacion\clases_virtuales_secundaria_preparatoria_universidad.jpg
-   📄 \assets\img\educacion\sala_de_estudios_distintos_niveles_secundaria_preparatoria_universidad_2.jpeg
    📄 \assets\img\educacion\sala_de_estudios_distintos_niveles_secundaria_preparatoria_universidad.jpeg
    📄 \assets\img\hero\fachada_principal.jpeg
-   📄 \assets\img\hero\fachada.jpeg
    📄 \assets\img\hero\logo_del_centro.png
    📄 \assets\img\hero\portada.png
    📄 \assets\img\hero\quienessomos.png
-   📄 \assets\img\hero\quienessomos2.png
 📁 \assets\img\instalaciones\areas_comunes
 📁 \assets\img\instalaciones\dormitorios
 📁 \assets\img\instalaciones\seguridad
    📄 \assets\img\instalaciones\areas_comunes\instalaciones_pasillo.jpeg
-   📄 \assets\img\instalaciones\areas_comunes\instalaciones_recepcion.jpeg
    📄 \assets\img\instalaciones\areas_comunes\recepcion.jpeg
-   📄 \assets\img\instalaciones\areas_comunes\recreativa.png
    📄 \assets\img\instalaciones\dormitorios\instalaciones_banos_hombres_2.jpeg
-   📄 \assets\img\instalaciones\dormitorios\instalaciones_banos_hombres.jpeg
    📄 \assets\img\instalaciones\dormitorios\sala_de_recuperacion_hombres.jpeg
-   📄 \assets\img\instalaciones\dormitorios\sala_de_recuperacion_jovenes.jpeg
-   📄 \assets\img\instalaciones\dormitorios\sala_de_recuperacion_mujeres_2.jpeg
-   📄 \assets\img\instalaciones\dormitorios\sala_de_recuperacion_mujeres_3.jpeg
-   📄 \assets\img\instalaciones\dormitorios\sala_de_recuperacion_mujeres.jpg
    📄 \assets\img\instalaciones\seguridad\video_vigilancia_24_hrs.jpeg
    📄 \assets\img\padecimientos\adicciones.webp
    📄 \assets\img\padecimientos\alcoholismo.jpg
@@ -89,82 +65,912 @@ Ruta Analizada: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Espera
 📁 \assets\img\tratamiento\clinico
 📁 \assets\img\tratamiento\espiritual
 📁 \assets\img\tratamiento\psicologico
-   📄 \assets\img\tratamiento\clinico\consultorio_medico_2_5414.jpeg
-   📄 \assets\img\tratamiento\clinico\consultorio_medico_2.jpeg
    📄 \assets\img\tratamiento\clinico\consultorio_medico.jpeg
    📄 \assets\img\tratamiento\espiritual\cadena_de_oracion_mujeres.jpg
-   📄 \assets\img\tratamiento\espiritual\junta_aa_hombres.jpg
-   📄 \assets\img\tratamiento\espiritual\junta_aa_mujeres.jpg
-   📄 \assets\img\tratamiento\espiritual\junta_aa_ninos.jpg
-   📄 \assets\img\tratamiento\espiritual\junta_aa_sala_de_hombres_2.jpg
-   📄 \assets\img\tratamiento\espiritual\junta_aa_sala_de_hombres_3.jpg
-   📄 \assets\img\tratamiento\espiritual\junta_aa_sala_de_hombres.jpg
-   📄 \assets\img\tratamiento\espiritual\junta_aa_sala_de_mujeres_2.jpg
-   📄 \assets\img\tratamiento\espiritual\junta_aa_sala_de_mujeres_3.jpg
-   📄 \assets\img\tratamiento\espiritual\junta_aa_sala_de_mujeres_4.jpg
-   📄 \assets\img\tratamiento\espiritual\junta_aa_sala_de_mujeres_5.jpg
-   📄 \assets\img\tratamiento\espiritual\junta_aa_sala_de_mujeres_6.jpg
-   📄 \assets\img\tratamiento\espiritual\junta_aa_sala_de_mujeres_7.jpg
-   📄 \assets\img\tratamiento\espiritual\junta_aa_sala_de_mujeres_8.jpg
-   📄 \assets\img\tratamiento\espiritual\junta_aa_sala_de_mujeres.jpg
-   📄 \assets\img\tratamiento\espiritual\retiro_espiritual_2.png
-   📄 \assets\img\tratamiento\espiritual\retiro_espiritual_3.png
    📄 \assets\img\tratamiento\espiritual\retiro_espiritual_5421.png
-   📄 \assets\img\tratamiento\espiritual\sala_de_recuperacion_junta_aa_5428.jpeg
-   📄 \assets\img\tratamiento\espiritual\sala_de_recuperacion_mujeres_junta_aa_5433.jpeg
-   📄 \assets\img\tratamiento\psicologico\actividades_con_los_psicologos.jpeg
-   📄 \assets\img\tratamiento\psicologico\actividades_psicologos.jpeg
-   📄 \assets\img\tratamiento\psicologico\consejeria_en_adicciones_hombres.jpg
-   📄 \assets\img\tratamiento\psicologico\consejeria_en_adicciones_sala_hombres.jpg
-   📄 \assets\img\tratamiento\psicologico\consultorio_de_psicologia.jpeg
-   📄 \assets\img\tratamiento\psicologico\dinamica_hombres.jpg
-   📄 \assets\img\tratamiento\psicologico\dinamica_ninos.jpg
-   📄 \assets\img\tratamiento\psicologico\dinamica_sala_de_hombes.jpg
    📄 \assets\img\tratamiento\psicologico\psicologia_grupal.jpg
-   📄 \assets\img\tratamiento\psicologico\terapia_grupal_mujeres_ninos.jpg
-   📄 \assets\img\tratamiento\psicologico\terapia_grupal_mujeres_psicologa.jpg
-   📄 \assets\img\tratamiento\psicologico\terapia_grupal_psicolo_2.jpg
-   📄 \assets\img\tratamiento\psicologico\terapia_grupal_psicolo.jpg
-   📄 \assets\img\tratamiento\psicologico\terapia_grupal_psicologa.jpg
-   📄 \assets\img\tratamiento\psicologico\terapia_grupal_psicologo_jovenes.jpg
-   📄 \assets\img\tratamiento\psicologico\terapia_grupal_psicologo.jpg
-   📄 \assets\img\tratamiento\psicologico\terapia_mujeres_psicologa.jpg
    📄 \assets\video\video-practicas.mp4
-📁 \css\base
-📁 \css\components
-📁 \css\layout
-📁 \css\sections
-   📄 \css\main.css
-   📄 \css\base\_reset.css
-   📄 \css\base\_responsive.css
-   📄 \css\base\_variables.css
-   📄 \css\components\_buttons.css
-   📄 \css\components\_effects.css
-   📄 \css\components\_modals.css
-   📄 \css\layout\_footer.css
-   📄 \css\layout\_header.css
-   📄 \css\sections\_contact.css
-   📄 \css\sections\_content.css
-   📄 \css\sections\_gallery.css
-   📄 \css\sections\_hero.css
-   📄 \css\sections\_method.css
-   📄 \css\sections\_staff.css
-   📄 \css\sections\_testimonials.css
-📁 \js\modules
-   📄 \js\main.js
-   📄 \js\modules\effects.js
-   📄 \js\modules\forms.js
-   📄 \js\modules\modal.js
-   📄 \js\modules\ui.js
 
 --------------------------------------------------
 
 --- [2] CONTENIDO DE LOS ARCHIVOS ---
 
 ==========================================================================
-ARCHIVO: _reset.css
-RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperanza-Que-Necesito\css\base\_reset.css
+ARCHIVO: googled12c5739ef345a25.html
+RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperanza-Que-Necesito\googled12c5739ef345a25.html
 ==========================================================================
+google-site-verification: googled12c5739ef345a25.html
+
+==========================================================================
+ARCHIVO: index.html
+RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperanza-Que-Necesito\index.html
+==========================================================================
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="google-site-verification" content="XdgdErVDX5QiFOniyrJqKLusOInbDD08gEpAz8SupLQ" />
+    <link rel="canonical" href="https://www.laluzylaesperanzaquenecesito.me/">
+
+    <meta name="description"
+        content="Centro de Rehabilitación La Luz y La Esperanza Que Necesito. Tratamiento integral para adicciones en Tres Valles, Veracruz. Ayuda médica, psicológica y espiritual.">
+    <meta name="keywords"
+        content="rehabilitación veracruz, clínica adicciones tres valles, anexo aa, tratamiento alcoholismo, internamiento, centro la luz y la esperanza">
+    <meta name="author" content="Centro La Luz y La Esperanza Que Necesito">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title" content="Centro La Luz y La Esperanza Que Necesito | Rehabilitación Integral">
+    <meta property="og:description"
+        content="Recupera tu vida y tu familia. Tratamiento profesional en Tres Valles, Veracruz.">
+    <meta property="og:image" content="assets/img/hero/portada.png">
+    <meta property="og:url" content="https://www.laluzylaesperanzaquenecesito.me/">
+    <meta property="og:type" content="website">
+
+    <title>Centro de Rehabilitación La Luz y La Esperanza Que Necesito</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="icon" type="image/png" href="assets/img/hero/logo_del_centro.png">
+    <link rel="shortcut icon" type="image/png" href="assets/img/hero/logo_del_centro.png">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="christmas-theme">
+
+    <div id="snow-container"></div>
+    <header class="main-header">
+        <div class="container header-container">
+            <div class="logo-box">
+                <img src="assets/img/hero/logo_del_centro.png" alt="Logo Centro de Rehabilitación" class="logo-img"
+                    loading="lazy">
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#identidad">Nosotros</a></li>
+                    <li><a href="#metodo">Tratamiento</a></li>
+                    <li><a href="#instalaciones">Instalaciones</a></li>
+                    <li><a href="#equipo">Equipo</a></li>
+                    <li><a href="#contacto" class="nav-cta">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="inicio" class="hero-section">
+            <div class="hero-overlay"></div>
+            <img src="assets/img/hero/fachada_principal.jpeg" alt="Fachada Centro de Rehabilitación" class="hero-bg-img"
+                fetchpriority="high" loading="lazy">
+
+            <div class="container hero-content">
+                <div class="badge-christmas"><i class="fas fa-star"></i> Atención Profesional y Humana</div>
+                <h1>Centro de Rehabilitación <br><span class="highlight">La Luz y La Esperanza Que Necesito</span></h1>
+                <p class="hero-subtitle">En Tres Valles, Veracruz, ofrecemos un refugio seguro donde la ciencia médica,
+                    la psicología y la fortaleza espiritual se unen para vencer las adicciones y recuperar a tu familia.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contacto" class="btn btn-gold pulse-effect">Solicitar Ayuda</a>
+                    <a href="tel:2871520875" class="btn btn-outline-light"><i class="fas fa-phone"></i> Llamada 24/7</a>
+                </div>
+            </div>
+        </section>
+        <section id="identidad" class="section-padding">
+            <div class="container grid-2-col">
+                <div class="text-content">
+                    <span class="section-subtitle">Nuestra Esencia</span>
+                    <h2 class="section-title">Más que un Centro, una Familia</h2>
+                    <p class="lead-text">Entendemos el dolor detrás de la adicción. No juzgamos; sanamos.</p>
+                    <p>Nuestra misión es reintegrar a la sociedad a seres humanos renovados, utilizando un modelo que
+                        combina disciplina, amor y tratamiento clínico profesional.</p>
+
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <i class="fas fa-user-md"></i>
+                            <div>
+                                <h4>Atención Médica</h4>
+                                <p>Valoración y seguimiento físico constante.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-church"></i>
+                            <div>
+                                <h4>Guía Espiritual</h4>
+                                <p>Fortaleza a través de la fe y los 12 pasos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-content images-column">
+                    <img src="assets/img/hero/portada.png" alt="Entrada principal" class="shadow-lg" loading="lazy">
+                    <img src="assets/img/hero/quienessomos.png" alt="Equipo terapéutico" class="shadow-lg"
+                        loading="lazy">
+                </div>
+            </div>
+        </section>
+        <section id="padecimientos" class="section-padding bg-light">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">Áreas de Atención</span>
+                    <h2>¿Qué situaciones abordamos?</h2>
+                    <p>Tratamiento especializado para detener el ciclo destructivo.</p>
+                </div>
+
+                <div class="grid-3-col">
+                    <article class="service-card">
+                        <div class="card-img">
+                            <img src="assets/img/padecimientos/alcoholismo.jpg" alt="Alcoholismo" loading="lazy">
+                        </div>
+                        <div class="card-content">
+                            <h3>Alcoholismo</h3>
+                            <p>Detenemos el deterioro físico y mental causado por la bebida.</p>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="card-img">
+                            <img src="assets/img/padecimientos/adicciones.webp" alt="Drogadicción" loading="lazy">
+                        </div>
+                        <div class="card-content">
+                            <h3>Drogadicción</h3>
+                            <p>Intervención profesional para sustancias ilícitas y fármacos.</p>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="card-img">
+                            <img src="assets/img/padecimientos/depresion.jpg" alt="Depresión y Ansiedad" loading="lazy">
+                        </div>
+                        <div class="card-content">
+                            <h3>Depresión Dual</h3>
+                            <p>Tratamos la raíz emocional que lleva al consumo.</p>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="card-img">
+                            <img src="assets/img/padecimientos/violencia.jpg" alt="Conductas Violentas" loading="lazy">
+                        </div>
+                        <div class="card-content">
+                            <h3>Conductas Agresivas</h3>
+                            <p>Manejo de ira y restauración de vínculos familiares.</p>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="card-img">
+                            <img src="assets/img/padecimientos/ingobernabilidad.jpg" alt="Ingobernabilidad"
+                                loading="lazy">
+                        </div>
+                        <div class="card-content">
+                            <h3>Ingobernabilidad</h3>
+                            <p>Orientación para jóvenes con conductas desafiantes.</p>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="card-img">
+                            <img src="assets/img/padecimientos/crisis.webp" alt="Crisis Emocional" loading="lazy">
+                        </div>
+                        <div class="card-content">
+                            <h3>Crisis Existencial</h3>
+                            <p>Recuperación del sentido de vida y valores.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section id="metodo" class="section-padding method-section">
+            <div class="container">
+                <h2 class="section-title text-center text-white">Nuestro Modelo de 4 Pilares</h2>
+
+                <div class="method-row">
+                    <div class="method-content">
+                        <h3>1. Estabilización Clínica</h3>
+                        <p>La recuperación inicia con el cuerpo. Contamos con consultorios equipados para asegurar la
+                            salud física del paciente desde su ingreso.</p>
+                        <ul class="check-list">
+                            <li><i class="fas fa-check-circle"></i> Desintoxicación supervisada.</li>
+                            <li><i class="fas fa-check-circle"></i> Consultorio Médico in-situ.</li>
+                        </ul>
+                    </div>
+                    <div class="method-visual">
+                        <img src="assets/img/tratamiento/clinico/consultorio_medico.jpeg" alt="Consultorio Médico"
+                            loading="lazy">
+                    </div>
+                </div>
+
+                <div class="method-row reverse">
+                    <div class="method-content">
+                        <h3>2. Reestructuración Psicológica</h3>
+                        <p>A través de terapias grupales e individuales, nuestros psicólogos trabajan en el manejo de
+                            emociones, traumas y prevención de recaídas.</p>
+                        <ul class="check-list">
+                            <li><i class="fas fa-check-circle"></i> Terapia Cognitivo-Conductual.</li>
+                            <li><i class="fas fa-check-circle"></i> Dinámicas grupales sanadoras.</li>
+                        </ul>
+                    </div>
+                    <div class="method-visual">
+                        <img src="assets/img/tratamiento/psicologico/psicologia_grupal.jpg" alt="Terapia Grupal"
+                            loading="lazy">
+                    </div>
+                </div>
+
+                <div class="method-row">
+                    <div class="method-content">
+                        <h3>3. Despertar Espiritual</h3>
+                        <p>Creemos en la sanación del alma. Integramos los 12 pasos de AA, juntas de compartimiento y
+                            retiros espirituales (Hacienda 4to y 5to paso).</p>
+                        <p><em>"La ciencia cura el cuerpo, la fe cura el alma."</em></p>
+                    </div>
+                    <div class="method-visual video-container">
+                        <video controls poster="assets/img/tratamiento/espiritual/retiro_espiritual_5421.png">
+                            <source src="assets/video/video-practicas.mp4" type="video/mp4">
+                            Tu navegador no soporta el video.
+                        </video>
+                        <span class="video-caption">Nuestras actividades y prácticas vivenciales.</span>
+                    </div>
+                </div>
+
+                <div class="method-row reverse">
+                    <div class="method-content">
+                        <h3>4. Reinserción Educativa</h3>
+                        <p>El futuro importa. Ofrecemos una sala de estudios digital para que los usuarios continúen su
+                            preparación académica mientras se rehabilitan.</p>
+                        <ul class="check-list">
+                            <li><i class="fas fa-graduation-cap"></i> Secundaria y Preparatoria (INEA/SEP).</li>
+                            <li><i class="fas fa-laptop"></i> Acceso a Universidad en Línea.</li>
+                        </ul>
+                    </div>
+                    <div class="method-visual">
+                        <img src="assets/img/educacion/sala_de_estudios_distintos_niveles_secundaria_preparatoria_universidad.jpeg"
+                            alt="Sala de cómputo y estudios" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="instalaciones" class="section-padding">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2>Instalaciones Dignas y Seguras</h2>
+                    <p>Un entorno diseñado para la paz, la higiene y la recuperación.</p>
+                </div>
+
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="assets/img/instalaciones/seguridad/video_vigilancia_24_hrs.jpeg"
+                            alt="Cámaras de Seguridad" loading="lazy">
+                        <div class="overlay">
+                            <i class="fas fa-shield-alt fa-2x mb-2"></i>
+                            <h4>Monitoreo 24/7</h4>
+                            <p>Seguridad y tranquilidad absoluta.</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="assets/img/instalaciones/areas_comunes/recepcion.jpeg" alt="Recepción" loading="lazy">
+                        <div class="overlay">
+                            <i class="fas fa-concierge-bell fa-2x mb-2"></i>
+                            <h4>Recepción y Atención</h4>
+                            <p>Espacios dignos desde el ingreso.</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="assets/img/instalaciones/areas_comunes/instalaciones_pasillo.jpeg" alt="Pasillos"
+                            loading="lazy">
+                        <div class="overlay">
+                            <i class="fas fa-route fa-2x mb-2"></i>
+                            <h4>Instalaciones Amplias</h4>
+                            <p>Higiene y orden en cada área.</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="assets/img/instalaciones/dormitorios/sala_de_recuperacion_hombres.jpeg"
+                            alt="Dormitorio Hombres" loading="lazy">
+                        <div class="overlay">
+                            <i class="fas fa-bed fa-2x mb-2"></i>
+                            <h4>Dormitorios Climatizados</h4>
+                            <p>Descanso reparador garantizado.</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="assets/img/tratamiento/espiritual/cadena_de_oracion_mujeres.jpg"
+                            alt="Dormitorio Mujeres" loading="lazy">
+                        <div class="overlay">
+                            <i class="fas fa-female fa-2x mb-2"></i>
+                            <h4>Área Femenina</h4>
+                            <p>Privacidad y seguridad exclusiva.</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="assets/img/instalaciones/dormitorios/instalaciones_banos_hombres_2.jpeg" alt="Baños"
+                            loading="lazy">
+                        <div class="overlay">
+                            <i class="fas fa-shower fa-2x mb-2"></i>
+                            <h4>Servicios Sanitarios</h4>
+                            <p>Limpieza constante y agua caliente.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="equipo" class="section-padding bg-light">
+            <div class="container">
+                <h2 class="section-title text-center">Nuestro Equipo Profesional</h2>
+                <p class="text-center mb-5">Personal capacitado con vocación de servicio.</p>
+
+                <div class="staff-category">
+                    <h3><i class="fas fa-user-tie"></i> Dirección y Área Clínica</h3>
+                    <div class="staff-grid">
+                        <div class="staff-card">
+                            <div class="staff-photo">
+                                <img src="assets/img/staff/directivos/director_general_luis_alberto_avarez_urbano.png"
+                                    alt="Director General Luis Alberto Alvarez" loading="lazy">
+                            </div>
+                            <h4>Luis Alberto Álvarez Urbano</h4>
+                            <span class="role">Director General</span>
+                        </div>
+                        <div class="staff-card">
+                            <div class="staff-photo">
+                                <img src="assets/img/staff/clinico/psicologo_eder_gomez.png" alt="Psicólogo Eder Gómez"
+                                    loading="lazy">
+                            </div>
+                            <h4>Psic. Eder Gómez</h4>
+                            <span class="role">Psicólogo Clínico</span>
+                        </div>
+                        <div class="staff-card">
+                            <div class="staff-photo">
+                                <img src="assets/img/staff/clinico/auxiliar_de_enfermeria_angel_de_jesus_lopez_bravo.png"
+                                    alt="Enfermero Ángel De Jesús" style="object-position: top;" loading="lazy">
+                            </div>
+                            <h4>Ángel De Jesús López</h4>
+                            <span class="role">Auxiliar de Enfermería</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="staff-category mt-5">
+                    <h3><i class="fas fa-hands-helping"></i> Consejería y Espiritualidad</h3>
+                    <div class="staff-grid">
+                        <div class="staff-card">
+                            <div class="staff-photo">
+                                <img src="assets/img/staff/espiritual/pastores_gabriela_cabrera_y_victor_hugo.png"
+                                    alt="Pastores Gaby y Victor" loading="lazy">
+                            </div>
+                            <h4>Pastores Gabriela Cabrera y Victor Hugo García</h4>
+                            <span class="role">Guía Pastoral</span>
+                        </div>
+                        <div class="staff-card">
+                            <div class="staff-photo">
+                                <img src="assets/img/staff/espiritual/consejero_en_adicciones_oscar_reyes.png"
+                                    alt="Consejero Oscar Reyes" style="object-position: top;" loading="lazy">
+                            </div>
+                            <h4>Oscar Reyes</h4>
+                            <span class="role">Consejero en Adicciones</span>
+                        </div>
+                        <div class="staff-card">
+                            <div class="staff-photo">
+                                <img src="assets/img/staff/espiritual/consejero_en_adicciones_obed_tronco_diaz.png"
+                                    alt="Consejero Obed Tronco" style="object-position: top;" loading="lazy">
+                            </div>
+                            <h4>Obed Tronco Díaz</h4>
+                            <span class="role">Consejero en Adicciones</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="staff-category mt-5">
+                    <h3><i class="fas fa-clipboard-list"></i> Coordinación y Administración</h3>
+                    <div class="staff-grid small-grid">
+                        <div class="staff-card mini">
+                            <div class="staff-photo">
+                                <img src="assets/img/staff/coordinadores/adminitrativo_maria_de_jesus_rodriguez_reyes.png"
+                                    alt="Administrativo Maria De Jesús" style="object-position: top;" loading="lazy">
+                            </div>
+                            <h4>María De Jesús Rodríguez</h4>
+                            <span class="role">Administrativa</span>
+                        </div>
+                        <div class="staff-card mini">
+                            <div class="staff-photo">
+                                <img src="assets/img/staff/coordinadores/coordinador_ismael_carmona_arias.png"
+                                    alt="Coordinador Ismael Carmona" style="object-position: top;" loading="lazy">
+                            </div>
+                            <h4>Ismael Carmona Arias</h4>
+                            <span class="role">Coordinador</span>
+                        </div>
+                        <div class="staff-card mini">
+                            <div class="staff-photo">
+                                <img src="assets/img/staff/coordinadores/coordinadores_brain_alexis_vidal_nolasco.png"
+                                    alt="Coordinador Brain Alexis" style="object-position: top;" loading="lazy">
+                            </div>
+                            <h4>Brain Alexis Vidal</h4>
+                            <span class="role">Coordinador</span>
+                        </div>
+                        <div class="staff-card mini">
+                            <div class="staff-photo">
+                                <img src="assets/img/staff/coordinadores/coordinador_diego_cabrera_pelaez.png"
+                                    alt="Coordinador Diego Cabrera" loading="lazy">
+                            </div>
+                            <h4>Diego Cabrera Páez</h4>
+                            <span class="role">Consejero en adicciones</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="testimonios" class="section-padding testimonials-section">
+            <div class="container">
+                <h2 class="text-center text-white">Historias de Esperanza</h2>
+
+                <div class="testimonials-wrapper">
+                    <div class="testimonial-card">
+                        <div class="user-icon"><i class="fas fa-user-circle"></i></div>
+                        <p class="testimonio-text">"Llegué destruida. Aquí encontré el amor y la disciplina que
+                            necesitaba para volver a ser madre y esposa. Gracias por la nueva oportunidad."</p>
+                        <div class="stars">★★★★★</div>
+                        <cite>— María S. <span class="rehab-time">(1 año sobria)</span></cite>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="user-icon"><i class="fas fa-user-circle"></i></div>
+                        <p class="testimonio-text">"El trato de los pastores y el psicólogo fue clave. No es una cárcel,
+                            es una escuela de vida donde aprendí a valorarme."</p>
+                        <div class="stars">★★★★★</div>
+                        <cite>— Juan P. <span class="rehab-time">(Recuperado)</span></cite>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="user-icon"><i class="fas fa-user-circle"></i></div>
+                        <p class="testimonio-text">"Gracias al apoyo educativo, terminé mi prepa aquí mientras me
+                            recuperaba. Hoy estoy estudiando la universidad."</p>
+                        <div class="stars">★★★★★</div>
+                        <cite>— Carlos R. <span class="rehab-time">(Estudiante)</span></cite>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contacto" class="section-padding bg-light">
+            <div class="container">
+
+                <div class="contact-layout">
+
+                    <div class="contact-info-box">
+
+                        <div class="contact-top-content">
+                            <h2>Estamos listos para ayudarte</h2>
+                            <p class="mb-4">La consulta es 100% confidencial. Un mensaje puede ser el inicio del cambio.
+                            </p>
+
+                            <div class="info-group-row">
+                                <div class="info-item">
+                                    <i class="fas fa-phone-alt"></i>
+                                    <div>
+                                        <h5>Llámanos 24/7</h5>
+                                        <p><a href="tel:2871520875" class="text-dark"><strong>287 152 0875</strong></a>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="info-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <div>
+                                        <h5>Correo Electrónico</h5>
+                                        <p>contacto@laluzylaesperanzaquenecesito.me</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="location-map-group">
+                            <div class="location-text">
+                                <i class="fas fa-map-marker-alt icon-location"></i>
+                                <div>
+                                    <h5>Ubicación del Centro</h5>
+                                    <p>Calle Guadalupe Victoria S/N, Col. Patricio Chirino, Tres Valles, Veracruz.</p>
+                                </div>
+                            </div>
+
+                            <div class="map-wrapper">
+                                <iframe
+                                    src="https://maps.google.com/maps?q=18.242750,-96.145018&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="contact-form-container">
+                        <h3>Envíanos un Mensaje</h3>
+
+                        <form id="contactForm" action="https://formspree.io/f/xzzngjzn" method="POST">
+                            <div class="input-group">
+                                <label for="email">Tu Correo Electrónico</label>
+                                <input type="email" name="email" id="email" required placeholder="nombre@ejemplo.com">
+                            </div>
+
+                            <div class="input-group">
+                                <label for="message">Cuéntanos tu situación</label>
+                                <textarea name="message" id="message" rows="5" required
+                                    placeholder="Escribe aquí tu duda o solicitud de internamiento..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary w-100 shadow-lg">Enviar Mensaje</button>
+
+                            <p id="form-status" class="status-msg"></p>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="section-padding bg-light text-center">
+            <div class="container">
+                <div class="donation-card">
+                    <i class="fas fa-hand-holding-heart icon-gold fa-3x"></i>
+                    <h3>¿Deseas apoyar nuestra causa?</h3>
+                    <p>Somos una institución comprometida. Aceptamos donaciones en especie (alimentos no perecederos,
+                        ropa, artículos de higiene) para apoyar a quienes más lo necesitan.</p>
+                    <a href="https://wa.me/522871520875" class="btn btn-outline-dark">Coordinar Donación</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+
+                <div class="footer-brand">
+                    <img src="assets/img/hero/logo_del_centro.png" alt="Logo La Luz y Esperanza" class="footer-logo-img"
+                        loading="lazy">
+                </div>
+
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/CENTRODEREHABILITACIONLALUZYESPERANZAQUENECESITO" target="_blank"
+                        class="social-btn facebook"><i class="fab fa-facebook-f"></i></a>
+
+                    <a href="https://wa.me/522871520875?text=Hola%2C%20vengo%20de%20su%20sitio%20web.%20Necesito%20informaci%C3%B3n%20y%20ayuda%20sobre%20el%20internamiento."
+                        target="_blank" class="social-btn whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+
+                <div class="footer-links">
+                    <a href="#inicio">Inicio</a>
+                    <a href="#metodo">Método</a>
+                    <a href="#contacto">Contacto</a>
+                </div>
+
+                <p class="copyright">© 2025 Centro de Rehabilitación La Luz y La Esperanza Que Necesito. Todos los
+                    derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <div id="modal-posada" class="modal-overlay">
+        <div class="modal-content">
+            <button id="close-modal-btn" class="modal-close">×</button>
+            <div class="modal-body">
+                <img src="assets/img/actividades/eventos/posada_20_12_2025.png"
+                    alt="Invitación Gran Posada Navideña 2025" class="modal-image" loading="lazy">
+            </div>
+        </div>
+    </div>
+
+    <a href="https://wa.me/522871520875?text=Hola%2C%20vengo%20de%20su%20sitio%20web.%20Necesito%20informaci%C3%B3n%20y%20ayuda%20sobre%20el%20internamiento."
+        class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+==========================================================================
+ARCHIVO: script.js
+RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperanza-Que-Necesito\script.js
+==========================================================================
+/* ==========================================================================
+   ARCHIVO MAESTRO DE SCRIPTS: SCRIPT.JS
+   PROYECTO: LA LUZ Y LA ESPERANZA QUE NECESITO
+   FECHA: 12/09/2025
+   ==========================================================================
+
+   TABLA DE CONTENIDO (MÓDULOS Y BLOQUES):
+   --------------------------------------------------
+   1.  INTERFAZ DE USUARIO (Menú Móvil y Scroll)
+   2.  EFECTOS VISUALES (Nieve)
+   3.  COMPONENTES (Modals y Popups)
+   4.  FORMULARIOS (Contacto y Validación)
+   5.  EJECUCIÓN PRINCIPAL (Inicializador)
+   ========================================================================== */
+
+/* ==========================================================================
+   [1] INICIO DEL BLOQUE: INTERFAZ DE USUARIO (UI)
+   FUENTE ORIGINAL: js/modules/ui.js
+   ========================================================================== */
+function initMobileMenu() {
+    const hamburger = document.querySelector('.hamburger-menu');
+    const nav = document.querySelector('.main-nav');
+    const links = document.querySelectorAll('.main-nav a');
+
+    if (hamburger && nav) {
+        hamburger.addEventListener('click', () => {
+            nav.classList.toggle('active');
+            const icon = hamburger.querySelector('i');
+            if (nav.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                nav.classList.remove('active');
+                const icon = hamburger.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            });
+        });
+    }
+}
+
+function initSmoothScroll() {
+    const headerHeight = 80;
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                e.preventDefault();
+                const elementPosition = targetElement.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - headerHeight;
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: "smooth"
+                });
+            }
+        });
+    });
+}
+/* ==========================================================================
+   [1] FIN DEL BLOQUE: INTERFAZ DE USUARIO (UI)
+   ========================================================================== */
+
+
+/* ==========================================================================
+   [2] INICIO DEL BLOQUE: EFECTOS VISUALES
+   FUENTE ORIGINAL: js/modules/effects.js
+   ========================================================================== */
+function initSnow() {
+    const container = document.getElementById('snow-container');
+    if (!container) return;
+
+    const count = 50;
+    for (let i = 0; i < count; i++) {
+        const flake = document.createElement('div');
+        flake.classList.add('snowflake');
+        flake.innerHTML = '❄';
+
+        const left = Math.random() * 100;
+        const animDuration = Math.random() * 5 + 5;
+        const animDelay = Math.random() * 5;
+        const size = Math.random() * 15 + 10;
+        const opacity = Math.random() * 0.5 + 0.3;
+
+        flake.style.left = left + '%';
+        flake.style.animationDuration = animDuration + 's';
+        flake.style.animationDelay = animDelay + 's';
+        flake.style.fontSize = size + 'px';
+        flake.style.opacity = opacity;
+
+        container.appendChild(flake);
+    }
+}
+/* ==========================================================================
+   [2] FIN DEL BLOQUE: EFECTOS VISUALES
+   ========================================================================== */
+
+
+/* ==========================================================================
+   [3] INICIO DEL BLOQUE: COMPONENTES (MODAL POSADA)
+   FUENTE ORIGINAL: js/modules/modal.js
+   ========================================================================== */
+function initPopup() {
+    const modal = document.getElementById('modal-posada');
+    const closeBtn = document.getElementById('close-modal-btn');
+
+    // Validación de seguridad: Si no existen los elementos, no hacer nada
+    if (modal && closeBtn) {
+
+        // 1. Mostrar automáticamente después de 1 segundo
+        setTimeout(() => {
+            modal.classList.add('active');
+        }, 1000);
+
+        // 2. Función Cerrar
+        const closeModal = () => {
+            modal.classList.remove('active');
+        };
+
+        // 3. Eventos
+        closeBtn.addEventListener('click', closeModal);
+
+        // Cerrar al dar clic fuera de la imagen
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                closeModal();
+            }
+        });
+
+        // Cerrar con tecla ESC
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modal.classList.contains('active')) {
+                closeModal();
+            }
+        });
+    } else {
+        console.warn("No se encontró el modal o el botón de cerrar en el HTML.");
+    }
+}
+/* ==========================================================================
+   [3] FIN DEL BLOQUE: COMPONENTES (MODAL POSADA)
+   ========================================================================== */
+
+
+/* ==========================================================================
+   [4] INICIO DEL BLOQUE: FORMULARIOS
+   FUENTE ORIGINAL: js/modules/forms.js
+   ========================================================================== */
+function initContactForm() {
+    const form = document.getElementById('contactForm');
+    const statusMsg = document.getElementById('form-status');
+
+    if (form) {
+        form.addEventListener("submit", async function (event) {
+            event.preventDefault();
+            const btn = form.querySelector('button[type="submit"]');
+            const data = new FormData(event.target);
+            const originalText = btn.textContent;
+
+            btn.disabled = true;
+            btn.innerHTML = 'Enviando... <i class="fas fa-spinner fa-spin"></i>';
+
+            try {
+                const response = await fetch(event.target.action, {
+                    method: form.method,
+                    body: data,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    statusMsg.innerHTML = '<i class="fas fa-check-circle"></i> ¡Gracias! Hemos recibido tu mensaje correctamente.';
+                    statusMsg.className = "status-msg success";
+                    form.reset();
+                } else {
+                    const errorData = await response.json();
+                    if (Object.hasOwn(errorData, 'errors')) {
+                        statusMsg.innerHTML = errorData.errors.map(error => error["message"]).join(", ");
+                    } else {
+                        statusMsg.innerHTML = '<i class="fas fa-exclamation-circle"></i> Ocurrió un error al enviar. Intenta de nuevo.';
+                    }
+                    statusMsg.className = "status-msg error";
+                }
+            } catch (error) {
+                statusMsg.innerHTML = '<i class="fas fa-wifi"></i> Error de conexión. Verifica tu internet.';
+                statusMsg.className = "status-msg error";
+            } finally {
+                btn.disabled = false;
+                btn.textContent = originalText;
+            }
+        });
+    }
+}
+/* ==========================================================================
+   [4] FIN DEL BLOQUE: FORMULARIOS
+   ========================================================================== */
+
+
+/* ==========================================================================
+   [5] INICIO DEL BLOQUE: EJECUCIÓN PRINCIPAL
+   FUENTE ORIGINAL: js/main.js
+   DESCRIPCIÓN: Orquestador que inicializa todos los módulos cuando el DOM está listo.
+   ========================================================================== */
+document.addEventListener('DOMContentLoaded', () => {
+    console.log('Sistema Monolítico Iniciando...');
+
+    // Inicialización de módulos
+    initMobileMenu();[cite_start]// [cite: 197]
+    initSmoothScroll();[cite_start]// [cite: 200]
+    initSnow();[cite_start]// [cite: 173]
+    initContactForm();[cite_start]// [cite: 179]
+    initPopup();[cite_start]// [cite: 190]
+});
+/* ==========================================================================
+   [5] FIN DEL BLOQUE: EJECUCIÓN PRINCIPAL
+   ========================================================================== */
+
+==========================================================================
+ARCHIVO: styles.css
+RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperanza-Que-Necesito\styles.css
+==========================================================================
+/* ==========================================================================
+   ARCHIVO MAESTRO DE ESTILOS: STYLES.CSS
+   PROYECTO: LA LUZ Y LA ESPERANZA QUE NECESITO
+   FECHA: 12/09/2025
+   ==========================================================================
+
+   TABLA DE CONTENIDO (MÓDULOS Y BLOQUES):
+   --------------------------------------------------
+   1.  VARIABLES GLOBALES (Base)
+   2.  RESET Y UTILIDADES (Base)
+   3.  HEADER Y NAVEGACIÓN (Layout)
+   4.  FOOTER (Layout)
+   5.  BOTONES (Componentes)
+   6.  EFECTOS VISUALES (Componentes)
+   7.  MODALES Y POPUPS (Componentes)
+   8.  SECCIÓN HERO (Secciones)
+   9.  CONTENIDO Y SERVICIOS (Secciones)
+   10. MÉTODO DE 4 PILARES (Secciones)
+   11. GALERÍA E INSTALACIONES (Secciones)
+   12. EQUIPO / STAFF (Secciones)
+   13. TESTIMONIOS (Secciones)
+   14. CONTACTO (Secciones)
+   15. RESPONSIVE DESIGN (Base - Override Final)
+   ========================================================================== */
+
+/* ==========================================================================
+   [1] INICIO DEL BLOQUE: VARIABLES GLOBALES
+   FUENTE ORIGINAL: css/base/_variables.css
+   ========================================================================== */
+:root {
+    /* Paleta de Colores "Medical Luxury" */
+    --primary: #0F2C59;
+    --secondary: #3E6D9C;
+    --gold: #D4AF37;
+    --red-christmas: #C92C2C;
+    /* Neutrales */
+    --text: #333333;
+    --text-light: #666666;
+    --bg-light: #F8F9FA;
+    --white: #FFFFFF;
+    /* Tipografía */
+    --font-head: 'Montserrat', sans-serif;
+    --font-body: 'Lato', sans-serif;
+    /* Efectos */
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    --radius: 12px;
+}
+
+/* ==========================================================================
+   [1] FIN DEL BLOQUE: VARIABLES GLOBALES
+   ========================================================================== */
+
+
+/* ==========================================================================
+   [2] INICIO DEL BLOQUE: RESET Y UTILIDADES
+   FUENTE ORIGINAL: css/base/_reset.css
+   ========================================================================== */
 * {
     margin: 0;
     padding: 0;
@@ -248,340 +1054,81 @@ ul {
     box-shadow: var(--shadow);
 }
 
-==========================================================================
-ARCHIVO: _responsive.css
-RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperanza-Que-Necesito\css\base\_responsive.css
-==========================================================================
-@media (max-width: 992px) {
-
-    .grid-2-col,
-    .method-row,
-    .method-row.reverse,
-    .contact-layout {
-        grid-template-columns: 1fr;
-        flex-direction: column;
-    }
-
-    .hero-content h1 {
-        font-size: 2.8rem;
-    }
-
-    .gallery-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .stacked-images {
-        height: 350px;
-        margin-top: 40px;
-    }
-
-    .img-main,
-    .img-secondary {
-        position: relative;
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .contact-info-box {
-        padding-right: 0;
-        margin-bottom: 50px;
-    }
-}
-
-@media (max-width: 768px) {
-    .main-nav {
-        display: none;
-        position: absolute;
-        top: 80px;
-        left: 0;
-        width: 100%;
-        background: var(--white);
-        flex-direction: column;
-        padding: 30px;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    }
-
-    .main-nav.active {
-        display: flex;
-    }
-
-    .main-nav ul {
-        flex-direction: column;
-        width: 100%;
-        gap: 20px;
-    }
-
-    .hamburger-menu {
-        display: block;
-    }
-
-    .hero-buttons {
-        flex-direction: column;
-    }
-
-    .section-title {
-        font-size: 2rem;
-    }
-
-    .gallery-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* =========================================
-   CORRECCIÓN CRÍTICA PARA IOS (IPHONE/IPAD)
-   ========================================= */
-@media (hover: none) and (pointer: coarse) {
-
-    /* Desactiva el parallax en pantallas táctiles para evitar zoom excesivo */
-    .hero-bg-img,
-    .testimonials-section {
-        background-attachment: scroll !important;
-        background-size: cover !important;
-        background-position: center center !important;
-    }
-}
-
-/* Ajuste de Imágenes Generales en Móvil */
-@media (max-width: 768px) {
-
-    /* Asegura que ninguna imagen se desborde o deforme */
-    img {
-        width: 100%;
-        height: auto !important;
-        /* Fuerza la proporción natural */
-        object-fit: cover;
-    }
-
-    /* Excepción para galería y staff que necesitan altura fija */
-    .gallery-item img,
-    .staff-photo img,
-    .card-img img {
-        height: 100% !important;
-        /* Aquí sí respetamos el contenedor */
-    }
-}
-
-==========================================================================
-ARCHIVO: _variables.css
-RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperanza-Que-Necesito\css\base\_variables.css
-==========================================================================
-:root {
-    /* Paleta de Colores "Medical Luxury" */
-    --primary: #0F2C59;
-    --secondary: #3E6D9C;
-    --gold: #D4AF37;
-    --red-christmas: #C92C2C;
-    /* Neutrales */
-    --text: #333333;
-    --text-light: #666666;
-    --bg-light: #F8F9FA;
-    --white: #FFFFFF;
-    /* Tipografía */
-    --font-head: 'Montserrat', sans-serif;
-    --font-body: 'Lato', sans-serif;
-    /* Efectos */
-    --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-    --radius: 12px;
-}
-
-==========================================================================
-ARCHIVO: _buttons.css
-RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperanza-Que-Necesito\css\components\_buttons.css
-==========================================================================
-.btn {
-    display: inline-block;
-    padding: 12px 35px;
-    border-radius: 50px;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 0.9rem;
-    cursor: pointer;
-    border: 2px solid transparent;
-}
-
-.btn-primary {
-    background: var(--primary);
-    color: var(--white);
-}
-
-.btn-primary:hover {
-    background: var(--secondary);
-    transform: translateY(-2px);
-}
-
-.btn-gold {
-    background: var(--gold);
-    color: var(--white);
-}
-
-.btn-gold:hover {
-    background: #b5952f;
-    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
-    transform: translateY(-2px);
-}
-
-.btn-outline-light {
-    border: 2px solid var(--white);
-    color: var(--white);
-}
-
-.btn-outline-light:hover {
-    background: var(--white);
-    color: var(--primary);
-}
-
-.btn-outline-dark {
-    border: 2px solid var(--primary);
-    color: var(--primary);
-}
-
-.btn-outline-dark:hover {
-    background: var(--primary);
-    color: var(--white);
-}
-
-.pulse-effect {
-    animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-    0% {
-        box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.7);
-    }
-
-    70% {
-        box-shadow: 0 0 0 10px rgba(212, 175, 55, 0);
-    }
-
-    100% {
-        box-shadow: 0 0 0 0 rgba(212, 175, 55, 0);
-    }
-}
-
-==========================================================================
-ARCHIVO: _effects.css
-RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperanza-Que-Necesito\css\components\_effects.css
-==========================================================================
-.snowflake {
-    position: fixed;
-    top: -10px;
-    color: #fff;
-    font-size: 1em;
-    pointer-events: none;
-    z-index: 9999;
-    animation: fall linear infinite;
-    text-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
-}
-
-@keyframes fall {
-    to {
-        transform: translateY(105vh);
-    }
-}
-
-==========================================================================
-ARCHIVO: _modals.css
-RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperanza-Que-Necesito\css\components\_modals.css
-==========================================================================
 /* ==========================================================================
-   COMPONENTE: MODALES Y POPUPS
+   [2] FIN DEL BLOQUE: RESET Y UTILIDADES
    ========================================================================== */
 
-.modal-overlay {
+
+/* ==========================================================================
+   [3] INICIO DEL BLOQUE: HEADER Y NAVEGACIÓN
+   FUENTE ORIGINAL: css/layout/_header.css
+   ========================================================================== */
+.main-header {
     position: fixed;
     top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.85);
-    z-index: 2000;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid var(--gold);
+    backdrop-filter: blur(10px);
+}
+
+.header-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    opacity: 0;
-    visibility: hidden;
-    /* Por defecto está oculto */
-    transition: all 0.4s ease;
+    height: 80px;
 }
 
-.modal-overlay.active {
-    opacity: 1;
-    visibility: visible;
+.logo-img {
+    height: 60px;
 }
 
-.modal-content {
-    position: relative;
-    background: transparent;
-    max-width: 450px;
-    width: 100%;
-    border-radius: var(--radius);
-    transform: scale(0.8);
-    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-}
-
-.modal-overlay.active .modal-content {
-    transform: scale(1);
-}
-
-.modal-image {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: var(--radius);
-    border: 2px solid var(--gold);
-}
-
-/* BOTÓN CERRAR (Medical Luxury Style) */
-.modal-close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: var(--primary);
-    color: var(--gold);
-    border: 1px solid var(--gold);
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    z-index: 2001;
+.main-nav ul {
     display: flex;
+    gap: 25px;
     align-items: center;
-    justify-content: center;
-    transition: 0.3s;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
 
-.modal-close:hover {
-    background: var(--white);
+.main-nav a {
     color: var(--primary);
-    border-color: var(--primary);
-    transform: rotate(90deg);
+    font-weight: 600;
+    font-size: 0.95rem;
+    position: relative;
 }
 
-/* Ajuste Móvil */
-@media (max-width: 480px) {
-    .modal-content {
-        max-width: 100%;
-    }
-
-    .modal-close {
-        width: 42px;
-        height: 42px;
-        font-size: 20px;
-        top: 15px;
-        right: 15px;
-        background: rgba(15, 44, 89, 0.95);
-    }
+.main-nav a:hover {
+    color: var(--gold);
 }
 
-==========================================================================
-ARCHIVO: _footer.css
-RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperanza-Que-Necesito\css\layout\_footer.css
-==========================================================================
+.nav-cta {
+    background: var(--primary);
+    color: var(--white) !important;
+    padding: 8px 20px;
+    border-radius: 20px;
+}
+
+.nav-cta:hover {
+    background: var(--gold);
+}
+
+.hamburger-menu {
+    display: none;
+    font-size: 1.5rem;
+    color: var(--primary);
+    cursor: pointer;
+}
+
+/* ==========================================================================
+   [3] FIN DEL BLOQUE: HEADER Y NAVEGACIÓN
+   ========================================================================== */
+
+
+/* ==========================================================================
+   [4] INICIO DEL BLOQUE: FOOTER
+   FUENTE ORIGINAL: css/layout/_footer.css
+   ========================================================================== */
 .main-footer {
     background: #051021;
     color: #b0b0b0;
@@ -693,71 +1240,772 @@ RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperan
     transform: scale(1.1);
 }
 
-==========================================================================
-ARCHIVO: _header.css
-RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperanza-Que-Necesito\css\layout\_header.css
-==========================================================================
-.main-header {
+/* ==========================================================================
+   [4] FIN DEL BLOQUE: FOOTER
+   ========================================================================== */
+
+
+/* ==========================================================================
+   [5] INICIO DEL BLOQUE: BOTONES
+   FUENTE ORIGINAL: css/components/_buttons.css
+   ========================================================================== */
+.btn {
+    display: inline-block;
+    padding: 12px 35px;
+    border-radius: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.btn-primary {
+    background: var(--primary);
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    background: var(--secondary);
+    transform: translateY(-2px);
+}
+
+.btn-gold {
+    background: var(--gold);
+    color: var(--white);
+}
+
+.btn-gold:hover {
+    background: #b5952f;
+    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
+    transform: translateY(-2px);
+}
+
+.btn-outline-light {
+    border: 2px solid var(--white);
+    color: var(--white);
+}
+
+.btn-outline-light:hover {
+    background: var(--white);
+    color: var(--primary);
+}
+
+.btn-outline-dark {
+    border: 2px solid var(--primary);
+    color: var(--primary);
+}
+
+.btn-outline-dark:hover {
+    background: var(--primary);
+    color: var(--white);
+}
+
+.pulse-effect {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.7);
+    }
+
+    70% {
+        box-shadow: 0 0 0 10px rgba(212, 175, 55, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(212, 175, 55, 0);
+    }
+}
+
+/* ==========================================================================
+   [5] FIN DEL BLOQUE: BOTONES
+   ========================================================================== */
+
+
+/* ==========================================================================
+   [6] INICIO DEL BLOQUE: EFECTOS VISUALES
+   FUENTE ORIGINAL: css/components/_effects.css
+   ========================================================================== */
+.snowflake {
+    position: fixed;
+    top: -10px;
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+    z-index: 9999;
+    animation: fall linear infinite;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(105vh);
+    }
+}
+
+/* ==========================================================================
+   [6] FIN DEL BLOQUE: EFECTOS VISUALES
+   ========================================================================== */
+
+
+/* ==========================================================================
+   [7] INICIO DEL BLOQUE: MODALES Y POPUPS
+   FUENTE ORIGINAL: css/components/_modals.css
+   ========================================================================== */
+.modal-overlay {
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
-    z-index: 1000;
-    background: rgba(255, 255, 255, 0.98);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    border-bottom: 3px solid var(--gold);
-    backdrop-filter: blur(10px);
-}
-
-.header-container {
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 2000;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    height: 80px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease;
 }
 
-.logo-img {
-    height: 60px;
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
 }
 
-.main-nav ul {
+.modal-content {
+    position: relative;
+    background: transparent;
+    max-width: 450px;
+    width: 100%;
+    border-radius: var(--radius);
+    transform: scale(0.8);
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.modal-overlay.active .modal-content {
+    transform: scale(1);
+}
+
+.modal-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: var(--radius);
+    border: 2px solid var(--gold);
+}
+
+/* BOTÓN CERRAR (Medical Luxury Style) */
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: var(--primary);
+    color: var(--gold);
+    border: 1px solid var(--gold);
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 2001;
     display: flex;
-    gap: 25px;
     align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
 
-.main-nav a {
+.modal-close:hover {
+    background: var(--white);
     color: var(--primary);
-    font-weight: 600;
-    font-size: 0.95rem;
+    border-color: var(--primary);
+    transform: rotate(90deg);
+}
+
+/* Ajuste Móvil para Modal */
+@media (max-width: 480px) {
+    .modal-content {
+        max-width: 100%;
+    }
+
+    .modal-close {
+        width: 42px;
+        height: 42px;
+        font-size: 20px;
+        top: 15px;
+        right: 15px;
+        background: rgba(15, 44, 89, 0.95);
+    }
+}
+
+/* ==========================================================================
+   [7] FIN DEL BLOQUE: MODALES Y POPUPS
+   ========================================================================== */
+
+
+/* ==========================================================================
+   [8] INICIO DEL BLOQUE: SECCIÓN HERO
+   FUENTE ORIGINAL: css/sections/_hero.css
+   ========================================================================== */
+.hero-section {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+    color: var(--white);
+    text-align: center;
+}
+
+.hero-bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: -2;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(15, 44, 89, 0.85), rgba(15, 44, 89, 0.7));
+    z-index: -1;
+}
+
+.hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+    z-index: 1;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    color: var(--white);
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.badge-christmas {
+    display: inline-block;
+    background: var(--red-christmas);
+    color: var(--white);
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    box-shadow: 0 0 15px rgba(201, 44, 44, 0.6);
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* ==========================================================================
+   [8] FIN DEL BLOQUE: SECCIÓN HERO
+   ========================================================================== */
+
+
+/* ==========================================================================
+   [9] INICIO DEL BLOQUE: CONTENIDO Y SERVICIOS
+   FUENTE ORIGINAL: css/sections/_content.css
+   ========================================================================== */
+.grid-2-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.section-subtitle {
+    display: block;
+    color: var(--gold);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+.section-title {
+    font-size: 2.5rem;
+}
+
+.lead-text {
+    font-size: 1.15rem;
+    color: var(--text);
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.features-list {
+    margin-top: 30px;
+}
+
+.feature-item {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.feature-item i {
+    font-size: 2rem;
+    color: var(--secondary);
+    background: rgba(62, 109, 156, 0.1);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.images-column {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: auto;
+}
+
+.images-column img {
+    width: 100%;
+    border-radius: var(--radius);
+    border: 5px solid var(--white);
+    position: relative;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+}
+
+.images-column img:hover {
+    transform: translateY(-5px);
+}
+
+.grid-3-col {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.service-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: 0.3s;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.card-img {
+    height: 220px;
+    overflow: hidden;
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.service-card:hover .card-img img {
+    transform: scale(1.1);
+}
+
+.card-content {
+    padding: 30px;
+}
+
+.card-content h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+/* ==========================================================================
+   [9] FIN DEL BLOQUE: CONTENIDO Y SERVICIOS
+   ========================================================================== */
+
+
+/* ==========================================================================
+   [10] INICIO DEL BLOQUE: MÉTODO DE 4 PILARES
+   FUENTE ORIGINAL: css/sections/_method.css
+   ========================================================================== */
+.method-section {
+    background: var(--primary);
+    color: var(--white);
     position: relative;
 }
 
-.main-nav a:hover {
+.method-section h2 {
+    color: var(--white);
+}
+
+.method-row {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 80px;
+}
+
+.method-row:last-child {
+    margin-bottom: 0;
+}
+
+.method-row.reverse {
+    flex-direction: row-reverse;
+}
+
+.method-content {
+    flex: 1;
+}
+
+.method-content h3 {
+    color: var(--gold);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.method-content p {
+    font-size: 1.05rem;
+    opacity: 0.9;
+    margin-bottom: 20px;
+}
+
+.check-list li {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1rem;
+}
+
+.check-list i {
     color: var(--gold);
 }
 
-.nav-cta {
-    background: var(--primary);
-    color: var(--white) !important;
-    padding: 8px 20px;
-    border-radius: 20px;
+.method-visual {
+    flex: 1;
+    border-radius: var(--radius);
+    overflow: hidden;
+    border: 4px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
 }
 
-.nav-cta:hover {
-    background: var(--gold);
+.method-visual img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
-.hamburger-menu {
-    display: none;
-    font-size: 1.5rem;
+.video-container video {
+    width: 100%;
+    border-radius: var(--radius);
+    display: block;
+}
+
+.video-caption {
+    display: block;
+    text-align: center;
+    font-size: 0.85rem;
+    padding-top: 10px;
+    opacity: 0.7;
+    font-style: italic;
+}
+
+/* ==========================================================================
+   [10] FIN DEL BLOQUE: MÉTODO DE 4 PILARES
+   ========================================================================== */
+
+
+/* ==========================================================================
+   [11] INICIO DEL BLOQUE: GALERÍA E INSTALACIONES
+   FUENTE ORIGINAL: css/sections/_gallery.css
+   ========================================================================== */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.gallery-item {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    height: 300px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border: 4px solid var(--white);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.15);
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(15, 44, 89, 0.95), rgba(15, 44, 89, 0.6));
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: 0.4s ease;
+    padding: 20px;
+    backdrop-filter: blur(2px);
+}
+
+.gallery-item:hover .overlay {
+    opacity: 1;
+}
+
+.overlay i {
+    color: var(--gold);
+    margin-bottom: 15px;
+}
+
+.overlay h4 {
+    color: var(--white);
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.overlay p {
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+
+/* ==========================================================================
+   [11] FIN DEL BLOQUE: GALERÍA E INSTALACIONES
+   ========================================================================== */
+
+
+/* ==========================================================================
+   [12] INICIO DEL BLOQUE: EQUIPO / STAFF
+   FUENTE ORIGINAL: css/sections/_staff.css
+   ========================================================================== */
+.staff-category {
+    margin-bottom: 60px;
+}
+
+.staff-category h3 {
+    border-bottom: 3px solid var(--gold);
+    display: inline-block;
+    padding-bottom: 8px;
+    margin-bottom: 40px;
+    font-size: 1.8rem;
+    color: var(--secondary);
+}
+
+.staff-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 40px;
+}
+
+.small-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+.staff-card {
+    background: var(--white);
+    padding: 30px 20px;
+    border-radius: var(--radius);
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: 0.3s;
+    border: 1px solid #eee;
+}
+
+.staff-card:hover {
+    transform: translateY(-8px);
+    border-bottom: 4px solid var(--gold);
+}
+
+.staff-photo {
+    width: 140px;
+    height: 140px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid var(--bg-light);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.staff-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.staff-card h4 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
     color: var(--primary);
-    cursor: pointer;
 }
 
-==========================================================================
-ARCHIVO: _contact.css
-RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperanza-Que-Necesito\css\sections\_contact.css
-==========================================================================
+.role {
+    display: block;
+    font-size: 0.95rem;
+    color: var(--text-light);
+    font-weight: 600;
+}
+
+.staff-card.mini {
+    padding: 20px 15px;
+}
+
+.staff-card.mini .staff-photo {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+    border-width: 3px;
+}
+
+.staff-card.mini h4 {
+    font-size: 1rem;
+}
+
+.staff-card.mini .role {
+    font-size: 0.85rem;
+}
+
+/* ==========================================================================
+   [12] FIN DEL BLOQUE: EQUIPO / STAFF
+   ========================================================================== */
+
+
+/* ==========================================================================
+   [13] INICIO DEL BLOQUE: TESTIMONIOS
+   FUENTE ORIGINAL: css/sections/_testimonials.css
+   ========================================================================== */
+/* Nota: hero-bg-img ya fue definido en HERO, pero si hay conflictos, esto es una redefinición local */
+.testimonials-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.testimonial-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    padding: 40px 30px;
+    border-radius: var(--radius);
+    max-width: 350px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    transition: 0.3s;
+}
+
+.testimonial-card:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-5px);
+}
+
+.user-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: var(--gold);
+}
+
+.testimonio-text {
+    font-style: italic;
+    margin-bottom: 25px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.stars {
+    color: var(--gold);
+    margin-bottom: 15px;
+    letter-spacing: 3px;
+}
+
+cite {
+    font-weight: 700;
+    display: block;
+    font-size: 1.1rem;
+}
+
+.rehab-time {
+    font-weight: 400;
+    font-size: 0.85rem;
+    opacity: 0.8;
+    display: block;
+    margin-top: 5px;
+}
+
+.donation-card {
+    background: var(--white);
+    padding: 50px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    border: 2px dashed var(--gold);
+    display: inline-block;
+    max-width: 800px;
+    margin-top: 20px;
+}
+
+.icon-gold {
+    color: var(--gold);
+    margin-bottom: 20px;
+}
+
+/* ==========================================================================
+   [13] FIN DEL BLOQUE: TESTIMONIOS
+   ========================================================================== */
+
+
+/* ==========================================================================
+   [14] INICIO DEL BLOQUE: CONTACTO
+   FUENTE ORIGINAL: css/sections/_contact.css
+   ========================================================================== */
 .contact-layout {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -935,1491 +2183,126 @@ RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperan
     box-shadow: 0 0 0 4px rgba(62, 109, 156, 0.1);
 }
 
-==========================================================================
-ARCHIVO: _content.css
-RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperanza-Que-Necesito\css\sections\_content.css
-==========================================================================
-.grid-2-col {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    align-items: center;
-}
-
-.section-subtitle {
-    display: block;
-    color: var(--gold);
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 10px;
-    font-size: 0.9rem;
-}
-
-.section-title {
-    font-size: 2.5rem;
-}
-
-.lead-text {
-    font-size: 1.15rem;
-    color: var(--text);
-    margin-bottom: 20px;
-    font-weight: 400;
-}
-
-.features-list {
-    margin-top: 30px;
-}
-
-.feature-item {
-    display: flex;
-    gap: 15px;
-    margin-bottom: 25px;
-}
-
-.feature-item i {
-    font-size: 2rem;
-    color: var(--secondary);
-    background: rgba(62, 109, 156, 0.1);
-    width: 60px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-}
-
-.images-column {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    height: auto;
-}
-
-.images-column img {
-    width: 100%;
-    border-radius: var(--radius);
-    border: 5px solid var(--white);
-    position: relative;
-    box-shadow: var(--shadow);
-    transition: transform 0.3s ease;
-}
-
-.images-column img:hover {
-    transform: translateY(-5px);
-}
-
-.grid-3-col {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 30px;
-    margin-top: 50px;
-}
-
-.service-card {
-    background: var(--white);
-    border-radius: var(--radius);
-    overflow: hidden;
-    box-shadow: var(--shadow);
-    transition: 0.3s;
-    border: 1px solid rgba(0, 0, 0, 0.05);
-}
-
-.service-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
-}
-
-.card-img {
-    height: 220px;
-    overflow: hidden;
-}
-
-.card-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: 0.5s;
-}
-
-.service-card:hover .card-img img {
-    transform: scale(1.1);
-}
-
-.card-content {
-    padding: 30px;
-}
-
-.card-content h3 {
-    font-size: 1.4rem;
-    margin-bottom: 10px;
-}
-
-==========================================================================
-ARCHIVO: _gallery.css
-RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperanza-Que-Necesito\css\sections\_gallery.css
-==========================================================================
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    margin-top: 50px;
-}
-
-.gallery-item {
-    position: relative;
-    border-radius: 15px;
-    overflow: hidden;
-    height: 300px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    border: 4px solid var(--white);
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
-}
-
-.gallery-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-    z-index: 2;
-}
-
-.gallery-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.6s ease;
-}
-
-.gallery-item:hover img {
-    transform: scale(1.15);
-}
-
-.overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(to top, rgba(15, 44, 89, 0.95), rgba(15, 44, 89, 0.6));
-    color: var(--white);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    opacity: 0;
-    transition: 0.4s ease;
-    padding: 20px;
-    backdrop-filter: blur(2px);
-}
-
-.gallery-item:hover .overlay {
-    opacity: 1;
-}
-
-.overlay i {
-    color: var(--gold);
-    margin-bottom: 15px;
-}
-
-.overlay h4 {
-    color: var(--white);
-    font-size: 1.4rem;
-    margin-bottom: 10px;
-    font-weight: 700;
-}
-
-.overlay p {
-    font-size: 0.95rem;
-    opacity: 0.9;
-}
-
-==========================================================================
-ARCHIVO: _hero.css
-RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperanza-Que-Necesito\css\sections\_hero.css
-==========================================================================
-.hero-section {
-    height: 100vh;
-    position: relative;
-    display: flex;
-    align-items: center;
-    margin-top: 80px;
-    color: var(--white);
-    text-align: center;
-}
-
-.hero-bg-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    /* CRÍTICO: Recorta, no estira */
-    object-position: center;
-    /* Centra la imagen */
-    z-index: -2;
-}
-
-.hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(15, 44, 89, 0.85), rgba(15, 44, 89, 0.7));
-    z-index: -1;
-}
-
-.hero-content {
-    max-width: 900px;
-    margin: 0 auto;
-    z-index: 1;
-    padding: 0 20px;
-}
-
-.hero-content h1 {
-    font-size: 3.5rem;
-    color: var(--white);
-    line-height: 1.2;
-    margin-bottom: 20px;
-}
-
-.hero-subtitle {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-    opacity: 0.9;
-}
-
-.badge-christmas {
-    display: inline-block;
-    background: var(--red-christmas);
-    color: var(--white);
-    padding: 8px 20px;
-    border-radius: 50px;
-    font-weight: 700;
-    margin-bottom: 25px;
-    box-shadow: 0 0 15px rgba(201, 44, 44, 0.6);
-    font-size: 0.9rem;
-    letter-spacing: 0.5px;
-}
-
-.hero-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-==========================================================================
-ARCHIVO: _method.css
-RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperanza-Que-Necesito\css\sections\_method.css
-==========================================================================
-.method-section {
-    background: var(--primary);
-    color: var(--white);
-    position: relative;
-}
-
-.method-section h2 {
-    color: var(--white);
-}
-
-.method-row {
-    display: flex;
-    align-items: center;
-    gap: 60px;
-    margin-bottom: 80px;
-}
-
-.method-row:last-child {
-    margin-bottom: 0;
-}
-
-.method-row.reverse {
-    flex-direction: row-reverse;
-}
-
-.method-content {
-    flex: 1;
-}
-
-.method-content h3 {
-    color: var(--gold);
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.method-content p {
-    font-size: 1.05rem;
-    opacity: 0.9;
-    margin-bottom: 20px;
-}
-
-.check-list li {
-    margin-bottom: 12px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    font-size: 1rem;
-}
-
-.check-list i {
-    color: var(--gold);
-}
-
-.method-visual {
-    flex: 1;
-    border-radius: var(--radius);
-    overflow: hidden;
-    border: 4px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
-}
-
-.method-visual img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.video-container video {
-    width: 100%;
-    border-radius: var(--radius);
-    display: block;
-}
-
-.video-caption {
-    display: block;
-    text-align: center;
-    font-size: 0.85rem;
-    padding-top: 10px;
-    opacity: 0.7;
-    font-style: italic;
-}
-
-==========================================================================
-ARCHIVO: _staff.css
-RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperanza-Que-Necesito\css\sections\_staff.css
-==========================================================================
-.staff-category {
-    margin-bottom: 60px;
-}
-
-.staff-category h3 {
-    border-bottom: 3px solid var(--gold);
-    display: inline-block;
-    padding-bottom: 8px;
-    margin-bottom: 40px;
-    font-size: 1.8rem;
-    color: var(--secondary);
-}
-
-.staff-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 40px;
-}
-
-.small-grid {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 30px;
-}
-
-.staff-card {
-    background: var(--white);
-    padding: 30px 20px;
-    border-radius: var(--radius);
-    text-align: center;
-    box-shadow: var(--shadow);
-    transition: 0.3s;
-    border: 1px solid #eee;
-}
-
-.staff-card:hover {
-    transform: translateY(-8px);
-    border-bottom: 4px solid var(--gold);
-}
-
-.staff-photo {
-    width: 140px;
-    height: 140px;
-    margin: 0 auto 20px;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 4px solid var(--bg-light);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.staff-photo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.staff-card h4 {
-    font-size: 1.2rem;
-    margin-bottom: 5px;
-    color: var(--primary);
-}
-
-.role {
-    display: block;
-    font-size: 0.95rem;
-    color: var(--text-light);
-    font-weight: 600;
-}
-
-.staff-card.mini {
-    padding: 20px 15px;
-}
-
-.staff-card.mini .staff-photo {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 15px;
-    border-width: 3px;
-}
-
-.staff-card.mini h4 {
-    font-size: 1rem;
-}
-
-.staff-card.mini .role {
-    font-size: 0.85rem;
-}
-
-==========================================================================
-ARCHIVO: _testimonials.css
-RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperanza-Que-Necesito\css\sections\_testimonials.css
-==========================================================================
-.hero-bg-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    /* CRÍTICO: Recorta, no estira */
-    object-position: center;
-    /* Centra la imagen */
-    z-index: -2;
-}
-
-.testimonials-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 50px;
-}
-
-.testimonial-card {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(8px);
-    padding: 40px 30px;
-    border-radius: var(--radius);
-    max-width: 350px;
-    text-align: center;
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    transition: 0.3s;
-}
-
-.testimonial-card:hover {
-    background: rgba(255, 255, 255, 0.15);
-    transform: translateY(-5px);
-}
-
-.user-icon {
-    font-size: 3rem;
-    margin-bottom: 20px;
-    color: var(--gold);
-}
-
-.testimonio-text {
-    font-style: italic;
-    margin-bottom: 25px;
-    font-size: 1rem;
-    line-height: 1.6;
-}
-
-.stars {
-    color: var(--gold);
-    margin-bottom: 15px;
-    letter-spacing: 3px;
-}
-
-cite {
-    font-weight: 700;
-    display: block;
-    font-size: 1.1rem;
-}
-
-.rehab-time {
-    font-weight: 400;
-    font-size: 0.85rem;
-    opacity: 0.8;
-    display: block;
-    margin-top: 5px;
-}
-
-.donation-card {
-    background: var(--white);
-    padding: 50px;
-    border-radius: var(--radius);
-    box-shadow: var(--shadow);
-    border: 2px dashed var(--gold);
-    display: inline-block;
-    max-width: 800px;
-    margin-top: 20px;
-}
-
-.icon-gold {
-    color: var(--gold);
-    margin-bottom: 20px;
-}
-
-==========================================================================
-ARCHIVO: main.css
-RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperanza-Que-Necesito\css\main.css
-==========================================================================
 /* ==========================================================================
-   MAIN.CSS - ARCHIVO MAESTRO DE ESTILOS
+   [14] FIN DEL BLOQUE: CONTACTO
    ========================================================================== */
 
-/* 1. Base */
-@import url('base/_variables.css');
-@import url('base/_reset.css');
-@import url('base/_responsive.css');
 
-/* 2. Layout */
-@import url('layout/_header.css');
-@import url('layout/_footer.css');
+/* ==========================================================================
+   [15] INICIO DEL BLOQUE: RESPONSIVE DESIGN
+   FUENTE ORIGINAL: css/base/_responsive.css
+   NOTA: Se ha movido al final para asegurar la prioridad en cascada.
+   ========================================================================== */
+@media (max-width: 992px) {
 
-/* 3. Componentes */
-@import url('components/_buttons.css');
-@import url('components/_effects.css');
-/* [CRÍTICO] Esta línea conecta el modal 👇 */
-@import url('components/_modals.css');
+    .grid-2-col,
+    .method-row,
+    .method-row.reverse,
+    .contact-layout {
+        grid-template-columns: 1fr;
+        flex-direction: column;
+    }
 
-/* 4. Secciones */
-@import url('sections/_hero.css');
-@import url('sections/_content.css');
-@import url('sections/_method.css');
-@import url('sections/_gallery.css');
-@import url('sections/_staff.css');
-@import url('sections/_testimonials.css');
-@import url('sections/_contact.css');
+    .hero-content h1 {
+        font-size: 2.8rem;
+    }
 
-==========================================================================
-ARCHIVO: effects.js
-RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperanza-Que-Necesito\js\modules\effects.js
-==========================================================================
-/* MÓDULO: EFECTOS VISUALES */
-export function initSnow() {
-    const container = document.getElementById('snow-container');
-    if (!container) return;
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
-    const count = 50;
-    for (let i = 0; i < count; i++) {
-        const flake = document.createElement('div');
-        flake.classList.add('snowflake');
-        flake.innerHTML = '❄';
+    .stacked-images {
+        height: 350px;
+        margin-top: 40px;
+    }
 
-        const left = Math.random() * 100;
-        const animDuration = Math.random() * 5 + 5;
-        const animDelay = Math.random() * 5;
-        const size = Math.random() * 15 + 10;
-        const opacity = Math.random() * 0.5 + 0.3;
+    .img-main,
+    .img-secondary {
+        position: relative;
+        width: 100%;
+        margin-bottom: 20px;
+    }
 
-        flake.style.left = left + '%';
-        flake.style.animationDuration = animDuration + 's';
-        flake.style.animationDelay = animDelay + 's';
-        flake.style.fontSize = size + 'px';
-        flake.style.opacity = opacity;
-
-        container.appendChild(flake);
+    .contact-info-box {
+        padding-right: 0;
+        margin-bottom: 50px;
     }
 }
 
-==========================================================================
-ARCHIVO: forms.js
-RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperanza-Que-Necesito\js\modules\forms.js
-==========================================================================
-/* MÓDULO: FORMULARIOS */
-export function initContactForm() {
-    const form = document.getElementById('contactForm');
-    const statusMsg = document.getElementById('form-status');
+@media (max-width: 768px) {
+    .main-nav {
+        display: none;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: var(--white);
+        flex-direction: column;
+        padding: 30px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
 
-    if (form) {
-        form.addEventListener("submit", async function (event) {
-            event.preventDefault();
-            const btn = form.querySelector('button[type="submit"]');
-            const data = new FormData(event.target);
-            const originalText = btn.textContent;
+    .main-nav.active {
+        display: flex;
+    }
 
-            btn.disabled = true;
-            btn.innerHTML = 'Enviando... <i class="fas fa-spinner fa-spin"></i>';
+    .main-nav ul {
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+    }
 
-            try {
-                const response = await fetch(event.target.action, {
-                    method: form.method,
-                    body: data,
-                    headers: { 'Accept': 'application/json' }
-                });
+    .hamburger-menu {
+        display: block;
+    }
 
-                if (response.ok) {
-                    statusMsg.innerHTML = '<i class="fas fa-check-circle"></i> ¡Gracias! Hemos recibido tu mensaje correctamente.';
-                    statusMsg.className = "status-msg success";
-                    form.reset();
-                } else {
-                    const errorData = await response.json();
-                    if (Object.hasOwn(errorData, 'errors')) {
-                        statusMsg.innerHTML = errorData.errors.map(error => error["message"]).join(", ");
-                    } else {
-                        // CORRECCIÓN: El texto debe estar en una sola línea
-                        statusMsg.innerHTML = '<i class="fas fa-exclamation-circle"></i> Ocurrió un error al enviar. Intenta de nuevo.';
-                    }
-                    statusMsg.className = "status-msg error";
-                }
-            } catch (error) {
-                // CORRECCIÓN: El texto debe estar en una sola línea
-                statusMsg.innerHTML = '<i class="fas fa-wifi"></i> Error de conexión. Verifica tu internet.';
-                statusMsg.className = "status-msg error";
-            } finally {
-                btn.disabled = false;
-                btn.textContent = originalText;
-            }
-        });
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
     }
 }
 
-==========================================================================
-ARCHIVO: modal.js
-RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperanza-Que-Necesito\js\modules\modal.js
-==========================================================================
-/* MÓDULO: MODAL POSADA */
-export function initPopup() {
-    const modal = document.getElementById('modal-posada');
-    const closeBtn = document.getElementById('close-modal-btn');
+/* =========================================
+   CORRECCIÓN CRÍTICA PARA IOS (IPHONE/IPAD)
+   ========================================= */
+@media (hover: none) and (pointer: coarse) {
 
-    // Validación de seguridad: Si no existen los elementos, no hacer nada
-    if (modal && closeBtn) {
-
-        // 1. Mostrar automáticamente después de 1 segundo
-        setTimeout(() => {
-            modal.classList.add('active');
-        }, 1000);
-
-        // 2. Función Cerrar
-        const closeModal = () => {
-            modal.classList.remove('active');
-        };
-
-        // 3. Eventos
-        closeBtn.addEventListener('click', closeModal);
-
-        // Cerrar al dar clic fuera de la imagen
-        modal.addEventListener('click', (e) => {
-            if (e.target === modal) {
-                closeModal();
-            }
-        });
-
-        // Cerrar con tecla ESC
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape' && modal.classList.contains('active')) {
-                closeModal();
-            }
-        });
-    } else {
-        console.warn("No se encontró el modal o el botón de cerrar en el HTML.");
+    /* Desactiva el parallax en pantallas táctiles para evitar zoom excesivo */
+    .hero-bg-img,
+    .testimonials-section {
+        background-attachment: scroll !important;
+        background-size: cover !important;
+        background-position: center center !important;
     }
 }
 
-==========================================================================
-ARCHIVO: ui.js
-RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperanza-Que-Necesito\js\modules\ui.js
-==========================================================================
-/* MÓDULO: INTERFAZ DE USUARIO (UI) */
-export function initMobileMenu() {
-    const hamburger = document.querySelector('.hamburger-menu');
-    const nav = document.querySelector('.main-nav');
-    const links = document.querySelectorAll('.main-nav a');
-    if (hamburger && nav) {
-        hamburger.addEventListener('click', () => {
-            nav.classList.toggle('active');
-            const icon = hamburger.querySelector('i');
-            if (nav.classList.contains('active')) {
-                icon.classList.remove('fa-bars'); icon.classList.add('fa-times');
-            } else {
-                icon.classList.remove('fa-times'); icon.classList.add('fa-bars');
-            }
-        });
-        links.forEach(link => {
-            link.addEventListener('click', () => {
-                nav.classList.remove('active');
-                const icon = hamburger.querySelector('i');
-                icon.classList.remove('fa-times'); icon.classList.add('fa-bars');
-            });
-        });
+/* Ajuste de Imágenes Generales en Móvil */
+@media (max-width: 768px) {
+
+    /* Asegura que ninguna imagen se desborde o deforme */
+    img {
+        width: 100%;
+        height: auto !important;
+        /* Fuerza la proporción natural */
+        object-fit: cover;
+    }
+
+    /* Excepción para galería y staff que necesitan altura fija */
+    .gallery-item img,
+    .staff-photo img,
+    .card-img img {
+        height: 100% !important;
+        /* Aquí sí respetamos el contenedor */
     }
 }
-export function initSmoothScroll() {
-    const headerHeight = 80;
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            const targetId = this.getAttribute('href');
-            if (targetId === '#') return;
-            const targetElement = document.querySelector(targetId);
-            if (targetElement) {
-                e.preventDefault();
-                const elementPosition = targetElement.getBoundingClientRect().top;
-                const offsetPosition = elementPosition + window.pageYOffset - headerHeight;
-                window.scrollTo({ top: offsetPosition, behavior: "smooth" });
-            }
-        });
-    });
-}
 
-
-==========================================================================
-ARCHIVO: main.js
-RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperanza-Que-Necesito\js\main.js
-==========================================================================
-/**
- * MAIN.JS - CONTROLADOR PRINCIPAL
- * Corrección: Ejecución directa para módulos ES6
- */
-import { initMobileMenu, initSmoothScroll } from './modules/ui.js';
-import { initSnow } from './modules/effects.js';
-import { initContactForm } from './modules/forms.js';
-import { initPopup } from './modules/modal.js';
-
-// Mensaje de depuración para confirmar que el archivo cargó
-console.log('Sistema Modular Iniciando (Ejecución Directa)...');
-
-// Ejecutamos las funciones directamente
-// Ya no esperamos a DOMContentLoaded porque 'type="module"' ya lo garantiza.
-initMobileMenu();
-initSmoothScroll();
-initSnow();
-initContactForm();
-initPopup();
-
-==========================================================================
-ARCHIVO: googled12c5739ef345a25.html
-RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperanza-Que-Necesito\googled12c5739ef345a25.html
-==========================================================================
-google-site-verification: googled12c5739ef345a25.html
-
-==========================================================================
-ARCHIVO: index.html
-RUTA COMPLETA: C:\Users\david\OneDrive\Desktop\Documentacion\La-Luz-Y-La-Esperanza-Que-Necesito\index.html
-==========================================================================
-
-
-
-<!DOCTYPE html>
-<html lang="es-MX">
-
-<!-- ========================================================================== 
-    [0] INICIO: HEAD (METADATOS Y RECURSOS)
-    ========================================================================== -->
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="google-site-verification" content="XdgdErVDX5QiFOniyrJqKLusOInbDD08gEpAz8SupLQ" />
-    <link rel="canonical" href="https://www.laluzylaesperanzaquenecesito.me/">
-
-    <meta name="description"
-        content="Centro de Rehabilitación La Luz y La Esperanza Que Necesito. Tratamiento integral para adicciones en Tres Valles, Veracruz. Ayuda médica, psicológica y espiritual.">
-    <meta name="keywords"
-        content="rehabilitación veracruz, clínica adicciones tres valles, anexo aa, tratamiento alcoholismo, internamiento, centro la luz y la esperanza">
-    <meta name="author" content="Centro La Luz y La Esperanza Que Necesito">
-    <meta name="robots" content="index, follow">
-
-    <meta property="og:title" content="Centro La Luz y La Esperanza Que Necesito | Rehabilitación Integral">
-    <meta property="og:description"
-        content="Recupera tu vida y tu familia. Tratamiento profesional en Tres Valles, Veracruz.">
-    <meta property="og:image" content="assets/img/hero/portada.png">
-    <meta property="og:url" content="https://www.laluzylaesperanzaquenecesito.me/">
-    <meta property="og:type" content="website">
-
-    <title>Centro de Rehabilitación La Luz y La Esperanza Que Necesito</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Lato:wght@300;400;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <link rel="icon" type="image/png" href="assets/img/hero/logo_del_centro.png">
-    <link rel="shortcut icon" type="image/png" href="assets/img/hero/logo_del_centro.png">
-    <link rel="stylesheet" href="css/main.css">
-</head>
-<!-- ========================================================================== 
-        [0] FIN: HEAD (METADATOS Y RECURSOS)
-        ========================================================================== -->
-
-<!-- ========================================================================== 
-        [1] INICIO: CUERPO PRINCIPAL (BODY)
-        ========================================================================== -->
-
-<body class="christmas-theme">
-
-    <!-- --------------------------------------------------------------------------
-            [2] INICIO: EFECTO ESPECIAL (NIEVE)
-            -------------------------------------------------------------------------- -->
-    <div id="snow-container"></div>
-    <!-- --------------------------------------------------------------------------
-            [2] FIN: EFECTO ESPECIAL (NIEVE)
-            -------------------------------------------------------------------------- -->
-
-    <!-- --------------------------------------------------------------------------
-            [3] INICIO: HEADER PRINCIPAL Y NAVEGACIÓN
-            -------------------------------------------------------------------------- -->
-    <header class="main-header">
-        <div class="container header-container">
-            <div class="logo-box">
-                <img src="assets/img/hero/logo_del_centro.png" alt="Logo Centro de Rehabilitación" class="logo-img" loading="lazy">
-            </div>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#identidad">Nosotros</a></li>
-                    <li><a href="#metodo">Tratamiento</a></li>
-                    <li><a href="#instalaciones">Instalaciones</a></li>
-                    <li><a href="#equipo">Equipo</a></li>
-                    <li><a href="#contacto" class="nav-cta">Contacto</a></li>
-                </ul>
-            </nav>
-            <div class="hamburger-menu">
-                <i class="fas fa-bars"></i>
-            </div>
-        </div>
-    </header>
-    <!-- --------------------------------------------------------------------------
-         [3] FIN: HEADER PRINCIPAL Y NAVEGACIÓN
-         -------------------------------------------------------------------------- -->
-
-    <!-- --------------------------------------------------------------------------
-         [4] INICIO: CONTENIDO PRINCIPAL (MAIN)
-         -------------------------------------------------------------------------- -->
-    <main>
-        <!-- --------------------------------------------------------------------------
-             [5] INICIO: SECCIÓN HERO (INICIO)
-             -------------------------------------------------------------------------- -->
-        <section id="inicio" class="hero-section">
-            <div class="hero-overlay"></div>
-            <img src="assets/img/hero/fachada_principal.jpeg" 
-     alt="Fachada Centro de Rehabilitación"
-     class="hero-bg-img"
-     fetchpriority="high" loading="lazy">
-
-            <div class="container hero-content">
-                <div class="badge-christmas"><i class="fas fa-star"></i> Atención Profesional y Humana</div>
-                <h1>Centro de Rehabilitación <br><span class="highlight">La Luz y La Esperanza Que Necesito</span></h1>
-                <p class="hero-subtitle">En Tres Valles, Veracruz, ofrecemos un refugio seguro donde la ciencia médica,
-                    la psicología y la fortaleza espiritual se unen para vencer las adicciones y recuperar a tu familia.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#contacto" class="btn btn-gold pulse-effect">Solicitar Ayuda</a>
-                    <a href="tel:2871520875" class="btn btn-outline-light"><i class="fas fa-phone"></i> Llamada 24/7</a>
-                </div>
-            </div>
-        </section>
-        <!-- --------------------------------------------------------------------------
-             [5] FIN: SECCIÓN HERO (INICIO)
-             -------------------------------------------------------------------------- -->
-
-        <!-- --------------------------------------------------------------------------
-             [6] INICIO: SECCIÓN IDENTIDAD (#identidad)
-             -------------------------------------------------------------------------- -->
-        <section id="identidad" class="section-padding">
-            <div class="container grid-2-col">
-                <div class="text-content">
-                    <span class="section-subtitle">Nuestra Esencia</span>
-                    <h2 class="section-title">Más que un Centro, una Familia</h2>
-                    <p class="lead-text">Entendemos el dolor detrás de la adicción. No juzgamos; sanamos.</p>
-                    <p>Nuestra misión es reintegrar a la sociedad a seres humanos renovados, utilizando un modelo que
-                        combina disciplina, amor y tratamiento clínico profesional.</p>
-
-                    <div class="features-list">
-                        <div class="feature-item">
-                            <i class="fas fa-user-md"></i>
-                            <div>
-                                <h4>Atención Médica</h4>
-                                <p>Valoración y seguimiento físico constante.</p>
-                            </div>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-church"></i>
-                            <div>
-                                <h4>Guía Espiritual</h4>
-                                <p>Fortaleza a través de la fe y los 12 pasos.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="image-content images-column">
-                    <img src="assets/img/hero/portada.png" alt="Entrada principal" class="shadow-lg" loading="lazy">
-
-                    <img src="assets/img/hero/quienessomos.png" alt="Equipo terapéutico" class="shadow-lg" loading="lazy">
-                </div>
-            </div>
-        </section>
-        <!-- --------------------------------------------------------------------------
-             [6] FIN: SECCIÓN IDENTIDAD (#identidad)
-             -------------------------------------------------------------------------- -->
-
-        <!-- --------------------------------------------------------------------------
-             [7] INICIO: SECCIÓN PADECIMIENTOS (#padecimientos)
-             -------------------------------------------------------------------------- -->
-        <section id="padecimientos" class="section-padding bg-light">
-            <div class="container">
-                <div class="section-header text-center">
-                    <span class="section-subtitle">Áreas de Atención</span>
-                    <h2>¿Qué situaciones abordamos?</h2>
-                    <p>Tratamiento especializado para detener el ciclo destructivo.</p>
-                </div>
-
-                <div class="grid-3-col">
-                    <article class="service-card">
-                        <div class="card-img">
-                            <img src="assets/img/padecimientos/alcoholismo.jpg" alt="Alcoholismo" loading="lazy">
-                        </div>
-                        <div class="card-content">
-                            <h3>Alcoholismo</h3>
-                            <p>Detenemos el deterioro físico y mental causado por la bebida.</p>
-                        </div>
-                    </article>
-
-                    <article class="service-card">
-                        <div class="card-img">
-                            <img src="assets/img/padecimientos/adicciones.webp" alt="Drogadicción" loading="lazy">
-                        </div>
-                        <div class="card-content">
-                            <h3>Drogadicción</h3>
-                            <p>Intervención profesional para sustancias ilícitas y fármacos.</p>
-                        </div>
-                    </article>
-
-                    <article class="service-card">
-                        <div class="card-img">
-                            <img src="assets/img/padecimientos/depresion.jpg" alt="Depresión y Ansiedad" loading="lazy">
-                        </div>
-                        <div class="card-content">
-                            <h3>Depresión Dual</h3>
-                            <p>Tratamos la raíz emocional que lleva al consumo.</p>
-                        </div>
-                    </article>
-
-                    <article class="service-card">
-                        <div class="card-img">
-                            <img src="assets/img/padecimientos/violencia.jpg" alt="Conductas Violentas" loading="lazy">
-                        </div>
-                        <div class="card-content">
-                            <h3>Conductas Agresivas</h3>
-                            <p>Manejo de ira y restauración de vínculos familiares.</p>
-                        </div>
-                    </article>
-
-                    <article class="service-card">
-                        <div class="card-img">
-                            <img src="assets/img/padecimientos/ingobernabilidad.jpg" alt="Ingobernabilidad" loading="lazy">
-                        </div>
-                        <div class="card-content">
-                            <h3>Ingobernabilidad</h3>
-                            <p>Orientación para jóvenes con conductas desafiantes.</p>
-                        </div>
-                    </article>
-
-                    <article class="service-card">
-                        <div class="card-img">
-                            <img src="assets/img/padecimientos/crisis.webp" alt="Crisis Emocional" loading="lazy">
-                        </div>
-                        <div class="card-content">
-                            <h3>Crisis Existencial</h3>
-                            <p>Recuperación del sentido de vida y valores.</p>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-        <!-- --------------------------------------------------------------------------
-             [7] FIN: SECCIÓN PADECIMIENTOS (#padecimientos)
-             -------------------------------------------------------------------------- -->
-
-        <!-- --------------------------------------------------------------------------
-             [8] INICIO: SECCIÓN MÉTODO (4 PILARES)
-             -------------------------------------------------------------------------- -->
-        <section id="metodo" class="section-padding method-section">
-            <div class="container">
-                <h2 class="section-title text-center text-white">Nuestro Modelo de 4 Pilares</h2>
-
-                <div class="method-row">
-                    <div class="method-content">
-                        <h3>1. Estabilización Clínica</h3>
-                        <p>La recuperación inicia con el cuerpo. Contamos con consultorios equipados para asegurar la
-                            salud física del paciente desde su ingreso.</p>
-                        <ul class="check-list">
-                            <li><i class="fas fa-check-circle"></i> Desintoxicación supervisada.</li>
-                            <li><i class="fas fa-check-circle"></i> Consultorio Médico in-situ.</li>
-                        </ul>
-                    </div>
-                    <div class="method-visual">
-                        <img src="assets/img/tratamiento/clinico/consultorio_medico.jpeg" alt="Consultorio Médico" loading="lazy">
-                    </div>
-                </div>
-
-                <div class="method-row reverse">
-                    <div class="method-content">
-                        <h3>2. Reestructuración Psicológica</h3>
-                        <p>A través de terapias grupales e individuales, nuestros psicólogos trabajan en el manejo de
-                            emociones, traumas y prevención de recaídas.</p>
-                        <ul class="check-list">
-                            <li><i class="fas fa-check-circle"></i> Terapia Cognitivo-Conductual.</li>
-                            <li><i class="fas fa-check-circle"></i> Dinámicas grupales sanadoras.</li>
-                        </ul>
-                    </div>
-                    <div class="method-visual">
-                        <img src="assets/img/tratamiento/psicologico/psicologia_grupal.jpg" alt="Terapia Grupal" loading="lazy">
-                    </div>
-                </div>
-
-                <div class="method-row">
-                    <div class="method-content">
-                        <h3>3. Despertar Espiritual</h3>
-                        <p>Creemos en la sanación del alma. Integramos los 12 pasos de AA, juntas de compartimiento y
-                            retiros espirituales (Hacienda 4to y 5to paso).</p>
-                        <p><em>"La ciencia cura el cuerpo, la fe cura el alma."</em></p>
-                    </div>
-                    <div class="method-visual video-container">
-                        <video controls poster="assets/img/tratamiento/espiritual/retiro_espiritual_5421.png">
-                            <source src="assets/video/video-practicas.mp4" type="video/mp4">
-                            Tu navegador no soporta el video.
-                        </video>
-                        <span class="video-caption">Nuestras actividades y prácticas vivenciales.</span>
-                    </div>
-                </div>
-
-                <div class="method-row reverse">
-                    <div class="method-content">
-                        <h3>4. Reinserción Educativa</h3>
-                        <p>El futuro importa. Ofrecemos una sala de estudios digital para que los usuarios continúen su
-                            preparación académica mientras se rehabilitan.</p>
-                        <ul class="check-list">
-                            <li><i class="fas fa-graduation-cap"></i> Secundaria y Preparatoria (INEA/SEP).</li>
-                            <li><i class="fas fa-laptop"></i> Acceso a Universidad en Línea.</li>
-                        </ul>
-                    </div>
-                    <div class="method-visual">
-                        <img src="assets/img/educacion/sala_de_estudios_distintos_niveles_secundaria_preparatoria_universidad.jpeg"
-                            alt="Sala de cómputo y estudios" loading="lazy">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- --------------------------------------------------------------------------
-             [8] FIN: SECCIÓN MÉTODO (4 PILARES)
-             -------------------------------------------------------------------------- -->
-
-        <!-- --------------------------------------------------------------------------
-             [9] INICIO: SECCIÓN INSTALACIONES (#instalaciones)
-             -------------------------------------------------------------------------- -->
-        <section id="instalaciones" class="section-padding">
-            <div class="container">
-                <div class="section-header text-center">
-                    <h2>Instalaciones Dignas y Seguras</h2>
-                    <p>Un entorno diseñado para la paz, la higiene y la recuperación.</p>
-                </div>
-
-                <div class="gallery-grid">
-                    <div class="gallery-item">
-                        <img src="assets/img/instalaciones/seguridad/video_vigilancia_24_hrs.jpeg"
-                             alt="Cámaras de Seguridad" loading="lazy">
-                        <div class="overlay">
-                            <i class="fas fa-shield-alt fa-2x mb-2"></i>
-                            <h4>Monitoreo 24/7</h4>
-                            <p>Seguridad y tranquilidad absoluta.</p>
-                        </div>
-                    </div>
-
-                    <div class="gallery-item">
-                        <img src="assets/img/instalaciones/areas_comunes/recepcion.jpeg" alt="Recepción" loading="lazy">
-                        <div class="overlay">
-                            <i class="fas fa-concierge-bell fa-2x mb-2"></i>
-                            <h4>Recepción y Atención</h4>
-                            <p>Espacios dignos desde el ingreso.</p>
-                        </div>
-                    </div>
-
-                    <div class="gallery-item">
-                        <img src="assets/img/instalaciones/areas_comunes/instalaciones_pasillo.jpeg" alt="Pasillos" loading="lazy">
-                        <div class="overlay">
-                            <i class="fas fa-route fa-2x mb-2"></i>
-                            <h4>Instalaciones Amplias</h4>
-                            <p>Higiene y orden en cada área.</p>
-                        </div>
-                    </div>
-
-                    <div class="gallery-item">
-                        <img src="assets/img/instalaciones/dormitorios/sala_de_recuperacion_hombres.jpeg"
-                            alt="Dormitorio Hombres" loading="lazy">
-                        <div class="overlay">
-                            <i class="fas fa-bed fa-2x mb-2"></i>
-                            <h4>Dormitorios Climatizados</h4>
-                            <p>Descanso reparador garantizado.</p>
-                        </div>
-                    </div>
-
-                    <div class="gallery-item">
-                        <img src="assets/img/tratamiento/espiritual/cadena_de_oracion_mujeres.jpg"
-                             alt="Dormitorio Mujeres" loading="lazy">
-                        <div class="overlay">
-                            <i class="fas fa-female fa-2x mb-2"></i>
-                            <h4>Área Femenina</h4>
-                            <p>Privacidad y seguridad exclusiva.</p>
-                        </div>
-                    </div>
-
-                    <div class="gallery-item">
-                        <img src="assets/img/instalaciones/dormitorios/instalaciones_banos_hombres_2.jpeg" alt="Baños" loading="lazy">
-                        <div class="overlay">
-                            <i class="fas fa-shower fa-2x mb-2"></i>
-                            <h4>Servicios Sanitarios</h4>
-                            <p>Limpieza constante y agua caliente.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- --------------------------------------------------------------------------
-             [9] FIN: SECCIÓN INSTALACIONES (#instalaciones)
-             -------------------------------------------------------------------------- -->
-
-        <!-- --------------------------------------------------------------------------
-             [10] INICIO: SECCIÓN EQUIPO (#equipo)
-             -------------------------------------------------------------------------- -->
-        <section id="equipo" class="section-padding bg-light">
-            <div class="container">
-                <h2 class="section-title text-center">Nuestro Equipo Profesional</h2>
-                <p class="text-center mb-5">Personal capacitado con vocación de servicio.</p>
-
-                <div class="staff-category">
-                    <h3><i class="fas fa-user-tie"></i> Dirección y Área Clínica</h3>
-                    <div class="staff-grid">
-                        <div class="staff-card">
-                            <div class="staff-photo">
-                                <img src="assets/img/staff/directivos/director_general_luis_alberto_avarez_urbano.png"
-                                    alt="Director General Luis Alberto Alvarez" loading="lazy">
-                            </div>
-                            <h4>Luis Alberto Álvarez Urbano</h4>
-                            <span class="role">Director General</span>
-                        </div>
-                        <div class="staff-card">
-                            <div class="staff-photo">
-                                <img src="assets/img/staff/clinico/psicologo_eder_gomez.png" alt="Psicólogo Eder Gómez" loading="lazy">
-                            </div>
-                            <h4>Psic. Eder Gómez</h4>
-                            <span class="role">Psicólogo Clínico</span>
-                        </div>
-                        <div class="staff-card">
-                            <div class="staff-photo">
-                                <img src="assets/img/staff/clinico/auxiliar_de_enfermeria_angel_de_jesus_lopez_bravo.png"
-                                    alt="Enfermero Ángel De Jesús" style="object-position: top;" loading="lazy">
-                            </div>
-                            <h4>Ángel De Jesús López</h4>
-                            <span class="role">Auxiliar de Enfermería</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="staff-category mt-5">
-                    <h3><i class="fas fa-hands-helping"></i> Consejería y Espiritualidad</h3>
-                    <div class="staff-grid">
-                        <div class="staff-card">
-                            <div class="staff-photo">
-                                <img src="assets/img/staff/espiritual/pastores_gabriela_cabrera_y_victor_hugo.png"
-                                    alt="Pastores Gaby y Victor" loading="lazy">
-                            </div>
-                            <h4>Pastores Gabriela Cabrera y Victor Hugo García</h4>
-                            <span class="role">Guía Pastoral</span>
-                        </div>
-                        <div class="staff-card">
-                            <div class="staff-photo">
-                                <img src="assets/img/staff/espiritual/consejero_en_adicciones_oscar_reyes.png"
-                                    alt="Consejero Oscar Reyes" style="object-position: top;" loading="lazy">
-                            </div>
-                            <h4>Oscar Reyes</h4>
-                            <span class="role">Consejero en Adicciones</span>
-                        </div>
-                        <div class="staff-card">
-                            <div class="staff-photo">
-                                <img src="assets/img/staff/espiritual/consejero_en_adicciones_obed_tronco_diaz.png"
-                                    alt="Consejero Obed Tronco" style="object-position: top;" loading="lazy">
-                            </div>
-                            <h4>Obed Tronco Díaz</h4>
-                            <span class="role">Consejero en Adicciones</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="staff-category mt-5">
-                    <h3><i class="fas fa-clipboard-list"></i> Coordinación y Administración</h3>
-                    <div class="staff-grid small-grid">
-                        <div class="staff-card mini">
-                            <div class="staff-photo">
-                                <img src="assets/img/staff/coordinadores/adminitrativo_maria_de_jesus_rodriguez_reyes.png"
-                                    alt="Administrativo Maria De Jesús" style="object-position: top;" loading="lazy">
-                            </div>
-                            <h4>María De Jesús Rodríguez</h4>
-                            <span class="role">Administrativa</span>
-                        </div>
-                        <div class="staff-card mini">
-                            <div class="staff-photo">
-                                <img src="assets/img/staff/coordinadores/coordinador_ismael_carmona_arias.png"
-                                    alt="Coordinador Ismael Carmona" style="object-position: top;" loading="lazy">
-                            </div>
-                            <h4>Ismael Carmona Arias</h4>
-                            <span class="role">Coordinador</span>
-                        </div>
-                        <div class="staff-card mini">
-                            <div class="staff-photo">
-                                <img src="assets/img/staff/coordinadores/coordinadores_brain_alexis_vidal_nolasco.png"
-                                    alt="Coordinador Brain Alexis" style="object-position: top;" loading="lazy">
-                            </div>
-                            <h4>Brain Alexis Vidal</h4>
-                            <span class="role">Coordinador</span>
-                        </div>
-                        <div class="staff-card mini">
-                            <div class="staff-photo">
-                                <img src="assets/img/staff/coordinadores/coordinador_diego_cabrera_pelaez.png"
-                                    alt="Coordinador Diego Cabrera" loading="lazy">
-                            </div>
-                            <h4>Diego Cabrera Páez</h4>
-                            <span class="role">Consejero en adicciones</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- --------------------------------------------------------------------------
-             [10] FIN: SECCIÓN EQUIPO (#equipo)
-             -------------------------------------------------------------------------- -->
-
-        <!-- --------------------------------------------------------------------------
-             [11] INICIO: SECCIÓN TESTIMONIOS (#testimonios)
-             -------------------------------------------------------------------------- -->
-        <section id="testimonios" class="section-padding testimonials-section">
-            <div class="container">
-                <h2 class="text-center text-white">Historias de Esperanza</h2>
-
-                <div class="testimonials-wrapper">
-                    <div class="testimonial-card">
-                        <div class="user-icon"><i class="fas fa-user-circle"></i></div>
-                        <p class="testimonio-text">"Llegué destruida. Aquí encontré el amor y la disciplina que
-                            necesitaba para volver a ser madre y esposa. Gracias por la nueva oportunidad."</p>
-                        <div class="stars">★★★★★</div>
-                        <cite>— María S. <span class="rehab-time">(1 año sobria)</span></cite>
-                    </div>
-
-                    <div class="testimonial-card">
-                        <div class="user-icon"><i class="fas fa-user-circle"></i></div>
-                        <p class="testimonio-text">"El trato de los pastores y el psicólogo fue clave. No es una cárcel,
-                            es una escuela de vida donde aprendí a valorarme."</p>
-                        <div class="stars">★★★★★</div>
-                        <cite>— Juan P. <span class="rehab-time">(Recuperado)</span></cite>
-                    </div>
-
-                    <div class="testimonial-card">
-                        <div class="user-icon"><i class="fas fa-user-circle"></i></div>
-                        <p class="testimonio-text">"Gracias al apoyo educativo, terminé mi prepa aquí mientras me
-                            recuperaba. Hoy estoy estudiando la universidad."</p>
-                        <div class="stars">★★★★★</div>
-                        <cite>— Carlos R. <span class="rehab-time">(Estudiante)</span></cite>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- --------------------------------------------------------------------------
-             [11] FIN: SECCIÓN TESTIMONIOS (#testimonios)
-             -------------------------------------------------------------------------- -->
-
-        <!-- --------------------------------------------------------------------------
-             [12] INICIO: SECCIÓN CONTACTO (#contacto)
-             -------------------------------------------------------------------------- -->
-        <section id="contacto" class="section-padding bg-light">
-            <div class="container">
-
-                <div class="contact-layout">
-
-                    <div class="contact-info-box">
-
-                        <div class="contact-top-content">
-                            <h2>Estamos listos para ayudarte</h2>
-                            <p class="mb-4">La consulta es 100% confidencial. Un mensaje puede ser el inicio del cambio.
-                            </p>
-
-                            <div class="info-group-row">
-                                <div class="info-item">
-                                    <i class="fas fa-phone-alt"></i>
-                                    <div>
-                                        <h5>Llámanos 24/7</h5>
-                                        <p><a href="tel:2871520875" class="text-dark"><strong>287 152 0875</strong></a>
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="info-item">
-                                    <i class="fas fa-envelope"></i>
-                                    <div>
-                                        <h5>Correo Electrónico</h5>
-                                        <p>contacto@laluzylaesperanzaquenecesito.me</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="location-map-group">
-                            <div class="location-text">
-                                <i class="fas fa-map-marker-alt icon-location"></i>
-                                <div>
-                                    <h5>Ubicación del Centro</h5>
-                                    <p>Calle Guadalupe Victoria S/N, Col. Patricio Chirino, Tres Valles, Veracruz.</p>
-                                </div>
-                            </div>
-
-                            <div class="map-wrapper">
-                                <iframe
-                                    src="https://maps.google.com/maps?q=18.242750,-96.145018&t=&z=15&ie=UTF8&iwloc=&output=embed"
-                                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                                </iframe>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="contact-form-container">
-                        <h3>Envíanos un Mensaje</h3>
-
-                        <form id="contactForm" action="https://formspree.io/f/xzzngjzn" method="POST">
-                            <div class="input-group">
-                                <label for="email">Tu Correo Electrónico</label>
-                                <input type="email" name="email" id="email" required placeholder="nombre@ejemplo.com">
-                            </div>
-
-                            <div class="input-group">
-                                <label for="message">Cuéntanos tu situación</label>
-                                <textarea name="message" id="message" rows="5" required
-                                    placeholder="Escribe aquí tu duda o solicitud de internamiento..."></textarea>
-                            </div>
-
-                            <button type="submit" class="btn btn-primary w-100 shadow-lg">Enviar Mensaje</button>
-
-                            <p id="form-status" class="status-msg"></p>
-                        </form>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-        <!-- --------------------------------------------------------------------------
-             [12] FIN: SECCIÓN CONTACTO (#contacto)
-             -------------------------------------------------------------------------- -->
-
-        <!-- --------------------------------------------------------------------------
-             [13] INICIO: SECCIÓN DONACIONES (CTA FINAL)
-             -------------------------------------------------------------------------- -->
-        <section class="section-padding bg-light text-center">
-            <div class="container">
-                <div class="donation-card">
-                    <i class="fas fa-hand-holding-heart icon-gold fa-3x"></i>
-                    <h3>¿Deseas apoyar nuestra causa?</h3>
-                    <p>Somos una institución comprometida. Aceptamos donaciones en especie (alimentos no perecederos,
-                        ropa, artículos de higiene) para apoyar a quienes más lo necesitan.</p>
-                    <a href="https://wa.me/522871520875" class="btn btn-outline-dark">Coordinar Donación</a>
-                </div>
-            </div>
-        </section>
-        <!-- --------------------------------------------------------------------------
-             [13] FIN: SECCIÓN DONACIONES (CTA FINAL)
-             -------------------------------------------------------------------------- -->
-
-    </main>
-    <!-- --------------------------------------------------------------------------
-         [4] FIN: CONTENIDO PRINCIPAL (MAIN)
-         -------------------------------------------------------------------------- -->
-
-    <!-- --------------------------------------------------------------------------
-         [14] INICIO: FOOTER PRINCIPAL
-         -------------------------------------------------------------------------- -->
-    <footer class="main-footer">
-        <div class="container">
-            <div class="footer-content">
-
-                <div class="footer-brand">
-                    <img src="assets/img/hero/logo_del_centro.png" alt="Logo La Luz y Esperanza"
-                        class="footer-logo-img" loading="lazy">
-                </div>
-
-                <div class="footer-social">
-                    <a href="https://www.facebook.com/CENTRODEREHABILITACIONLALUZYESPERANZAQUENECESITO" target="_blank"
-                        class="social-btn facebook"><i class="fab fa-facebook-f"></i></a>
-
-                    <a href="https://wa.me/522871520875?text=Hola%2C%20vengo%20de%20su%20sitio%20web.%20Necesito%20informaci%C3%B3n%20y%20ayuda%20sobre%20el%20internamiento."
-                        target="_blank" class="social-btn whatsapp">
-                        <i class="fab fa-whatsapp"></i>
-                    </a>
-                </div>
-
-                <div class="footer-links">
-                    <a href="#inicio">Inicio</a>
-                    <a href="#metodo">Método</a>
-                    <a href="#contacto">Contacto</a>
-                </div>
-
-                <p class="copyright">© 2025 Centro de Rehabilitación La Luz y La Esperanza Que Necesito. Todos los
-                    derechos reservados.</p>
-            </div>
-        </div>
-    </footer>
-    <!-- --------------------------------------------------------------------------
-            [14] FIN: FOOTER PRINCIPAL
-            -------------------------------------------------------------------------- -->
-
-    <div id="modal-posada" class="modal-overlay">
-        <div class="modal-content">
-            <button id="close-modal-btn" class="modal-close">×</button>
-            <div class="modal-body">
-                <img src="assets/img/actividades/eventos/posada_20_12_2025.png" 
-                     alt="Invitación Gran Posada Navideña 2025" 
-                     class="modal-image" loading="lazy">
-            </div>
-        </div>
-    </div>
-
-    <!-- --------------------------------------------------------------------------
-            [15] INICIO: BOTÓN FLOTANTE WHATSAPP
-            -------------------------------------------------------------------------- -->
-    <a href="https://wa.me/522871520875?text=Hola%2C%20vengo%20de%20su%20sitio%20web.%20Necesito%20informaci%C3%B3n%20y%20ayuda%20sobre%20el%20internamiento."
-        class="whatsapp-float" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-    <!-- --------------------------------------------------------------------------
-            [15] FIN: BOTÓN FLOTANTE WHATSAPP
-            -------------------------------------------------------------------------- -->
-
-    <!-- --------------------------------------------------------------------------
-            [16] INICIO: SCRIPTS FINALES
-            -------------------------------------------------------------------------- -->
-    <script type="module" src="js/main.js"></script>
-    <!-- --------------------------------------------------------------------------
-            [16] FIN: SCRIPTS FINALES
-            -------------------------------------------------------------------------- -->
-</body>
-<!-- ========================================================================== 
-        [1] FIN: CUERPO PRINCIPAL (BODY)
-        ========================================================================== -->
-
-</html>
-
-
+/* ==========================================================================
+   [15] FIN DEL BLOQUE: RESPONSIVE DESIGN
+   ========================================================================== */
