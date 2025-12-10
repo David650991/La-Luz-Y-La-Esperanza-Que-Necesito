@@ -1646,3 +1646,39 @@ cite {
 /* ==========================================================================
    [15] FIN DEL BLOQUE: RESPONSIVE DESIGN
    ========================================================================== */
+
+/* =========================================
+   CORRECCIONES VISUALES FINALES (LOGO FOOTER Y STAFF)
+   Arregla la imagen desaparecida del director y el tamaño del logo inferior
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    /* 1. DOMANDO EL LOGO DEL FOOTER */
+    .footer-logo-img {
+        width: auto !important;
+        /* Prohibido estirarse al 100% */
+        height: 100px !important;
+        /* Altura fija elegante */
+        max-width: 80%;
+        /* Margen de seguridad */
+        object-fit: contain;
+    }
+
+    /* 2. RESCATANDO LA FOTO DEL DIRECTOR */
+    /* Aseguramos que la imagen llene el círculo a la fuerza */
+    .staff-photo img {
+        width: 100% !important;
+        height: 100% !important;
+        /* Crucial: obliga a la imagen a tener altura */
+        object-fit: cover !important;
+        /* Recorte perfecto sin deformar */
+    }
+
+    /* Protección extra para que el círculo no se aplaste */
+    .staff-photo {
+        width: 140px !important;
+        height: 140px !important;
+        margin: 0 auto 20px auto !important;
+    }
+}
