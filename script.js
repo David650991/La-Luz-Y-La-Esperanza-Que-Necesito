@@ -55,6 +55,7 @@ function initSmoothScroll() {
 }
 
 /* [2] EFECTOS VISUALES */
+/*
 function initSnow() {
     const container = document.getElementById('snow-container');
     if (!container) return;
@@ -81,6 +82,7 @@ function initSnow() {
         container.appendChild(flake);
     }
 }
+*/
 
 /* [3] COMPONENTES (MODAL POSADA - CORREGIDO) */
 function initPopup() {
@@ -178,7 +180,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Ejecución segura de módulos
     try { initMobileMenu(); } catch (e) { console.error("Error en Menu:", e); }
     try { initSmoothScroll(); } catch (e) { console.error("Error en Scroll:", e); }
-    try { initSnow(); } catch (e) { console.error("Error en Nieve:", e); }
+   // try { initSnow(); } catch (e) { console.error("Error en Nieve:", e); }
     try { initContactForm(); } catch (e) { console.error("Error en Formulario:", e); }
     
     // El modal es la prioridad ahora
