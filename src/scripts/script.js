@@ -1,7 +1,7 @@
 /* ==========================================================================
    ORQUESTADOR DE SCRIPTS (CARGADOR DINÁMICO)
    UBICACIÓN: src/scripts/script.js
-   VERSION: Modular 3.0
+   VERSION: Modular 3.1 (Hotfix Carga Asíncrona)
    ========================================================================== */
 
 // Función auxiliar para cargar scripts externos
@@ -15,10 +15,10 @@ function loadModule(src) {
     });
 }
 
-document.addEventListener('DOMContentLoaded', async () => {
+// Lógica principal de inicialización
+const initApplication = async () => {
     console.log('🚀 Iniciando carga de módulos JS desde src/scripts/...');
 
-    // LISTA DE MÓDULOS ACTUALIZADA CON LA NUEVA RUTA
     const modules = [
         'src/scripts/js-menu.js',
         'src/scripts/js-scroll.js',
@@ -28,20 +28,29 @@ document.addEventListener('DOMContentLoaded', async () => {
     ];
 
     try {
-        // 1. Cargar todos los archivos JS
+        // 1. Cargar todos los archivos JS en paralelo
         await Promise.all(modules.map(loadModule));
         console.log('📦 Todos los módulos importados correctamente.');
 
-        // 2. Ejecutar las funciones una vez cargadas
+        // 2. Ejecutar las funciones INMEDIATAMENTE
+        // Esto soluciona que el modal y el formulario no reaccionaran antes
         if (typeof window.initMobileMenu === 'function') window.initMobileMenu();
         if (typeof window.initSmoothScroll === 'function') window.initSmoothScroll();
         if (typeof window.initPopup === 'function') window.initPopup();
         if (typeof window.initContactForm === 'function') window.initContactForm();
         
-        // La nieve es opcional
+        // Efecto de nieve (Opcional, descomentar si es temporada)
         // if (typeof window.initSnow === 'function') window.initSnow();
 
     } catch (error) {
         console.error('❌ Error crítico cargando módulos:', error);
     }
-});
+};
+
+// COMPROBACIÓN DE ESTADO DEL DOM (CORRECCIÓN CRÍTICA)
+// Si el script carga después del DOMContentLoaded, ejecutamos directamente.
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initApplication);
+} else {
+    initApplication();
+}

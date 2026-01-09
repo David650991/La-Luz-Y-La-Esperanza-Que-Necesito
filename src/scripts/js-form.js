@@ -1,23 +1,29 @@
 /* =========================================
-   MÓDULO: FORMULARIO DE CONTACTO
+   MÓDULO: FORMULARIO DE CONTACTO (DELEGACIÓN DE EVENTOS)
    ========================================= */
 window.initContactForm = function() {
-    const form = document.getElementById('contactForm');
-    const statusMsg = document.getElementById('form-status');
+    console.log("📨 Inicializando escucha del formulario...");
 
-    if (form) {
-        form.addEventListener("submit", async function (event) {
-            event.preventDefault();
+    // Usamos delegación: Escuchamos en el 'document' porque el formulario 
+    // se inyecta dinámicamente y puede no existir al cargar la página inicialmente.
+    document.addEventListener("submit", async function (event) {
+        
+        // Verificamos si el evento viene de NUESTRO formulario
+        if (event.target && event.target.id === 'contactForm') {
+            event.preventDefault(); // <--- ESTO EVITA LA REDIRECCIÓN
+            
+            const form = event.target;
             const btn = form.querySelector('button[type="submit"]');
-            const data = new FormData(event.target);
+            const statusMsg = document.getElementById('form-status');
+            const data = new FormData(form);
             const originalText = btn.textContent;
 
-            // Estado de carga
+            // UI: Estado de carga
             btn.disabled = true;
             btn.innerHTML = 'Enviando... <i class="fas fa-spinner fa-spin"></i>';
 
             try {
-                const response = await fetch(event.target.action, {
+                const response = await fetch(form.action, {
                     method: form.method,
                     body: data,
                     headers: { 'Accept': 'application/json' }
@@ -29,7 +35,7 @@ window.initContactForm = function() {
                     form.reset();
                 } else {
                     const errorData = await response.json();
-                    if (Object.hasOwn(errorData, 'errors')) {
+                    if (errorData && errorData.errors) {
                         statusMsg.innerHTML = errorData.errors.map(error => error["message"]).join(", ");
                     } else {
                         statusMsg.innerHTML = '<i class="fas fa-exclamation-circle"></i> Ocurrió un error.';
@@ -39,11 +45,13 @@ window.initContactForm = function() {
             } catch (error) {
                 statusMsg.innerHTML = '<i class="fas fa-wifi"></i> Error de conexión.';
                 statusMsg.className = "status-msg error";
+                console.error(error);
             } finally {
                 btn.disabled = false;
                 btn.textContent = originalText;
             }
-        });
-        console.log("✅ Módulo Formulario cargado.");
-    }
+        }
+    });
+    
+    console.log("✅ Módulo Formulario listo (Modo Delegado).");
 };
