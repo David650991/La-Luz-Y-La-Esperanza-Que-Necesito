@@ -24,6 +24,7 @@ const initApplication = async () => {
         'src/scripts/js-scroll.js',
         'src/scripts/js-modal.js',
         'src/scripts/js-form.js',
+            'src/scripts/js-testimonials.js?v=1.1',
         'src/scripts/js-snow.js' 
     ];
 
@@ -38,6 +39,7 @@ const initApplication = async () => {
         if (typeof window.initSmoothScroll === 'function') window.initSmoothScroll();
         if (typeof window.initPopup === 'function') window.initPopup();
         if (typeof window.initContactForm === 'function') window.initContactForm();
+        if (typeof window.initTestimonialsCarousel === 'function') window.initTestimonialsCarousel();
         
         // Efecto de nieve (Opcional, descomentar si es temporada)
         // if (typeof window.initSnow === 'function') window.initSnow();
