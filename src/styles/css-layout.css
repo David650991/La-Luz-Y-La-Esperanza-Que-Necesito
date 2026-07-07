@@ -123,6 +123,22 @@
   color: #1877f2;
 }
 
+.social-btn.instagram:hover {
+  color: #e1306c;
+}
+
+.social-btn.x:hover {
+  color: #000000;
+}
+
+.social-btn.tiktok:hover {
+  color: #111111;
+}
+
+.social-btn.youtube:hover {
+  color: #ff0000;
+}
+
 .social-btn.whatsapp:hover {
   color: #25d366;
 }
