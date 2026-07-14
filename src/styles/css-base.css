@@ -83,3 +83,9 @@ ul {
 .shadow-lg {
   box-shadow: var(--shadow);
 }
+
+/* Evita calcular y pintar secciones fuera de la ventana visible. */
+main > section:not(#inicio) {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 800px;
+}

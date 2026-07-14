@@ -32,6 +32,9 @@ window.initContactForm = function() {
                 if (response.ok) {
                     statusMsg.innerHTML = '<i class="fas fa-check-circle"></i> ¡Gracias! Hemos recibido tu mensaje.';
                     statusMsg.className = "status-msg success";
+                    if (typeof window.trackSiteConversion === 'function') {
+                        window.trackSiteConversion('contact_form_success', { conversion_location: 'contacto' });
+                    }
                     form.reset();
                 } else {
                     const errorData = await response.json();

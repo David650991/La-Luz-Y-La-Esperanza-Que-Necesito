@@ -1,69 +1,90 @@
-<section id="padecimientos" class="section-padding bg-light">
-    <div class="container">
-        <div class="section-header text-center">
-            <span class="section-subtitle">Áreas de Atención</span>
-            <h2>¿Qué situaciones abordamos?</h2>
-            <p>Tratamiento especializado para detener el ciclo destructivo.</p>
-        </div>
+<section
+    id="padecimientos"
+    class="clinical-specialties section-padding"
+    aria-labelledby="clinical-specialties-title"
+>
+    <div class="container clinical-specialties__container">
+        <header class="clinical-specialties__header">
+            <span class="clinical-specialties__eyebrow">¿Cómo podemos ayudarte?</span>
+            <h2 id="clinical-specialties-title" class="clinical-specialties__title">
+                Especialidades Clínicas y Terapéuticas
+            </h2>
+            <span class="clinical-specialties__divider" aria-hidden="true"></span>
+            <p class="clinical-specialties__description">
+                Protocolos de intervención médica y psicológica diseñados para una recuperación integral y digna.
+            </p>
+        </header>
 
-        <div class="grid-3-col">
-            <article class="service-card">
-                <div class="card-img">
-                    <img src="src/assets/img/padecimientos/alcoholismo.jpg" alt="Alcoholismo" loading="lazy">
+        <div class="clinical-specialties__grid">
+            <article class="clinical-specialties__card clinical-specialties__card--alcohol">
+                <div class="clinical-specialties__media">
+                    <img class="clinical-specialties__image" src="src/assets/img/padecimientos/alcoholismo.jpg" alt="Atención clínica para el trastorno por consumo de alcohol" loading="lazy" decoding="async" fetchpriority="low">
+                    <span class="clinical-specialties__number" aria-hidden="true">01</span>
                 </div>
-                <div class="card-content">
-                    <h3>Alcoholismo</h3>
-                    <p>Detenemos el deterioro físico y mental causado por la bebida.</p>
+                <div class="clinical-specialties__body">
+                    <div class="clinical-specialties__icon" aria-hidden="true"><i class="fa-solid fa-wine-glass-empty"></i></div>
+                    <h3 class="clinical-specialties__card-title">Trastorno por Consumo de Alcohol</h3>
+                    <p class="clinical-specialties__card-text">Tratamiento médico y terapéutico para revertir el impacto físico, cognitivo y emocional, restaurando la salud metabólica del paciente.</p>
                 </div>
             </article>
 
-            <article class="service-card">
-                <div class="card-img">
-                    <img src="src/assets/img/padecimientos/adicciones.webp" alt="Drogadicción" loading="lazy">
+            <article class="clinical-specialties__card clinical-specialties__card--substances">
+                <div class="clinical-specialties__media">
+                    <img class="clinical-specialties__image" src="src/assets/img/padecimientos/adicciones.webp" alt="Intervención clínica para dependencia a sustancias químicas" loading="lazy" decoding="async" fetchpriority="low">
+                    <span class="clinical-specialties__number" aria-hidden="true">02</span>
                 </div>
-                <div class="card-content">
-                    <h3>Drogadicción</h3>
-                    <p>Intervención profesional para sustancias ilícitas y fármacos.</p>
-                </div>
-            </article>
-
-            <article class="service-card">
-                <div class="card-img">
-                    <img src="src/assets/img/padecimientos/depresion.jpg" alt="Depresión y Ansiedad" loading="lazy">
-                </div>
-                <div class="card-content">
-                    <h3>Depresión Dual</h3>
-                    <p>Tratamos la raíz emocional que lleva al consumo.</p>
+                <div class="clinical-specialties__body">
+                    <div class="clinical-specialties__icon" aria-hidden="true"><i class="fa-solid fa-flask-vial"></i></div>
+                    <h3 class="clinical-specialties__card-title">Dependencia a Sustancias Químicas</h3>
+                    <p class="clinical-specialties__card-text">Protocolos clínicos de desintoxicación y rehabilitación enfocados en dependencias a narcóticos, estimulantes y fármacos controlados.</p>
                 </div>
             </article>
 
-            <article class="service-card">
-                <div class="card-img">
-                    <img src="src/assets/img/padecimientos/violencia.jpg" alt="Conductas Violentas" loading="lazy">
+            <article class="clinical-specialties__card clinical-specialties__card--mental-health">
+                <div class="clinical-specialties__media">
+                    <img class="clinical-specialties__image" src="src/assets/img/padecimientos/depresion.jpg" alt="Atención integral para patología dual y salud mental" loading="lazy" decoding="async" fetchpriority="low">
+                    <span class="clinical-specialties__number" aria-hidden="true">03</span>
                 </div>
-                <div class="card-content">
-                    <h3>Conductas Agresivas</h3>
-                    <p>Manejo de ira y restauración de vínculos familiares.</p>
-                </div>
-            </article>
-
-            <article class="service-card">
-                <div class="card-img">
-                    <img src="src/assets/img/padecimientos/ingobernabilidad.jpg" alt="Ingobernabilidad" loading="lazy">
-                </div>
-                <div class="card-content">
-                    <h3>Ingobernabilidad</h3>
-                    <p>Orientación para jóvenes con conductas desafiantes.</p>
+                <div class="clinical-specialties__body">
+                    <div class="clinical-specialties__icon" aria-hidden="true"><i class="fa-solid fa-brain"></i></div>
+                    <h3 class="clinical-specialties__card-title">Patología Dual y Salud Mental</h3>
+                    <p class="clinical-specialties__card-text">Abordaje psiquiátrico y psicológico simultáneo para tratar la adicción junto con trastornos subyacentes como la ansiedad profunda o la depresión clínica.</p>
                 </div>
             </article>
 
-            <article class="service-card">
-                <div class="card-img">
-                    <img src="src/assets/img/padecimientos/crisis.webp" alt="Crisis Emocional" loading="lazy">
+            <article class="clinical-specialties__card clinical-specialties__card--emotional-regulation">
+                <div class="clinical-specialties__media">
+                    <img class="clinical-specialties__image" src="src/assets/img/padecimientos/violencia.jpg" alt="Terapia para regulación emocional y control de impulsos" loading="lazy" decoding="async" fetchpriority="low">
+                    <span class="clinical-specialties__number" aria-hidden="true">04</span>
                 </div>
-                <div class="card-content">
-                    <h3>Crisis Existencial</h3>
-                    <p>Recuperación del sentido de vida y valores.</p>
+                <div class="clinical-specialties__body">
+                    <div class="clinical-specialties__icon" aria-hidden="true"><i class="fa-solid fa-heart-pulse"></i></div>
+                    <h3 class="clinical-specialties__card-title">Regulación Emocional y Control de Impulsos</h3>
+                    <p class="clinical-specialties__card-text">Terapias cognitivo-conductuales orientadas a la gestión de la ira, fomentando la asertividad y la reconstrucción del tejido familiar.</p>
+                </div>
+            </article>
+
+            <article class="clinical-specialties__card clinical-specialties__card--adolescents">
+                <div class="clinical-specialties__media">
+                    <img class="clinical-specialties__image" src="src/assets/img/padecimientos/ingobernabilidad.jpg" alt="Atención profesional para trastornos de conducta en adolescentes" loading="lazy" decoding="async" fetchpriority="low">
+                    <span class="clinical-specialties__number" aria-hidden="true">05</span>
+                </div>
+                <div class="clinical-specialties__body">
+                    <div class="clinical-specialties__icon" aria-hidden="true"><i class="fa-solid fa-people-roof"></i></div>
+                    <h3 class="clinical-specialties__card-title">Trastornos de Conducta en Adolescentes</h3>
+                    <p class="clinical-specialties__card-text">Intervención temprana y estructurada para jóvenes con patrones de comportamiento desafiante, enfocada en la disciplina positiva y la reestructuración de límites.</p>
+                </div>
+            </article>
+
+            <article class="clinical-specialties__card clinical-specialties__card--crisis">
+                <div class="clinical-specialties__media">
+                    <img class="clinical-specialties__image" src="src/assets/img/padecimientos/crisis.webp" alt="Acompañamiento psicológico durante crisis y construcción de proyecto de vida" loading="lazy" decoding="async" fetchpriority="low">
+                    <span class="clinical-specialties__number" aria-hidden="true">06</span>
+                </div>
+                <div class="clinical-specialties__body">
+                    <div class="clinical-specialties__icon" aria-hidden="true"><i class="fa-solid fa-compass"></i></div>
+                    <h3 class="clinical-specialties__card-title">Intervención en Crisis y Proyecto de Vida</h3>
+                    <p class="clinical-specialties__card-text">Acompañamiento psicológico para superar episodios de quiebre emocional, ayudando al paciente a rediseñar un propósito de vida sólido y funcional.</p>
                 </div>
             </article>
         </div>

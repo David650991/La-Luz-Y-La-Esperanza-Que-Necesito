@@ -73,7 +73,8 @@
   }
   .gallery-item img,
   .staff-photo img,
-  .card-img img {
+  .card-img img,
+  .clinical-specialties__image {
     height: 100% !important;
   }
 
@@ -93,6 +94,22 @@
     width: 140px !important;
     height: 140px !important;
     margin: 0 auto 20px auto !important;
+  }
+  .podcast-live-card {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .podcast-episode-poster {
+    width: min(72vw, 260px);
+  }
+  .podcast-live-actions {
+    grid-template-columns: 1fr;
+  }
+  .podcast-live-actions__primary {
+    grid-column: auto;
+  }
+  .podcast-countdown {
+    padding: 18px 12px;
   }
 }
 

@@ -1,55 +1,111 @@
-# 🏥 Centro de Rehabilitación "La Luz y La Esperanza Que Necesito"
+# Centro de Rehabilitación La Luz y La Esperanza Que Necesito
 
-![Estado](https://img.shields.io/badge/Estado-Producción-success?style=for-the-badge&logo=statuspage)
-![Versión](https://img.shields.io/badge/Versión-4.0_Modular-blue?style=for-the-badge&logo=git)
-![Licencia](https://img.shields.io/badge/Licencia-Proprietaria-red?style=for-the-badge)
+[![Estado](https://img.shields.io/badge/Estado-Producción-success?style=for-the-badge)](https://www.laluzylaesperanzaquenecesito.me/)
+![Versión](https://img.shields.io/badge/Versión-5.0_Medical_Luxury-0F2C59?style=for-the-badge)
+![Licencia](https://img.shields.io/badge/Licencia-Proprietaria-D4AF37?style=for-the-badge)
 
-> **Sitio web institucional de alto rendimiento** desarrollado para el Centro de Rehabilitación en Tres Valles, Veracruz.
->
-> Este proyecto implementa una **Arquitectura de Componentes (Client-Side Includes)** para garantizar escalabilidad, mantenimiento modular y una experiencia de usuario fluida sin depender de frameworks pesados.
+Sitio institucional del Centro de Rehabilitación **La Luz y La Esperanza Que Necesito**, ubicado en Tres Valles, Veracruz, México.
 
-🌐 **[Visitar Sitio Web en Vivo](https://www.laluzylaesperanzaquenecesito.me/)**
+El proyecto presenta los servicios clínicos, psicológicos, terapéuticos, espirituales y educativos del centro mediante una experiencia responsiva con identidad visual **Medical Luxury**.
 
----
+Sitio oficial: [www.laluzylaesperanzaquenecesito.me](https://www.laluzylaesperanzaquenecesito.me/)
 
-## 🚀 Características Técnicas Destacadas
+## Versión actual
 
-Este proyecto va más allá de un sitio estático tradicional. Hemos implementado ingeniería de software moderna:
+**5.0 — Actualización del 14 de julio de 2026**
 
-### 🏗️ Arquitectura & Diseño
-* **Diseño Atómico Modular:** El sitio no es un solo bloque HTML. Está dividido en **componentes reutilizables** (`header`, `footer`, `secciones`) cargados dinámicamente.
-* **CSS Modular:** Estilos separados por responsabilidad (`layout`, `components`, `sections`) para un mantenimiento quirúrgico.
-* **Responsive & Adaptable:** Interfaz "Medical Luxury" totalmente fluida desde móviles (Galaxy Fold) hasta pantallas 4K.
+Esta versión incorpora:
 
-### 🔍 SEO & Rendimiento (Nivel Experto)
-* **Schema.org JSON-LD:** Implementación avanzada de datos estructurados para `MedicalOrganization`, `FAQPage` y `Breadcrumbs`.
-* **Open Graph & Twitter Cards:** Previsualizaciones ricas para redes sociales.
-* **Optimización de Carga:** Uso de `preload`, `preconnect` y carga diferida (`lazy loading`) de imágenes.
-* **PWA Ready:** Incluye Manifiesto Web y configuración para instalación en dispositivos móviles.
+- Sección de especialidades clínicas y terapéuticas con diseño editorial responsivo.
+- Podcast **El Origen De La Luz Y La Esperanza Que Necesito**.
+- Episodio 2: **El Precio de la Curiosidad**, con Fernando Acevedo y David Vidal.
+- Reproductor de transmisión de YouTube integrado.
+- Temporizador para emisiones programadas y acciones para compartir y suscribirse.
+- Optimización de imágenes de alta resolución sin alterar los archivos originales.
+- Carga diferida de recursos, video bajo demanda y renderizado diferido de secciones.
+- Metadatos SEO, Open Graph, Twitter Cards y datos estructurados Schema.org.
+- Eventos de conversión preparados para llamadas, WhatsApp, formularios y podcast, sin recopilar datos personales por defecto.
+- Manifiesto web, sitemap, robots y archivos de verificación actualizados.
 
-### ⚙️ Funcionalidad
-* **Inyección Asíncrona:** Sistema de carga de HTML vía `fetch API` con promesas paralelas (`Promise.all`) para velocidad extrema.
-* **Formulario Serverless:** Integración con **Formspree** para gestión de contactos sin backend propio.
-* **Efectos Estacionales:** Motor de partículas (Nieve) activable para temporadas festivas.
+## Arquitectura
 
----
-
-## 📂 Estructura del Proyecto (Arquitectura MVC-Like)
-
-El proyecto sigue una estricta separación de responsabilidades:
+El sitio utiliza una arquitectura modular basada en **Client-Side Includes**. Los fragmentos HTML se cargan mediante `fetch` y los módulos JavaScript se inicializan después de completar la composición de la página.
 
 ```text
 /
-├── index.html             # 🟢 Punto de entrada (Shell de la aplicación)
-├── public/                # 🌍 Archivos públicos y de identidad
-│   ├── img/               # Favicons e iconos de aplicación
-│   ├── manifest/          # Manifiesto de Aplicación Web (PWA)
-│   └── verification/      # Archivos de verificación (Google, Robots, Sitemap)
-│
-└── src/                   # 🛠️ Código Fuente
-    ├── assets/            # Recursos Multimedia
-    │   ├── img/           # Imágenes organizadas por sección
-    │   └── video/         # Video institucional
-    ├── components/        # Fragmentos HTML (Vistas Parciales)
-    ├── scripts/           # Lógica JavaScript Modular
-    └── styles/            # Hojas de estilo CSS Modulares
+├── index.html
+├── sitemap.xml
+├── robots.txt
+├── CNAME
+├── googled12c5739ef345a25.html
+├── public/
+│   ├── img/
+│   ├── manifest/
+│   │   └── site.webmanifest
+│   └── verification/
+└── src/
+    ├── assets/
+    │   ├── img/
+    │   └── video/
+    ├── components/
+    │   ├── part-header.html
+    │   ├── part-footer.html
+    │   ├── podcast.html
+    │   └── seccion-*.html
+    ├── scripts/
+    │   ├── script.js
+    │   └── js-*.js
+    └── styles/
+        ├── styles.css
+        └── css-*.css
+```
+
+## SEO y descubrimiento
+
+- URL canónica única con idioma `es-MX`.
+- Metadatos Open Graph y Twitter con imagen social de 1200×630.
+- Schema.org para organización médica, negocio local, sitio web, página, podcast, episodio y video.
+- Sitemap XML con fecha de modificación verificable.
+- `robots.txt` abierto a rastreadores y enlazado al sitemap.
+- Verificación de Google mediante archivo y etiqueta meta.
+- Información local consistente: Tres Valles, Veracruz, teléfono y coordenadas.
+
+El posicionamiento orgánico también depende de factores externos al código, como Google Business Profile, Search Console, reseñas legítimas, autoridad temática, enlaces y publicación constante de contenido útil.
+
+## Rendimiento
+
+Las copias optimizadas reducen aproximadamente un 93.8 % el peso combinado de las imágenes de mayor tamaño utilizadas por la interfaz. Los originales se conservan para archivo y futuras ediciones.
+
+El video institucional utiliza `preload="none"`, las imágenes fuera de pantalla emplean carga diferida y las secciones no visibles usan `content-visibility` cuando el navegador lo admite.
+
+## Desarrollo local
+
+Debido al uso de `fetch`, el proyecto debe ejecutarse desde un servidor HTTP local y no abriendo directamente `index.html` mediante `file://`.
+
+Ejemplos de servidores locales compatibles:
+
+```text
+npx serve .
+php -S localhost:8000
+```
+
+## Publicación
+
+El proyecto está preparado para GitHub Pages:
+
+- `CNAME` define el dominio personalizado.
+- `.nojekyll` en la raíz desactiva el procesamiento de Jekyll.
+- Los verificadores y archivos públicos se conservan en rutas estables.
+
+Después de cada publicación importante se recomienda:
+
+1. Validar la URL en Google Search Console.
+2. Enviar nuevamente el sitemap.
+3. Probar los datos estructurados con Rich Results Test.
+4. Revisar Core Web Vitals y eventos de conversión.
+
+## Licencia y privacidad
+
+El código, la marca y el material multimedia están sujetos a los términos descritos en [LICENSE](LICENSE). Las fotografías del personal, pacientes, instalaciones y actividades no deben reutilizarse fuera de este proyecto sin autorización expresa.
+
+Contacto técnico: `David650991@gmail.com`
