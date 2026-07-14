@@ -1,7 +1,7 @@
 # Centro de Rehabilitación La Luz y La Esperanza Que Necesito
 
 [![Estado](https://img.shields.io/badge/Estado-Producción-success?style=for-the-badge)](https://www.laluzylaesperanzaquenecesito.me/)
-![Versión](https://img.shields.io/badge/Versión-5.0_Medical_Luxury-0F2C59?style=for-the-badge)
+![Versión](https://img.shields.io/badge/Versión-5.1_Medical_Luxury-0F2C59?style=for-the-badge)
 ![Licencia](https://img.shields.io/badge/Licencia-Proprietaria-D4AF37?style=for-the-badge)
 
 Sitio institucional del Centro de Rehabilitación **La Luz y La Esperanza Que Necesito**, ubicado en Tres Valles, Veracruz, México.
@@ -12,7 +12,7 @@ Sitio oficial: [www.laluzylaesperanzaquenecesito.me](https://www.laluzylaesperan
 
 ## Versión actual
 
-**5.0 — Actualización del 14 de julio de 2026**
+**5.1 — Actualización del 14 de julio de 2026**
 
 Esta versión incorpora:
 
@@ -69,6 +69,8 @@ El sitio utiliza una arquitectura modular basada en **Client-Side Includes**. Lo
 - `robots.txt` abierto a rastreadores y enlazado al sitemap.
 - Verificación de Google mediante archivo y etiqueta meta.
 - Información local consistente: Tres Valles, Veracruz, teléfono y coordenadas.
+- Google Tag Manager `GTM-NBC7X6GV` con Consent Mode y preferencias reversibles.
+- Eventos `dataLayer` preparados para conectar GA4 `G-T2VB7BXSBD` desde Tag Manager.
 
 El posicionamiento orgánico también depende de factores externos al código, como Google Business Profile, Search Console, reseñas legítimas, autoridad temática, enlaces y publicación constante de contenido útil.
 

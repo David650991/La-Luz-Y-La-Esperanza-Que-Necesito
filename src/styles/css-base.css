@@ -89,3 +89,113 @@ main > section:not(#inicio) {
   content-visibility: auto;
   contain-intrinsic-size: auto 800px;
 }
+
+/* Consentimiento de medición */
+.consent-banner {
+  position: fixed;
+  z-index: 10000;
+  right: 20px;
+  bottom: 20px;
+  left: 20px;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 22px;
+  color: #f8fafc;
+  background: rgba(10, 37, 64, 0.98);
+  border: 1px solid rgba(198, 164, 93, 0.55);
+  border-radius: 18px;
+  box-shadow: 0 20px 55px rgba(3, 18, 32, 0.32);
+  backdrop-filter: blur(12px);
+}
+
+.consent-banner[hidden] {
+  display: none;
+}
+
+.consent-banner__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+.consent-banner__copy {
+  max-width: 760px;
+}
+
+.consent-banner__title {
+  margin: 0 0 6px;
+  color: #ffffff;
+  font-size: clamp(1.05rem, 2vw, 1.25rem);
+}
+
+.consent-banner__description {
+  margin: 0;
+  color: #dbe7f0;
+  font-size: 0.93rem;
+  line-height: 1.55;
+}
+
+.consent-banner__actions {
+  display: flex;
+  flex-shrink: 0;
+  gap: 10px;
+}
+
+.consent-banner__button {
+  min-height: 44px;
+  padding: 10px 20px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  font: 700 0.88rem var(--font-body);
+  cursor: pointer;
+}
+
+.consent-banner__button--primary {
+  color: #0a2540;
+  background: #d9b968;
+}
+
+.consent-banner__button--secondary {
+  color: #ffffff;
+  background: transparent;
+  border-color: rgba(255, 255, 255, 0.55);
+}
+
+.consent-banner__button:focus-visible,
+.consent-settings:focus-visible {
+  outline: 3px solid #f4d98b;
+  outline-offset: 3px;
+}
+
+.consent-settings {
+  padding: 0;
+  color: inherit;
+  background: none;
+  border: 0;
+  font: inherit;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .consent-banner {
+    right: 12px;
+    bottom: 12px;
+    left: 12px;
+    padding: 18px;
+  }
+
+  .consent-banner__content,
+  .consent-banner__actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .consent-banner__content {
+    gap: 16px;
+  }
+
+  .consent-banner__actions {
+    gap: 8px;
+  }
+}
