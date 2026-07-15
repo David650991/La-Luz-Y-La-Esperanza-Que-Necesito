@@ -18,7 +18,7 @@ Esta versión incorpora:
 
 - Sección de especialidades clínicas y terapéuticas con diseño editorial responsivo.
 - Podcast **El Origen De La Luz Y La Esperanza Que Necesito**.
-- Episodio 2: **El Precio de la Curiosidad**, con Fernando Acevedo y David Vidal.
+- Nuevo episodio: **29 Años de Libertad: El Milagro de la Recuperación**, con Padrino Germán Luna y Psic. Eder Gómez.
 - Reproductor de transmisión de YouTube integrado.
 - Temporizador para emisiones programadas y acciones para compartir y suscribirse.
 - Optimización de imágenes de alta resolución sin alterar los archivos originales.

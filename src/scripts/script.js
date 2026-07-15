@@ -1,7 +1,7 @@
 /* ==========================================================================
    ORQUESTADOR DE SCRIPTS (CARGADOR DINÁMICO)
    UBICACIÓN: src/scripts/script.js
-   VERSION: Modular 3.3
+   VERSION: Modular 3.4
    ========================================================================== */
 
 // Función auxiliar para cargar scripts externos
@@ -25,7 +25,7 @@ const initApplication = async () => {
         'src/scripts/js-modal.js',
         'src/scripts/js-form.js',
         'src/scripts/js-testimonials.js?v=1.1',
-        'src/scripts/js-podcast.js?v=1.1',
+        'src/scripts/js-podcast.js?v=1.2',
         'src/scripts/js-conversions.js?v=1.0',
         'src/scripts/js-snow.js' 
     ];

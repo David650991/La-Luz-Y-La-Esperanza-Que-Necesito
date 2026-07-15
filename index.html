@@ -201,42 +201,41 @@
         },
         {
           "@type": "PodcastEpisode",
-          "@id": "https://www.laluzylaesperanzaquenecesito.me/#podcast-episode-2",
-          "name": "El Precio de la Curiosidad",
-          "headline": "Episodio 2: El Precio de la Curiosidad",
-          "description": "Teniendo su vida hecha, la curiosidad de encajar en los antros lo llevó a perder el control. Conoce la historia de Fernando.",
-          "episodeNumber": 2,
+          "@id": "https://www.laluzylaesperanzaquenecesito.me/#podcast-29-anos-libertad",
+          "name": "29 Años de Libertad: El Milagro de la Recuperación",
+          "headline": "29 Años de Libertad: El Milagro de la Recuperación",
+          "description": "Padrino Germán Luna comparte una historia de esperanza, recuperación y cambio después de 29 años de libertad, en una conversación conducida por Psic. Eder Gómez.",
           "url": "https://www.laluzylaesperanzaquenecesito.me/#podcast",
           "inLanguage": "es-MX",
           "partOfSeries": {
             "@id": "https://www.laluzylaesperanzaquenecesito.me/#podcast-series"
           },
           "contributor": [
-            { "@type": "Person", "name": "Fernando Acevedo", "description": "Invitado" },
-            { "@type": "Person", "name": "David Vidal", "description": "Conductor" }
+            { "@type": "Person", "name": "Germán Luna", "description": "Invitado especial" },
+            { "@type": "Person", "name": "Eder Gómez", "description": "Conductor" }
           ],
-          "image": "https://www.laluzylaesperanzaquenecesito.me/src/assets/img/podcast/publicidad/El_precio_de_la_curiosidad.jpeg",
+          "image": "https://www.laluzylaesperanzaquenecesito.me/src/assets/img/podcast/publicidad/29_A%C3%B1os_de%20Libertad_El_Milagro_de_la_Recuperaci%C3%B3n.jpeg",
           "associatedMedia": {
-            "@id": "https://www.laluzylaesperanzaquenecesito.me/#podcast-episode-2-video"
+            "@id": "https://www.laluzylaesperanzaquenecesito.me/#podcast-29-anos-libertad-video"
           }
         },
         {
           "@type": "VideoObject",
-          "@id": "https://www.laluzylaesperanzaquenecesito.me/#podcast-episode-2-video",
-          "name": "Episodio 2: El Precio de la Curiosidad",
-          "description": "Fernando Acevedo comparte cómo la curiosidad por encajar en los antros lo llevó a perder el control, en una conversación conducida por David Vidal.",
-          "url": "https://youtu.be/FUXk3V7PI30",
-          "embedUrl": "https://www.youtube.com/embed/FUXk3V7PI30",
-          "thumbnailUrl": "https://i.ytimg.com/vi/FUXk3V7PI30/maxresdefault.jpg",
-          "uploadDate": "2026-07-14T00:00:00-06:00",
+          "@id": "https://www.laluzylaesperanzaquenecesito.me/#podcast-29-anos-libertad-video",
+          "name": "29 Años de Libertad: El Milagro de la Recuperación",
+          "description": "Padrino Germán Luna comparte una historia de esperanza, recuperación y cambio después de 29 años de libertad, en una conversación conducida por Psic. Eder Gómez.",
+          "url": "https://youtu.be/2j-1Tg17hNI",
+          "embedUrl": "https://www.youtube.com/embed/2j-1Tg17hNI",
+          "thumbnailUrl": "https://i.ytimg.com/vi/2j-1Tg17hNI/maxresdefault.jpg",
+          "uploadDate": "2026-07-15T00:00:00-06:00",
           "inLanguage": "es-MX",
           "publication": {
             "@type": "BroadcastEvent",
             "isLiveBroadcast": true,
-            "startDate": "2026-07-15T09:00:00-06:00"
+            "startDate": "2026-07-17T09:00:00-06:00"
           },
           "isPartOf": {
-            "@id": "https://www.laluzylaesperanzaquenecesito.me/#podcast-episode-2"
+            "@id": "https://www.laluzylaesperanzaquenecesito.me/#podcast-29-anos-libertad"
           },
           "publisher": {
             "@id": "https://www.laluzylaesperanzaquenecesito.me/#organization"
@@ -306,7 +305,7 @@
             id: "load-testimonios",
             file: "src/components/seccion-testimonios.html",
           },
-          { id: "load-podcast", file: "src/components/podcast.html" },
+          { id: "load-podcast", file: "src/components/podcast.html?v=2.0" },
           { id: "load-contacto", file: "src/components/seccion-contacto.html" },
           { id: "load-donacion", file: "src/components/seccion-donacion.html" },
           { id: "load-footer", file: "src/components/part-footer.html" },
@@ -335,7 +334,7 @@
 
         // [CORREGIDO] Cargar script principal desde src/scripts/
         const mainScript = document.createElement("script");
-        mainScript.src = "src/scripts/script.js?v=3.3";
+        mainScript.src = "src/scripts/script.js?v=3.4";
         document.body.appendChild(mainScript);
       });
     </script>
