@@ -94,7 +94,7 @@
     
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="src/styles/styles.css?v=4.7">
+    <link rel="stylesheet" href="src/styles/styles.css?v=4.8">
 
     <script type="application/ld+json">
     {
@@ -279,6 +279,7 @@
       <div id="load-donacion"></div>
     </main>
 
+    <div id="load-visitor-stats"></div>
     <div id="load-footer"></div>
 
     <script>
@@ -308,6 +309,7 @@
           { id: "load-podcast", file: "src/components/podcast.html?v=2.0" },
           { id: "load-contacto", file: "src/components/seccion-contacto.html" },
           { id: "load-donacion", file: "src/components/seccion-donacion.html" },
+          { id: "load-visitor-stats", file: "src/components/visitor-stats.html?v=1.0" },
           { id: "load-footer", file: "src/components/part-footer.html" },
         ];
 
@@ -331,6 +333,12 @@
 
         // Cargar todos en paralelo
         await Promise.all(includes.map(loadSection));
+
+        // El contador usa módulos ES oficiales de Firebase y se aísla del resto de la aplicación.
+        const visitorStatsScript = document.createElement("script");
+        visitorStatsScript.type = "module";
+        visitorStatsScript.src = "src/scripts/js-visitor-stats.js?v=1.0";
+        document.body.appendChild(visitorStatsScript);
 
         // [CORREGIDO] Cargar script principal desde src/scripts/
         const mainScript = document.createElement("script");

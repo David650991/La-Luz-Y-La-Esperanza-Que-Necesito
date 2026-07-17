@@ -71,6 +71,7 @@ El sitio utiliza una arquitectura modular basada en **Client-Side Includes**. Lo
 - Información local consistente: Tres Valles, Veracruz, teléfono y coordenadas.
 - Google Tag Manager `GTM-NBC7X6GV` con Consent Mode y preferencias reversibles.
 - Eventos `dataLayer` preparados para conectar GA4 `G-T2VB7BXSBD` desde Tag Manager.
+- Módulo informativo de conexiones activas y visitas acumuladas desde el 16 de julio de 2026, respaldado por Firebase Realtime Database y autenticación anónima.
 
 El posicionamiento orgánico también depende de factores externos al código, como Google Business Profile, Search Console, reseñas legítimas, autoridad temática, enlaces y publicación constante de contenido útil.
 

@@ -1,7 +1,7 @@
 /* ==========================================================================
    ARCHIVO MAESTRO: STYLES.CSS
    PROYECTO: LA LUZ Y LA ESPERANZA QUE NECESITO
-   VERSION: Modular 2.1
+   VERSION: Modular 2.2
    ========================================================================== */
 
 /* 1. Variables Globales (Colores, Fuentes) */
@@ -18,6 +18,9 @@
 
 /* 5. Secciones de Página (Hero, Servicios, Contacto, etc.) */
 @import url("css-sections.css");
+
+/* 5.1 Módulo informativo de presencia y visitas */
+@import url("css-visitor-stats.css");
 
 /* 6. Responsividad (Mobile y Ajustes Finales) */
 @import url("css-responsive.css");
