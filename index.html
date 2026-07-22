@@ -1,102 +1,115 @@
 <!DOCTYPE html>
 <html lang="es-MX">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <!-- Consent Mode: privacidad por defecto antes de cargar Google Tag Manager. -->
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
+  <!-- Consent Mode: privacidad por defecto antes de cargar Google Tag Manager. -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
 
-      let storedConsent = null;
-      try {
-        storedConsent = localStorage.getItem("site_consent_v1");
-      } catch (error) {
-        storedConsent = null;
-      }
+    let storedConsent = null;
+    try {
+      storedConsent = localStorage.getItem("site_consent_v1");
+    } catch (error) {
+      storedConsent = null;
+    }
 
-      const analyticsConsent = storedConsent === "accepted" ? "granted" : "denied";
-      gtag("consent", "default", {
-        ad_storage: analyticsConsent,
-        analytics_storage: analyticsConsent,
-        ad_user_data: analyticsConsent,
-        ad_personalization: analyticsConsent,
-        functionality_storage: "granted",
-        security_storage: "granted",
-        wait_for_update: 500
-      });
-      gtag("set", "ads_data_redaction", true);
-    </script>
+    const analyticsConsent = storedConsent === "accepted" ? "granted" : "denied";
+    gtag("consent", "default", {
+      ad_storage: analyticsConsent,
+      analytics_storage: analyticsConsent,
+      ad_user_data: analyticsConsent,
+      ad_personalization: analyticsConsent,
+      functionality_storage: "granted",
+      security_storage: "granted",
+      wait_for_update: 500
+    });
+    gtag("set", "ads_data_redaction", true);
+  </script>
 
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-NBC7X6GV');</script>
-    <!-- End Google Tag Manager -->
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-NBC7X6GV');</script>
+  <!-- End Google Tag Manager -->
 
-    <script src="src/scripts/js-consent.js?v=1.0" defer></script>
-    
-    <title>Centro de Rehabilitación en Tres Valles | La Luz y La Esperanza</title>
+  <script src="src/scripts/js-consent.js?v=1.0" defer></script>
 
-    <link rel="icon" href="public/img/favicon.png" sizes="32x32">
-    <link rel="icon" href="public/img/favicon-96x96.png" sizes="96x96">
-    <link rel="apple-touch-icon" sizes="180x180" href="public/img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="public/img/web-app-manifest-192x192.png">
-    
-    <link rel="manifest" href="public/manifest/site.webmanifest">
-    <meta name="theme-color" content="#0F2C59">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>Centro de Rehabilitación en Tres Valles | La Luz y La Esperanza</title>
 
-    <meta name="description" content="Centro de rehabilitación en Tres Valles, Veracruz. Atención médica, psicológica y espiritual para adicciones, alcoholismo y salud mental. Ayuda confidencial 24/7.">
+  <link rel="icon" href="public/img/favicon.png" sizes="32x32">
+  <link rel="icon" href="public/img/favicon-96x96.png" sizes="96x96">
+  <link rel="apple-touch-icon" sizes="180x180" href="public/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="public/img/web-app-manifest-192x192.png">
 
-    <meta name="author" content="Centro de Rehabilitación La Luz y La Esperanza Que Necesito">
-    <meta name="copyright" content="Centro La Luz y La Esperanza Que Necesito">
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <link rel="manifest" href="public/manifest/site.webmanifest">
+  <meta name="theme-color" content="#0F2C59">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-    <meta name="geo.region" content="MX-VER">
-    <meta name="geo.placename" content="Tres Valles, Veracruz, México">
-    <meta name="geo.position" content="18.2384;-96.1438">
-    <meta name="ICBM" content="18.2384, -96.1438">
+  <meta name="description"
+    content="Centro de rehabilitación en Tres Valles, Veracruz. Atención médica, psicológica y espiritual para adicciones, alcoholismo y salud mental. Ayuda confidencial 24/7.">
 
-    <meta name="google-site-verification" content="XdgdErVDX5QiFOniyrJqKLusOInbDD08gEpAz8SupLQ">
-    <link rel="canonical" href="https://www.laluzylaesperanzaquenecesito.me/">
-    <link rel="alternate" hreflang="es-MX" href="https://www.laluzylaesperanzaquenecesito.me/">
-    <link rel="alternate" hreflang="x-default" href="https://www.laluzylaesperanzaquenecesito.me/">
+  <meta name="author" content="Centro de Rehabilitación La Luz y La Esperanza Que Necesito">
+  <meta name="copyright" content="Centro La Luz y La Esperanza Que Necesito">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
-    <meta property="og:title" content="Centro de Rehabilitación en Tres Valles | Ayuda 24/7">
-    <meta property="og:description" content="Atención integral, confidencial y humana para adicciones, alcoholismo y salud mental en Tres Valles, Veracruz.">
-    <meta property="og:image" content="https://www.laluzylaesperanzaquenecesito.me/src/assets/img/hero/social-share-1200x630.jpg">
-    <meta property="og:image:secure_url" content="https://www.laluzylaesperanzaquenecesito.me/src/assets/img/hero/social-share-1200x630.jpg">
-    <meta property="og:image:type" content="image/jpeg">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Fachada del Centro de Rehabilitación La Luz y La Esperanza Que Necesito en Tres Valles">
-    <meta property="og:url" content="https://www.laluzylaesperanzaquenecesito.me/">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="es_MX">
-    <meta property="og:site_name" content="La Luz y La Esperanza Que Necesito">
+  <meta name="geo.region" content="MX-VER">
+  <meta name="geo.placename" content="Tres Valles, Veracruz, México">
+  <meta name="geo.position" content="18.2384;-96.1438">
+  <meta name="ICBM" content="18.2384, -96.1438">
 
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Centro de Rehabilitación en Tres Valles | Ayuda 24/7">
-    <meta name="twitter:description" content="Atención integral y confidencial para adicciones, alcoholismo y salud mental en Veracruz.">
-    <meta name="twitter:image" content="https://www.laluzylaesperanzaquenecesito.me/src/assets/img/hero/social-share-1200x630.jpg">
-    <meta name="twitter:image:alt" content="Fachada del Centro de Rehabilitación La Luz y La Esperanza Que Necesito">
+  <meta name="google-site-verification" content="XdgdErVDX5QiFOniyrJqKLusOInbDD08gEpAz8SupLQ">
+  <link rel="canonical" href="https://www.laluzylaesperanzaquenecesito.me/">
+  <link rel="alternate" hreflang="es-MX" href="https://www.laluzylaesperanzaquenecesito.me/">
+  <link rel="alternate" hreflang="x-default" href="https://www.laluzylaesperanzaquenecesito.me/">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <link rel="preload" href="src/assets/img/hero/fachada_principal.jpeg" as="image" fetchpriority="high">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="src/styles/styles.css?v=4.8">
+  <meta property="og:title" content="Centro de Rehabilitación en Tres Valles | Ayuda 24/7">
+  <meta property="og:description"
+    content="Atención integral, confidencial y humana para adicciones, alcoholismo y salud mental en Tres Valles, Veracruz.">
+  <meta property="og:image"
+    content="https://www.laluzylaesperanzaquenecesito.me/src/assets/img/hero/social-share-1200x630.jpg">
+  <meta property="og:image:secure_url"
+    content="https://www.laluzylaesperanzaquenecesito.me/src/assets/img/hero/social-share-1200x630.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt"
+    content="Fachada del Centro de Rehabilitación La Luz y La Esperanza Que Necesito en Tres Valles">
+  <meta property="og:url" content="https://www.laluzylaesperanzaquenecesito.me/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:site_name" content="La Luz y La Esperanza Que Necesito">
 
-    <script type="application/ld+json">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Centro de Rehabilitación en Tres Valles | Ayuda 24/7">
+  <meta name="twitter:description"
+    content="Atención integral y confidencial para adicciones, alcoholismo y salud mental en Veracruz.">
+  <meta name="twitter:image"
+    content="https://www.laluzylaesperanzaquenecesito.me/src/assets/img/hero/social-share-1200x630.jpg">
+  <meta name="twitter:image:alt" content="Fachada del Centro de Rehabilitación La Luz y La Esperanza Que Necesito">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link rel="preload" href="src/assets/img/hero/fachada_principal.jpeg" as="image" fetchpriority="high">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Lato:wght@300;400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="src/styles/styles.css?v=4.8">
+
+  <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@graph": [
@@ -246,105 +259,110 @@
     </script>
 </head>
 
-  <body class="christmas-theme">
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NBC7X6GV"
-    height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Manager"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+<body class="christmas-theme">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NBC7X6GV" height="0" width="0"
+      style="display:none;visibility:hidden" title="Google Tag Manager"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
-    <aside id="consent-banner" class="consent-banner" role="dialog" aria-labelledby="consent-title" aria-describedby="consent-description" hidden>
-      <div class="consent-banner__content">
-        <div class="consent-banner__copy">
-          <h2 id="consent-title" class="consent-banner__title">Tu privacidad es importante</h2>
-          <p id="consent-description" class="consent-banner__description">Usamos medición analítica para entender el funcionamiento del sitio y mejorar la orientación que ofrecemos. Puedes aceptar o rechazar esta medición.</p>
-        </div>
-        <div class="consent-banner__actions">
-          <button type="button" class="consent-banner__button consent-banner__button--secondary" data-consent-reject>Rechazar</button>
-          <button type="button" class="consent-banner__button consent-banner__button--primary" data-consent-accept>Aceptar</button>
-        </div>
+  <aside id="consent-banner" class="consent-banner" role="dialog" aria-labelledby="consent-title"
+    aria-describedby="consent-description" hidden>
+    <div class="consent-banner__content">
+      <div class="consent-banner__copy">
+        <h2 id="consent-title" class="consent-banner__title">Tu privacidad es importante</h2>
+        <p id="consent-description" class="consent-banner__description">Usamos medición analítica para entender el
+          funcionamiento del sitio y mejorar la orientación que ofrecemos. Puedes aceptar o rechazar esta medición.</p>
       </div>
-    </aside>
-    <div id="load-header"></div>
+      <div class="consent-banner__actions">
+        <button type="button" class="consent-banner__button consent-banner__button--secondary"
+          data-consent-reject>Rechazar</button>
+        <button type="button" class="consent-banner__button consent-banner__button--primary"
+          data-consent-accept>Aceptar</button>
+      </div>
+    </div>
+  </aside>
+  <div id="load-header"></div>
 
-    <main>
-      <div id="load-inicio"></div>
-      <div id="load-identidad"></div>
-      <div id="load-padecimientos"></div>
-      <div id="load-metodo"></div>
-      <div id="load-instalaciones"></div>
-      <div id="load-equipo"></div>
-      <div id="load-testimonios"></div>
-      <div id="load-podcast"></div>
-      <div id="load-contacto"></div>
-      <div id="load-donacion"></div>
-    </main>
+  <main>
+    <div id="load-inicio"></div>
+    <div id="load-identidad"></div>
+    <div id="load-padecimientos"></div>
+    <div id="load-metodo"></div>
+    <div id="load-instalaciones"></div>
+    <div id="load-equipo"></div>
+    <div id="load-testimonios"></div>
+    <div id="load-podcast"></div>
+    <div id="load-contacto"></div>
+    <div id="load-donacion"></div>
+  </main>
 
-    <div id="load-visitor-stats"></div>
-    <div id="load-footer"></div>
+  <div id="load-visitor-stats"></div>
+  <div id="load-footer"></div>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", async () => {
-        // [CORREGIDO] RUTAS APUNTAN A src/components/
-        const includes = [
-          { id: "load-header", file: "src/components/part-header.html" },
-          { id: "load-inicio", file: "src/components/seccion-inicio.html" },
-          {
-            id: "load-identidad",
-            file: "src/components/seccion-identidad.html",
-          },
-          {
-            id: "load-padecimientos",
-            file: "src/components/seccion-padecimientos.html",
-          },
-          { id: "load-metodo", file: "src/components/seccion-metodo.html" },
-          {
-            id: "load-instalaciones",
-            file: "src/components/seccion-instalaciones.html",
-          },
-          { id: "load-equipo", file: "src/components/seccion-equipo.html" },
-          {
-            id: "load-testimonios",
-            file: "src/components/seccion-testimonios.html",
-          },
-          { id: "load-podcast", file: "src/components/podcast.html?v=2.0" },
-          { id: "load-contacto", file: "src/components/seccion-contacto.html" },
-          { id: "load-donacion", file: "src/components/seccion-donacion.html" },
-          { id: "load-visitor-stats", file: "src/components/visitor-stats.html?v=1.0" },
-          { id: "load-footer", file: "src/components/part-footer.html" },
-        ];
+  <script>
+    document.addEventListener("DOMContentLoaded", async () => {
+      // [CORREGIDO] RUTAS APUNTAN A src/components/
+      const includes = [
+        { id: "load-header", file: "src/components/part-header.html" },
+        { id: "load-inicio", file: "src/components/seccion-inicio.html" },
+        {
+          id: "load-identidad",
+          file: "src/components/seccion-identidad.html",
+        },
+        {
+          id: "load-padecimientos",
+          file: "src/components/seccion-padecimientos.html",
+        },
+        { id: "load-metodo", file: "src/components/seccion-metodo.html" },
+        {
+          id: "load-instalaciones",
+          file: "src/components/seccion-instalaciones.html",
+        },
+        { id: "load-equipo", file: "src/components/seccion-equipo.html" },
+        {
+          id: "load-testimonios",
+          file: "src/components/seccion-testimonios.html",
+        },
+        { id: "load-podcast", file: "src/components/podcast.html?v=2.0" },
+        { id: "load-contacto", file: "src/components/seccion-contacto.html" },
+        { id: "load-donacion", file: "src/components/seccion-donacion.html" },
+        { id: "load-visitor-stats", file: "src/components/visitor-stats.html?v=1.0" },
+        { id: "load-footer", file: "src/components/part-footer.html" },
+      ];
 
-        // Función asíncrona para cargar HTML
-        const loadSection = async (item) => {
-          try {
-            const response = await fetch(item.file);
-            if (!response.ok) throw new Error(`Error loading ${item.file}`);
-            const text = await response.text();
+      // Función asíncrona para cargar HTML
+      const loadSection = async (item) => {
+        try {
+          const response = await fetch(item.file);
+          if (!response.ok) throw new Error(`Error loading ${item.file}`);
+          const text = await response.text();
 
-            // [OPCIONAL PERO RECOMENDADO] Inyección de rutas de assets
-            // Si el script de PowerShell anterior no cubrió algún caso, esto lo asegura en tiempo real
-            // const fixedText = text.replace(/assets\/img/g, 'src/assets/img')
-            //                       .replace(/assets\/video/g, 'src/assets/video');
+          // [OPCIONAL PERO RECOMENDADO] Inyección de rutas de assets
+          // Si el script de PowerShell anterior no cubrió algún caso, esto lo asegura en tiempo real
+          // const fixedText = text.replace(/assets\/img/g, 'src/assets/img')
+          //                       .replace(/assets\/video/g, 'src/assets/video');
 
-            document.getElementById(item.id).outerHTML = text;
-          } catch (error) {
-            console.error(error);
-          }
-        };
+          document.getElementById(item.id).outerHTML = text;
+        } catch (error) {
+          console.error(error);
+        }
+      };
 
-        // Cargar todos en paralelo
-        await Promise.all(includes.map(loadSection));
+      // Cargar todos en paralelo
+      await Promise.all(includes.map(loadSection));
 
-        // El contador usa módulos ES oficiales de Firebase y se aísla del resto de la aplicación.
-        const visitorStatsScript = document.createElement("script");
-        visitorStatsScript.type = "module";
-        visitorStatsScript.src = "src/scripts/js-visitor-stats.js?v=1.0";
-        document.body.appendChild(visitorStatsScript);
+      // El contador usa módulos ES oficiales de Firebase y se aísla del resto de la aplicación.
+      const visitorStatsScript = document.createElement("script");
+      visitorStatsScript.type = "module";
+      visitorStatsScript.src = "src/scripts/js-visitor-stats.js?v=1.0";
+      document.body.appendChild(visitorStatsScript);
 
-        // [CORREGIDO] Cargar script principal desde src/scripts/
-        const mainScript = document.createElement("script");
-        mainScript.src = "src/scripts/script.js?v=3.4";
-        document.body.appendChild(mainScript);
-      });
-    </script>
-  </body>
+      // [CORREGIDO] Cargar script principal desde src/scripts/
+      const mainScript = document.createElement("script");
+      mainScript.src = "src/scripts/script.js?v=3.4";
+      document.body.appendChild(mainScript);
+    });
+  </script>
+</body>
+
 </html>

@@ -192,6 +192,32 @@
   opacity: 0.5;
 }
 
+.footer-personal-access {
+  margin: 14px 0 0;
+  font-size: 0.72rem;
+}
+
+.footer-personal-access a {
+  color: rgba(255, 255, 255, 0.48);
+  font-weight: 500;
+  letter-spacing: 0.025em;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.footer-personal-access a:hover,
+.footer-personal-access a:focus-visible {
+  color: var(--gold);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.footer-personal-access a:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+
 .whatsapp-float {
   position: fixed;
   bottom: 30px;
