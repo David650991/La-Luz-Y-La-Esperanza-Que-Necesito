@@ -45,8 +45,8 @@ window.initPodcast = function initPodcast() {
 
         shareButton.addEventListener('click', async () => {
             const shareData = {
-                title: '29 Años de Libertad: El Milagro de la Recuperación',
-                text: 'Acompáñanos en una historia de esperanza, recuperación y cambio de El Origen De La Luz Y La Esperanza Que Necesito.',
+                title: 'La herida de abandono y la droga como anestesia',
+                text: 'Acompáñanos en este nuevo episodio de El Origen De La Luz Y La Esperanza Que Necesito.',
                 url: `${window.location.origin}${window.location.pathname}#podcast`
             };
 
