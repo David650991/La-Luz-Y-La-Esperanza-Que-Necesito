@@ -1,6 +1,6 @@
 'use strict';
 
-const URL_GENERADOR_PROTEGIDO = 'https://generador-expedientes-podcast.pages.dev/index.html';
+const URL_GENERADOR_PROTEGIDO = 'https://generador-expedientes-podcast.pages.dev/';
 
 class AccesoPersonal {
   constructor() {
