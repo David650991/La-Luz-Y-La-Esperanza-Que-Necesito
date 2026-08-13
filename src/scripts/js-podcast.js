@@ -45,7 +45,7 @@ window.initPodcast = function initPodcast() {
 
         shareButton.addEventListener('click', async () => {
             const shareData = {
-                title: 'La herida de abandono y la droga como anestesia',
+                title: 'Ep. 9: HAY PÉRDIDAS QUE EL TIEMPO NO CURA | La historia de Cristian Estefano | EN VIVO',
                 text: 'Acompáñanos en este nuevo episodio de El Origen De La Luz Y La Esperanza Que Necesito.',
                 url: `${window.location.origin}${window.location.pathname}#podcast`
             };
