@@ -45,8 +45,8 @@ window.initPodcast = function initPodcast() {
 
         shareButton.addEventListener('click', async () => {
             const shareData = {
-                title: 'SOBRIO, PERO NO PERFECTO | Anastacio Ascanio Regueira | EN VIVO',
-                text: 'Acompáñanos en una conversación sobre sobriedad, adicciones y el trabajo diario con los defectos de carácter.',
+                title: 'EP. 12: LA FAMILIA COMO FACTOR PROTECTOR | EN VIVO',
+                text: 'Acompáñanos en una conversación sobre prevención, acompañamiento y atención de las adicciones desde el entorno familiar.',
                 url: `${window.location.origin}${window.location.pathname}#podcast`
             };
 
