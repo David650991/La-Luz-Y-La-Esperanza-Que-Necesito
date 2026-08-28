@@ -45,8 +45,8 @@ window.initPodcast = function initPodcast() {
 
         shareButton.addEventListener('click', async () => {
             const shareData = {
-                title: 'EP. 12: LA FAMILIA COMO FACTOR PROTECTOR | EN VIVO',
-                text: 'Acompáñanos en una conversación sobre prevención, acompañamiento y atención de las adicciones desde el entorno familiar.',
+                title: '40 AÑOS DESPUÉS… ¿POR QUÉ SIGUE VOLVIENDO? | EN VIVO',
+                text: 'Acompáñanos en una conversación con el Padrino Ricachá sobre cuatro décadas de abstinencia y una vida sin soltar la agrupación.',
                 url: `${window.location.origin}${window.location.pathname}#podcast`
             };
 
