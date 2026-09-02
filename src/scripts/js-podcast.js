@@ -20,8 +20,8 @@ window.initPodcast = function initPodcast() {
 
             if (remaining <= 0) {
                 countdown.classList.add('is-live');
-                countdown.querySelector('.podcast-countdown__label').textContent = 'La transmisión ya comenzó';
-                countdown.querySelector('.podcast-countdown__date').textContent = 'Conéctate ahora para ver el episodio en vivo.';
+                countdown.querySelector('.podcast-countdown__label').textContent = 'El estreno ya comenzó';
+                countdown.querySelector('.podcast-countdown__date').textContent = 'Ya puedes ver el episodio en YouTube.';
                 return false;
             }
 
@@ -45,8 +45,8 @@ window.initPodcast = function initPodcast() {
 
         shareButton.addEventListener('click', async () => {
             const shareData = {
-                title: '40 AÑOS DESPUÉS… ¿POR QUÉ SIGUE VOLVIENDO? | EN VIVO',
-                text: 'Acompáñanos en una conversación con el Padrino Ricachá sobre cuatro décadas de abstinencia y una vida sin soltar la agrupación.',
+                title: 'YO NO QUERÍA CAMBIAR | EPISODIO 13',
+                text: 'Acompáñanos en el estreno del episodio 13 con Brian Vidal Nolasco, Padrino Brian, entrevistado por David Vidal Ramírez.',
                 url: `${window.location.origin}${window.location.pathname}#podcast`
             };
 
