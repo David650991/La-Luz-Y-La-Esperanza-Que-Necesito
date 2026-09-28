@@ -45,8 +45,8 @@ window.initPodcast = function initPodcast() {
 
         shareButton.addEventListener('click', async () => {
             const shareData = {
-                title: 'CUANDO QUISE DARME CUENTA, YA ESTABA MUY ADENTRO | EN VIVO',
-                text: 'Acompáñanos en una conversación con Israel Herrera Hernández sobre consumo, familia, recuperación y la oportunidad de comenzar una nueva vida.',
+                title: 'DE RECUPERARME A AYUDAR A OTROS | EN VIVO',
+                text: 'Acompáñanos en una conversación con Oscar Reyes sobre cinco años de abstinencia, servicio y el compromiso de acompañar a quienes todavía están luchando.',
                 url: `${window.location.origin}${window.location.pathname}#podcast`
             };
 
