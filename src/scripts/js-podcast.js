@@ -45,8 +45,8 @@ window.initPodcast = function initPodcast() {
 
         shareButton.addEventListener('click', async () => {
             const shareData = {
-                title: 'DE RECUPERARME A AYUDAR A OTROS | EN VIVO',
-                text: 'Acompáñanos en una conversación con Oscar Reyes sobre cinco años de abstinencia, servicio y el compromiso de acompañar a quienes todavía están luchando.',
+                title: 'LA MAMÁ DE UN ADICTO | EN VIVO',
+                text: 'Acompáñanos en una conversación con Ciany Ochoa Méndez sobre el amor, la incertidumbre, los límites y la esperanza de una madre ante las adicciones.',
                 url: `${window.location.origin}${window.location.pathname}#podcast`
             };
 
