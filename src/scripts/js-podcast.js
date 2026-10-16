@@ -45,8 +45,8 @@ window.initPodcast = function initPodcast() {
 
         shareButton.addEventListener('click', async () => {
             const shareData = {
-                title: 'LA MAMÁ DE UN ADICTO | EN VIVO',
-                text: 'Acompáñanos en una conversación con Ciany Ochoa Méndez sobre el amor, la incertidumbre, los límites y la esperanza de una madre ante las adicciones.',
+                title: 'EL NIÑO QUE SOLO QUERÍA SER FELIZ | EN VIVO',
+                text: 'Angelo Jonathan Pacheco Azamar conversa con Éder Gómez sobre su infancia, la familia, las emociones y la esperanza de construir un futuro diferente.',
                 url: `${window.location.origin}${window.location.pathname}#podcast`
             };
 
