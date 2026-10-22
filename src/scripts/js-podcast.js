@@ -45,8 +45,8 @@ window.initPodcast = function initPodcast() {
 
         shareButton.addEventListener('click', async () => {
             const shareData = {
-                title: 'EL NIÑO QUE SOLO QUERÍA SER FELIZ | EN VIVO',
-                text: 'Angelo Jonathan Pacheco Azamar conversa con Éder Gómez sobre su infancia, la familia, las emociones y la esperanza de construir un futuro diferente.',
+                title: 'MI PASADO NO DEFINE MI VOCACIÓN | EN VIVO',
+                text: 'La Dra. Milagros conversa con Éder Gómez sobre su historia personal, su vocación médica y el compromiso de ayudar a los demás.',
                 url: `${window.location.origin}${window.location.pathname}#podcast`
             };
 
