@@ -45,8 +45,8 @@ window.initPodcast = function initPodcast() {
 
         shareButton.addEventListener('click', async () => {
             const shareData = {
-                title: 'MI PASADO NO DEFINE MI VOCACIÓN | EN VIVO',
-                text: 'La Dra. Milagros conversa con Éder Gómez sobre su historia personal, su vocación médica y el compromiso de ayudar a los demás.',
+                title: 'CENTROS DE REHABILITACIÓN: DESAFÍOS Y OPORTUNIDADES DE CAMBIO | EN VIVO',
+                text: 'Acompáñanos en una conversación con Éder Gómez sobre los desafíos y las oportunidades de cambio en los centros de rehabilitación.',
                 url: `${window.location.origin}${window.location.pathname}#podcast`
             };
 
